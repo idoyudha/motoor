@@ -25,7 +25,7 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 <details class="mt-faq">
 <summary>How does Motoor decide when a service is due?</summary>
 <div>
-<p>When you add a vehicle, Motoor sets up a starting schedule for its class, with each item due by distance or by date, whichever comes first. You can change any interval, add your own items or remove ones you don’t need. Keep the odometer up to date by logging fuel or services so distance-based reminders stay accurate.</p>
+<p>When you add a vehicle, Motoor proposes a service schedule for its make, class and powertrain, with each item due by distance or by date, whichever comes first. Every item shows where its interval comes from. On any plan you can untick the items you don’t need. With Premium you can also rename items, change their intervals and add your own. Keep the odometer up to date by logging fuel or services so distance-based reminders stay accurate.</p>
 </div>
 </details>
 
@@ -44,7 +44,7 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 <li><strong>Android:</strong> open the Play Store, tap your profile picture, then <strong>Payments and subscriptions → Subscriptions → Motoor → Cancel subscription</strong>.</li>
 <li><strong>iOS:</strong> open <strong>Settings</strong>, tap your name, then <strong>Subscriptions → Motoor → Cancel Subscription</strong>.</li>
 </ul>
-<p>Cancelling drops the free limits back on at the end of the billing period, but every vehicle, log and attachment stays on the device.</p>
+<p>When the billing period ends, the Free limits apply again, but nothing is deleted. Your first vehicle stays active (you can pick a different one), and any others become read-only until you subscribe again. Every log and attachment is kept, on your phone and in your backup.</p>
 </div>
 </details>
 
@@ -56,9 +56,16 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 </details>
 
 <details class="mt-faq">
+<summary>Is my logbook backed up?</summary>
+<div>
+<p>Yes, automatically, on both Free and Premium. Your vehicles, logs, reminders, attachments and receipts are backed up to our server whenever you’re online. On a new phone, sign in with the same Google or Apple account and your logbook comes back. Read more in the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Does Motoor work offline?</summary>
 <div>
-<p>Yes. Your logbook is stored on your phone, so you can log fuel, services and costs without a connection.</p>
+<p>Yes. Your logbook is stored on your phone, so you can log fuel, services and costs, see your history and get reminders without a connection. Changes back up automatically when you’re online again. Signing in, scanning receipts, sharing and transferring a vehicle need a connection.</p>
 </div>
 </details>
 
@@ -71,12 +78,20 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 
 ## Delete your data
 
-Motoor doesn’t use accounts, and your logbook is stored only on your phone, so there is no account to close and nothing on our side to delete. You can remove everything yourself:
+Deleting your account removes your logbook from your phone and, after {{ site.privacy.deletion_grace_days }} days, from our server for good. There are two ways to do it.
 
-1. **Inside the app:** open **Settings → Delete all data** and confirm. This removes every vehicle, log, reminder and photo from the device.
-2. **Or uninstall Motoor.** Uninstalling deletes the app’s data from your phone.
-3. **Phone backups:** if your phone backs up apps to Google or iCloud, older copies may remain in that backup until it is replaced. You can manage these in your Google or Apple account settings.
+**In the app:** open **Settings → Profile → Delete account** and confirm. Your account is locked straight away and any share links stop working.
 
-If you’ve emailed us and want that correspondence deleted, write to [{{ dev.email }}](mailto:{{ dev.email }}?subject=Delete%20my%20data) with the subject “Delete my data”. We’ll delete it within 30 days and confirm by email.
+**Without the app:** email [{{ dev.email }}](mailto:{{ dev.email }}?subject=Delete%20my%20account) with the subject “Delete my account”, from the email address you sign in with. We’ll confirm by email {{ dev.response_time }} and schedule the deletion, which then works the same way.
+
+What happens next:
+
+1. **For {{ site.privacy.deletion_grace_days }} days you can change your mind.** Sign in to Motoor and choose **Restore**. Your logbook comes back as it was.
+2. **After {{ site.privacy.deletion_grace_days }} days** your account, logbook backup, attachments, receipts and scans are deleted permanently, and your sign-in account is removed. Copies in our disaster-recovery backups expire within a further {{ site.privacy.backup_expiry_days }} days. This can’t be undone.
+3. **Your subscription isn’t cancelled automatically.** Cancel it in Google Play or the App Store first (see above).
+
+Uninstalling Motoor removes only the copy on your phone. Your backup stays until you delete your account.
+
+If you’ve emailed us and want that correspondence deleted, write to [{{ dev.email }}](mailto:{{ dev.email }}?subject=Delete%20my%20emails) with the subject “Delete my emails”. We’ll delete it within 30 days and confirm by email.
 
 Read more in the [privacy policy]({{ '/privacy/' | relative_url }}).

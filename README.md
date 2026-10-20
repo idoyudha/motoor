@@ -13,7 +13,7 @@ Landing page, privacy policy and support page for Motoor, built with Jekyll for 
 
 1. Open `_config.yml` and fill in everything marked `TODO`: your name (as on the store), support email, site `url`.
 2. Set the `privacy:` switches to match what your app really does. The privacy policy rewrites itself to match. Make the same answers in the Play Data safety form and App Store privacy labels.
-3. Read `privacy.md` and `support.md` once more. They mention **Settings → Delete all data**, **Settings → Premium → Restore purchase** and **Settings → About** in the app; rename these if your menus differ.
+3. Read `privacy.md` and `support.md` once more. They mention **Settings → Profile → Delete account**, **Settings → Premium → Restore purchase** and **Settings → About** in the app; rename these if your menus differ.
 4. Optional: replace the placeholder logo in `_includes/logo.html` and the icons in `_includes/icon.html` with the files from `assets/Logos` and `assets/Icons`.
 
 ## Publish on GitHub Pages

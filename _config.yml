@@ -7,7 +7,7 @@ title: Motoor
 tagline: The calm logbook for every vehicle you own
 description: >-
   Motoor keeps service reminders, fuel, costs and history for your car,
-  motorcycle or bicycle in one place, on your phone.
+  motorcycle or bicycle in one place.
 lang: en
 
 # Site address. For a custom domain (e.g. https://motoor.app) set url to it and
@@ -35,10 +35,13 @@ stores:
 # form and your App Store privacy labels.
 privacy:
   updated: 2026-10-20               # change whenever the policy changes
-  ads_provider: "Google AdMob"      # "" if the app shows no ads
-  crash_reporting: ""               # e.g. "Firebase Crashlytics"; "" if none
-  analytics: ""                     # e.g. "Firebase Analytics"; "" if none
-  receipt_scanning_on_device: true  # false if receipt photos are sent to a server
+  crash_reporting: "Firebase Crashlytics"   # "" if none
+  analytics: "Firebase Analytics"          # "" if none
+  analytics_retention: "2 months"          # match Firebase console → Data retention
+  data_location: "Jakarta, Indonesia"      # where the backup server stores data
+  scan_location: "Indonesia or Singapore"  # where server-side receipt scans run
+  deletion_grace_days: 30                  # restore window after Delete account
+  backup_expiry_days: 7                    # how long disaster-recovery copies live
   min_age: 13
 
 # Navigation in the header
