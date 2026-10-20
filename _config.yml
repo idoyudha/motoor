@@ -20,7 +20,6 @@ baseurl: "/motoor"
 # the seller name on the App Store.
 developer:
   name: "Ido Yudhatama"
-  country: "Indonesia"
   email: "idoyudhatama.dev@gmail.com"
   response_time: "within 2 working days"
 
