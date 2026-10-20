@@ -1,23 +1,38 @@
 {%- comment -%}
   Usage: {% include icon.html name="bell" %}  (optional: class="...")
-  24px line icons drawn in currentColor, so they take the surrounding text color.
+  Motoor line icons: 24px grid, 1.7px stroke, drawn in currentColor.
+  Paths are copied from the design system (motoor-ui/src/icons.tsx); play, apple,
+  shield and mail are site-only additions drawn to the same rules.
 {%- endcomment -%}
 {%- assign n = include.name -%}
-<svg{% if include.class %} class="{{ include.class }}"{% endif %} viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+{%- if n == "logo" -%}
+<svg{% if include.class %} class="{{ include.class }}"{% endif %} viewBox="0 0 100 100" width="24" height="24" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="40"/><path d="M18 70 34 34 50 56 66 34 82 70"/></svg>
+{%- else -%}
+<svg{% if include.class %} class="{{ include.class }}"{% endif %} viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="
 {%- case n -%}
-{%- when "logo" -%}<circle cx="12" cy="12" r="10"/><path d="M7 16V8.5l5 5.5 5-5.5V16"/>
-{%- when "play" -%}<path d="M5 3.5v17a.8.8 0 0 0 1.2.7l14.6-8.5a.8.8 0 0 0 0-1.4L6.2 2.8A.8.8 0 0 0 5 3.5z"/><path d="M5 3.5 15 13M5 20.5 15 11"/>
-{%- when "apple" -%}<path d="M12 7c-1.5-1-4.5-1.2-6 1-1.6 2.4-1 6.5 1 9.5 1.2 1.8 2.4 2.8 3.6 2.4.6-.2 1-.4 1.4-.4s.8.2 1.4.4c1.2.4 2.4-.6 3.6-2.4.7-1 1.2-2 1.5-3-1.6-.7-2.5-2-2.5-3.5 0-1.3.7-2.4 1.8-3.1-1.5-2-4.3-1.9-5.8-.9z"/><path d="M12 7c0-2 1.2-3.6 3-4"/>
-{%- when "bell" -%}<path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/>
-{%- when "car" or "vehicle-car" -%}<path d="M3 16v-3l2-5a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 8l2 5v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3.5 12.5h17"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/>
-{%- when "vehicle-moto" -%}<circle cx="5.5" cy="16" r="3.5"/><circle cx="18.5" cy="16" r="3.5"/><path d="M5.5 16h5l3-5h-6M13.5 11l2-4h2.5M15.5 7l3 9"/>
-{%- when "vehicle-bike" -%}<circle cx="5.5" cy="16" r="3.5"/><circle cx="18.5" cy="16" r="3.5"/><path d="M5.5 16 9 9h7l2.5 7M9 9l3.5 7h-7M16 9l-1.5-3H17M8 6h3"/>
-{%- when "vehicle-ev" -%}<path d="M3 16v-3l2-5a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 8l2 5v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/><path d="m12.5 8.5-2 3h3l-2 3"/>
-{%- when "gear" -%}<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>
-{%- when "coin" -%}<circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.6 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5V8M12 16v1.5"/>
-{%- when "fuel" -%}<path d="M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M3 21h12M4 10h10"/><path d="M14 8h2a2 2 0 0 1 2 2v6.5a1.5 1.5 0 0 0 3 0V8l-3-3"/>
-{%- when "wrench" -%}<path d="M14.7 6.3a4 4 0 0 1 5-5L17 4l.5 2.5L20 7l2.7-2.7a4 4 0 0 1-5 5L8 19a2.1 2.1 0 0 1-3-3z"/>
-{%- when "shield" -%}<path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>
-{%- when "mail" -%}<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/>
+{%- when "car" -%}M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11m-14 0h14m-14 0v5h2m12-5v5h-2m-10 0h10m-10 0v1.5a1 1 0 01-2 0V16m12 0v1.5a1 1 0 002 0V16M7.5 13.5h.01M16.5 13.5h.01
+{%- when "bell" -%}M12 4a5 5 0 00-5 5v3.5L5.5 15.5h13L17 12.5V9a5 5 0 00-5-5zm-2.5 11.5a2.5 2.5 0 005 0
+{%- when "doc" -%}M6.5 3.5h7l4.5 4.5v12h-11.5zM13.5 3.5V8H18M9 12.5h6M9 16h6
+{%- when "fuel" -%}M4.2 20h9.6M5.5 20V5.6A1.6 1.6 0 017.1 4h4.8a1.6 1.6 0 011.6 1.6V20M5.5 10.6h8M15.6 8.4l2.5 2.5a1.5 1.5 0 01.44 1.06V16a1.48 1.48 0 002.96 0V9.1l-2.4-2.4
+{%- when "camera" -%}M4 8.5h3.2l1.4-2.2h6.8l1.4 2.2H20v10H4zM12 16.6a3.1 3.1 0 100-6.2 3.1 3.1 0 000 6.2z
+{%- when "qr" -%}M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2.6v2.6H14zM17.4 17.4H20V20h-2.6zM14 20h2.6M20 14h-2.6
+{%- when "handoff" -%}M4 8.5h9m0 0l-3.2-3.2M13 8.5l-3.2 3.2M20 15.5h-9m0 0l3.2-3.2M11 15.5l3.2 3.2
+{%- when "coin" -%}M12 20a8 8 0 100-16 8 8 0 000 16zm2.6-10.6c-.4-.9-1.4-1.4-2.6-1.4-1.5 0-2.6.8-2.6 1.9 0 2.6 5.4 1.4 5.4 4.2 0 1.1-1.2 1.9-2.8 1.9-1.3 0-2.3-.5-2.7-1.4M12 6.5V8m0 8v1.5
+{%- when "wrench" -%}M15.5 4.2a4.6 4.6 0 00-5.7 5.7L4.6 15a1.9 1.9 0 002.7 2.7l5.1-5.1a4.6 4.6 0 005.7-5.7l-2.6 2.6-2.4-.6-.6-2.4z
+{%- when "gear" -%}M12 15a3 3 0 100-6 3 3 0 000 6zm8-3l-1.9-.6a6.2 6.2 0 00-.6-1.5l1-1.7-1.7-1.7-1.7 1a6.2 6.2 0 00-1.5-.6L12.9 4h-2.4l-.6 1.9a6.2 6.2 0 00-1.5.6l-1.7-1L5 7.2l1 1.7a6.2 6.2 0 00-.6 1.5L3.5 11v2.4l1.9.6a6.2 6.2 0 00.6 1.5l-1 1.7 1.7 1.7 1.7-1a6.2 6.2 0 001.5.6l.6 1.9h2.4l.6-1.9a6.2 6.2 0 001.5-.6l1.7 1 1.7-1.7-1-1.7a6.2 6.2 0 00.6-1.5l1.9-.6V12z
+{%- when "vehicle-car" -%}M3.5 11.5l1.7-4.9A2.5 2.5 0 017.6 5h8.8a2.5 2.5 0 012.4 1.6l1.7 4.9M3.5 11.5h17M3.5 11.5V18h2.2m14.8-6.5V18h-2.2M5.7 18h12.6M5.7 18v1.4a1.1 1.1 0 01-2.2 0V18m14.8 0v1.4a1.1 1.1 0 002.2 0V18M6.8 14.6h1.4m7.6 0h1.4
+{%- when "vehicle-moto" -%}M5.5 18.5a3 3 0 100-6 3 3 0 000 6zm13 0a3 3 0 100-6 3 3 0 000 6zM8.4 15.5h7.2m0 0l-2.8-6.2m0 0h3.1m-3.1 0h-2.3m-2 2.3l2-2.3M5.5 12.5V9.8h2.6
+{%- when "vehicle-bike" -%}M5.5 18a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm13 0a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zM8.7 14.8l3.5-6.3m0 0l3 6.3m-3-6.3h3.3M8.7 8.5h3.5m0 0l3.9 6.3M12 8.5l-3.3 6.3
+{%- when "vehicle-ev" -%}M3.5 11.5l1.7-4.9A2.5 2.5 0 017.6 5h8.8a2.5 2.5 0 012.4 1.6l1.7 4.9M3.5 11.5h17M3.5 11.5V18h2.2m14.8-6.5V18h-2.2M5.7 18h12.6M5.7 18v1.4a1.1 1.1 0 01-2.2 0V18m14.8 0v1.4a1.1 1.1 0 002.2 0V18M12.7 12.6l-1.9 2.6h2.2l-.6 2.3 2.1-2.7h-2.2z
+{%- when "vehicle-evmoto" -%}M5.5 18.5a3 3 0 100-6 3 3 0 000 6zm13 0a3 3 0 100-6 3 3 0 000 6zM8.4 15.5h7.2m0 0l-2.8-6.2m0 0h3.1m-3.1 0h-2.3m-2 2.3l2-2.3M5.5 12.5V9.8h2.6M11 4.2L9.3 6.8h2L10.8 9l2-2.8h-2z
+{%- when "vehicle-other" -%}M12 3.5l8 4.6v7.8l-8 4.6-8-4.6V8.1l8-4.6zm0 0v8.7m0 0l8-4.1m-8 4.1l-8-4.1m8 4.1v8.4
+{%- when "check" -%}M5 12.5l4.5 4.5L19 7.5
+{%- when "close" -%}M6 6l12 12M18 6L6 18
+{%- when "plus" -%}M12 4v16M4 12h16
+{%- when "play" -%}M5.5 3.8v16.4a.8.8 0 001.2.7l13.7-8.2a.8.8 0 000-1.4L6.7 3.1a.8.8 0 00-1.2.7zM5.8 3.4L15 12l-9.2 8.6
+{%- when "apple" -%}M12 7.2c-1.4-.9-4.3-1.1-5.8 1-1.6 2.3-1 6.4 1 9.3 1.1 1.7 2.3 2.8 3.5 2.3.5-.2.9-.4 1.3-.4s.8.2 1.3.4c1.2.5 2.4-.6 3.5-2.3.6-.9 1.1-1.9 1.4-2.8-1.5-.7-2.4-2-2.4-3.5 0-1.3.6-2.3 1.7-3-1.4-1.9-4.1-1.9-5.5-1zM12 7.2c0-1.9 1.1-3.4 2.8-3.8
+{%- when "shield" -%}M12 3.5L5 6.3v5.2c0 4.2 3 7.7 7 9 4-1.3 7-4.8 7-9V6.3zM8.8 12l2.3 2.3 4.2-4.6
+{%- when "mail" -%}M4 6h16v12H4zM4.5 6.5L12 12.5l7.5-6
 {%- endcase -%}
-</svg>
+"/></svg>
+{%- endif -%}

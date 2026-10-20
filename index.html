@@ -39,61 +39,7 @@ title: Motoor · Vehicle logbook for service, fuel and costs
       <p class="mt-hero__fine">Free to start · Your logbook stays on your phone</p>
     </div>
 
-    <!-- Illustration built from Motoor components -->
-    <div class="mt-phone mt-rise mt-rise--3" role="img" aria-label="The Motoor garage screen with two vehicles: a Triumph Trident 660 with an overdue engine oil change, and a Toyota RAV4 with a tire rotation due soon.">
-      <div class="mt-phone__top" aria-hidden="true">
-        <p class="mt-phone__title">Garage</p>
-        <span class="mt-tier">Free · 2 of 2</span>
-      </div>
-      <div class="mt-stack" aria-hidden="true">
-        <div class="mt-vcard mt-vcard--hero">
-          <div class="mt-vcard__body">
-            <div class="mt-vcard__head">
-              <div>
-                <p class="mt-eyebrow">Triumph · Motorcycle</p>
-                <p class="mt-vcard__name">Trident 660</p>
-              </div>
-              <span class="mt-avatar">TR<span class="mt-avatar__badge">{% include icon.html name="vehicle-moto" %}</span></span>
-            </div>
-            <div class="mt-metrics">
-              <div><span class="mt-metric__label">Odometer</span><span class="mt-metric__value">11,450 mi</span></div>
-              <div><span class="mt-metric__label">Cost / mi</span><span class="mt-metric__value">$0.21</span></div>
-            </div>
-          </div>
-          <div class="mt-strip mt-strip--overdue">
-            <span class="mt-glyph mt-glyph--square"></span>
-            <span class="mt-strip__label">Overdue</span>
-            <span class="mt-strip__note">Engine oil · 2 weeks ago</span>
-          </div>
-        </div>
-
-        <div class="mt-vcard">
-          <div class="mt-vcard__body">
-            <div class="mt-vcard__head">
-              <div>
-                <p class="mt-eyebrow">Toyota · Car</p>
-                <p class="mt-vcard__name">RAV4</p>
-              </div>
-              <span class="mt-avatar">TO<span class="mt-avatar__badge">{% include icon.html name="vehicle-car" %}</span></span>
-            </div>
-            <div class="mt-metrics">
-              <div><span class="mt-metric__label">Odometer</span><span class="mt-metric__value">38,605 mi</span></div>
-              <div><span class="mt-metric__label">Cost / mi</span><span class="mt-metric__value">$0.34</span></div>
-            </div>
-          </div>
-          <div class="mt-strip mt-strip--due">
-            <span class="mt-glyph"></span>
-            <span class="mt-strip__label">Due soon</span>
-            <span class="mt-strip__note">Tire rotation · in 3 weeks</span>
-          </div>
-        </div>
-      </div>
-      <div class="mt-phone__nav" aria-hidden="true">
-        <div class="mt-phone__tab mt-phone__tab--on"><span>{% include icon.html name="car" %}</span>Garage</div>
-        <div class="mt-phone__tab"><span>{% include icon.html name="bell" %}</span>Reminders</div>
-        <div class="mt-phone__tab"><span>{% include icon.html name="gear" %}</span>Settings</div>
-      </div>
-    </div>
+    {% include phone.html %}
   </div>
 </section>
 
@@ -164,7 +110,7 @@ title: Motoor · Vehicle logbook for service, fuel and costs
       <span class="mt-class">{% include icon.html name="vehicle-moto" %}Motorcycle</span>
       <span class="mt-class">{% include icon.html name="vehicle-bike" %}Bicycle</span>
       <span class="mt-class">{% include icon.html name="vehicle-ev" %}Electric car</span>
-      <span class="mt-class">{% include icon.html name="vehicle-ev" %}Electric motorcycle</span>
+      <span class="mt-class">{% include icon.html name="vehicle-evmoto" %}Electric motorcycle</span>
     </div>
   </div>
 </section>
@@ -185,3 +131,5 @@ title: Motoor · Vehicle logbook for service, fuel and costs
     </div>
   </div>
 </section>
+
+<script src="{{ '/assets/js/phone.js' | relative_url }}" defer></script>

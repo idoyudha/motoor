@@ -1,0 +1,300 @@
+{%- comment -%}
+  Interactive preview of the Motoor app, rebuilt from the prototype in
+  motoor_compose/design/Motoor App M3.html. Behaviour lives in assets/js/phone.js:
+  data-go switches screen, data-toast shows a snackbar, data-filter filters
+  reminders, data-theme-set changes the phone's theme, data-cycle rotates a value.
+{%- endcomment -%}
+<div class="mt-phone-wrap mt-rise mt-rise--3">
+<div class="mt-phone" data-mt-phone role="region" aria-label="Interactive preview of the Motoor app">
+  <div class="mt-phone__status" aria-hidden="true"><span>9:41</span><span><i></i><i></i><i></i></span></div>
+
+  <div class="mt-phone__body">
+    <div class="mt-phone__screen">
+
+      <!-- Garage -->
+      <section class="mt-scr" data-screen="garage" aria-label="Garage">
+        <div class="mt-scr__bar">
+          <span class="mt-scr__brand">{% include icon.html name="logo" %}<span>Motoor</span></span>
+          <span class="mt-tier">Free · 2 of 2</span>
+        </div>
+        <div class="mt-scr__head">
+          <h2 class="mt-scr__title">Your garage</h2>
+          <p class="mt-scr__sub">2 of 2 vehicles need attention.</p>
+        </div>
+        <div class="mt-stack">
+          <button class="mt-vcard mt-vcard--hero mt-tap" data-go="v1">
+            <span class="mt-vcard__body">
+              <span class="mt-vcard__head">
+                <span>
+                  <span class="mt-eyebrow">Triumph · Motorcycle</span>
+                  <span class="mt-vcard__name" style="display:block">Trident 660</span>
+                </span>
+                <span class="mt-avatar">TR<span class="mt-avatar__badge">{% include icon.html name="vehicle-moto" %}</span></span>
+              </span>
+              <span class="mt-metrics">
+                <span><span class="mt-metric__label">Odometer</span><span class="mt-metric__value">11,450 mi</span></span>
+                <span><span class="mt-metric__label">Cost / mi</span><span class="mt-metric__value">$0.21</span></span>
+                <span class="mt-vcard__open">Open ›</span>
+              </span>
+            </span>
+            <span class="mt-strip mt-strip--overdue">
+              <span class="mt-glyph mt-glyph--square"></span>
+              <span class="mt-strip__label">Overdue</span>
+              <span class="mt-strip__note">Engine oil · 2 weeks ago</span>
+            </span>
+          </button>
+
+          <button class="mt-vcard mt-tap" data-go="v2">
+            <span class="mt-vcard__body">
+              <span class="mt-vcard__head">
+                <span>
+                  <span class="mt-eyebrow">Toyota · Car</span>
+                  <span class="mt-vcard__name" style="display:block">RAV4</span>
+                </span>
+                <span class="mt-avatar">TO<span class="mt-avatar__badge">{% include icon.html name="vehicle-car" %}</span></span>
+              </span>
+              <span class="mt-metrics">
+                <span><span class="mt-metric__label">Odometer</span><span class="mt-metric__value">38,605 mi</span></span>
+                <span><span class="mt-metric__label">Cost / mi</span><span class="mt-metric__value">$0.34</span></span>
+                <span class="mt-vcard__open">Open ›</span>
+              </span>
+            </span>
+            <span class="mt-strip mt-strip--due">
+              <span class="mt-glyph"></span>
+              <span class="mt-strip__label">Due soon</span>
+              <span class="mt-strip__note">Tire rotation · in 3 weeks</span>
+            </span>
+          </button>
+
+          <button class="mt-btn mt-btn--outlined mt-btn--block" data-toast="Free keeps two vehicles. Premium adds as many as you own.">Add vehicle</button>
+        </div>
+      </section>
+
+      <!-- Vehicle: Trident 660 -->
+      <section class="mt-scr" data-screen="v1" aria-label="Trident 660" hidden>
+        <div class="mt-detail__bar">
+          <button class="mt-iconbtn mt-tap" data-go="garage" aria-label="Back to garage">‹</button>
+          <button class="mt-pillbtn mt-tap" data-toast="Edit the name, plate, odometer and photos here.">Edit vehicle</button>
+        </div>
+        <div class="mt-detail__head">
+          <span class="mt-avatar mt-avatar--lg">TR<span class="mt-avatar__badge">{% include icon.html name="vehicle-moto" %}</span></span>
+          <div>
+            <h2 class="mt-detail__name">Trident 660</h2>
+            <p class="mt-detail__sub">Triumph · 2022 · Petrol</p>
+          </div>
+        </div>
+        <div class="mt-stats">
+          <div class="mt-stat"><span class="mt-stat__label">ODOMETER</span><span class="mt-stat__value">11,450 mi</span><span class="mt-stat__hint">Updated 12 Sep</span></div>
+          <div class="mt-stat mt-stat--alert"><span class="mt-stat__label">NEXT SERVICE</span><span class="mt-stat__value">Overdue</span><span class="mt-stat__hint">Engine oil</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">CONSUMPTION</span><span class="mt-stat__value">52.3 mpg</span><span class="mt-stat__hint">Last 3 full tanks</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">TOTAL SPEND</span><span class="mt-stat__value">$1,184</span><span class="mt-stat__hint">Fuel + service logged here</span></div>
+        </div>
+        <div class="mt-subhead">Reminders <small>2 active</small></div>
+        <div class="mt-group">
+          <button class="mt-row mt-tap" data-go="reminders" data-filter-to="v1">
+            <span class="mt-row__main"><span class="mt-row__title">Engine oil</span><span class="mt-row__meta">Every 10,000 mi or 12 months</span></span>
+            <span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>Overdue</span><span class="mt-chev">›</span>
+          </button>
+          <button class="mt-row mt-tap" data-go="reminders" data-filter-to="v1">
+            <span class="mt-row__main"><span class="mt-row__title">Chain lube</span><span class="mt-row__meta">Every 500 mi</span></span>
+            <span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span><span class="mt-chev">›</span>
+          </button>
+        </div>
+        <div class="mt-subhead">History <small>3 entries</small></div>
+        <div class="mt-group">
+          <button class="mt-row mt-tap" data-toast="Full tank · 3.6 gal at $4.56/gal. Consumption updated.">
+            <span class="mt-badge mt-badge--fuel">{% include icon.html name="fuel" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">Full tank · 3.6 gal</span><span class="mt-row__meta">12 Sep · Shell, Main St</span></span>
+            <span class="mt-row__end">$16.40</span>
+          </button>
+          <button class="mt-row mt-tap" data-toast="Chain cleaned and lubed. Next one in 500 mi.">
+            <span class="mt-badge">{% include icon.html name="wrench" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">Chain clean &amp; lube</span><span class="mt-row__meta">30 Aug · At home</span></span>
+            <span class="mt-row__end">$12.00</span>
+          </button>
+          <button class="mt-row mt-tap" data-toast="Receipt photo attached to this entry.">
+            <span class="mt-badge mt-badge--cost">{% include icon.html name="coin" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">Insurance renewal</span><span class="mt-row__meta">2 Aug · Annual</span></span>
+            <span class="mt-row__end">$310.00</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Vehicle: RAV4 -->
+      <section class="mt-scr" data-screen="v2" aria-label="RAV4" hidden>
+        <div class="mt-detail__bar">
+          <button class="mt-iconbtn mt-tap" data-go="garage" aria-label="Back to garage">‹</button>
+          <button class="mt-pillbtn mt-tap" data-toast="Edit the name, plate, odometer and photos here.">Edit vehicle</button>
+        </div>
+        <div class="mt-detail__head">
+          <span class="mt-avatar mt-avatar--lg">TO<span class="mt-avatar__badge">{% include icon.html name="vehicle-car" %}</span></span>
+          <div>
+            <h2 class="mt-detail__name">RAV4</h2>
+            <p class="mt-detail__sub">Toyota · 2020 · Hybrid</p>
+          </div>
+        </div>
+        <div class="mt-stats">
+          <div class="mt-stat"><span class="mt-stat__label">ODOMETER</span><span class="mt-stat__value">38,605 mi</span><span class="mt-stat__hint">Updated 9 Sep</span></div>
+          <div class="mt-stat mt-stat--warn"><span class="mt-stat__label">NEXT SERVICE</span><span class="mt-stat__value">Due soon</span><span class="mt-stat__hint">Tire rotation</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">CONSUMPTION</span><span class="mt-stat__value">39.1 mpg</span><span class="mt-stat__hint">Last 3 full tanks</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">TOTAL SPEND</span><span class="mt-stat__value">$2,736</span><span class="mt-stat__hint">Fuel + service logged here</span></div>
+        </div>
+        <div class="mt-subhead">Reminders <small>2 active</small></div>
+        <div class="mt-group">
+          <button class="mt-row mt-tap" data-go="reminders" data-filter-to="v2">
+            <span class="mt-row__main"><span class="mt-row__title">Tire rotation</span><span class="mt-row__meta">Every 7,500 mi or 6 months</span></span>
+            <span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>Due soon</span><span class="mt-chev">›</span>
+          </button>
+          <button class="mt-row mt-tap" data-go="reminders" data-filter-to="v2">
+            <span class="mt-row__main"><span class="mt-row__title">Registration renewal</span><span class="mt-row__meta">Every year · $82</span></span>
+            <span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span><span class="mt-chev">›</span>
+          </button>
+        </div>
+        <div class="mt-subhead">History <small>3 entries</small></div>
+        <div class="mt-group">
+          <button class="mt-row mt-tap" data-toast="Full tank · 11.2 gal at $3.55/gal. Consumption updated.">
+            <span class="mt-badge mt-badge--fuel">{% include icon.html name="fuel" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">Full tank · 11.2 gal</span><span class="mt-row__meta">9 Sep · Costco</span></span>
+            <span class="mt-row__end">$39.80</span>
+          </button>
+          <button class="mt-row mt-tap" data-toast="Oil and filter changed. Reminder reset to 10,000 mi.">
+            <span class="mt-badge">{% include icon.html name="wrench" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">Oil &amp; filter</span><span class="mt-row__meta">18 Jul · Toyota dealer</span></span>
+            <span class="mt-row__end">$68.00</span>
+          </button>
+          <button class="mt-row mt-tap" data-toast="Receipt photo attached to this entry.">
+            <span class="mt-badge mt-badge--cost">{% include icon.html name="coin" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">Wiper blades</span><span class="mt-row__meta">2 Jul · AutoZone</span></span>
+            <span class="mt-row__end">$34.50</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Reminders -->
+      <section class="mt-scr" data-screen="reminders" aria-label="Reminders" hidden>
+        <div class="mt-scr__head" style="padding-top:16px">
+          <h2 class="mt-scr__title">Reminders</h2>
+          <p class="mt-scr__sub">Fires on whichever comes first.</p>
+        </div>
+        <div class="mt-filters" role="group" aria-label="Filter by vehicle">
+          <button class="mt-filter mt-tap" data-filter="all" aria-pressed="true">All</button>
+          <button class="mt-filter mt-tap" data-filter="v1" aria-pressed="false">Trident 660</button>
+          <button class="mt-filter mt-tap" data-filter="v2" aria-pressed="false">RAV4</button>
+        </div>
+        <article class="mt-rcard" data-vid="v1">
+          <div class="mt-rcard__top"><span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>Overdue</span>Trident 660</div>
+          <h3 class="mt-rcard__title">Engine oil</h3>
+          <p class="mt-rcard__due">Was due 2 weeks ago · 11,000 mi</p>
+          <div class="mt-bar mt-bar--overdue"><i style="width:100%"></i></div>
+          <div class="mt-rcard__foot">
+            <span class="mt-rcard__src">Triumph service schedule</span>
+            <span class="mt-rcard__acts">
+              <button class="mt-smallbtn mt-smallbtn--outline mt-tap" data-toast="Snoozed for 1 week.">Snooze</button>
+              <button class="mt-smallbtn mt-smallbtn--filled mt-tap" data-toast="Opens a service log with the odometer filled in.">Log it now</button>
+            </span>
+          </div>
+        </article>
+        <article class="mt-rcard" data-vid="v2">
+          <div class="mt-rcard__top"><span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>Due soon</span>RAV4</div>
+          <h3 class="mt-rcard__title">Tire rotation</h3>
+          <p class="mt-rcard__due">In 3 weeks · or 420 mi</p>
+          <div class="mt-bar mt-bar--due"><i style="width:86%"></i></div>
+          <div class="mt-rcard__foot">
+            <span class="mt-rcard__src">Toyota maintenance guide</span>
+            <span class="mt-rcard__acts">
+              <button class="mt-smallbtn mt-smallbtn--outline mt-tap" data-toast="Snoozed for 1 week.">Snooze</button>
+              <button class="mt-smallbtn mt-smallbtn--filled mt-tap" data-toast="Opens a service log with the odometer filled in.">Log it now</button>
+            </span>
+          </div>
+        </article>
+        <article class="mt-rcard" data-vid="v2">
+          <div class="mt-rcard__top"><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span>RAV4</div>
+          <h3 class="mt-rcard__title">Registration renewal</h3>
+          <p class="mt-rcard__due">In 4 months · $82</p>
+          <div class="mt-bar"><i style="width:62%"></i></div>
+          <div class="mt-rcard__foot">
+            <span class="mt-rcard__src">Added by you</span>
+            <span class="mt-rcard__acts">
+              <button class="mt-smallbtn mt-smallbtn--outline mt-tap" data-toast="Snoozed for 1 week.">Snooze</button>
+              <button class="mt-smallbtn mt-smallbtn--filled mt-tap" data-toast="Logs the renewal as a cost and sets next year’s date.">Log it now</button>
+            </span>
+          </div>
+        </article>
+        <article class="mt-rcard" data-vid="v1">
+          <div class="mt-rcard__top"><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span>Trident 660</div>
+          <h3 class="mt-rcard__title">Chain lube</h3>
+          <p class="mt-rcard__due">In 310 mi</p>
+          <div class="mt-bar"><i style="width:38%"></i></div>
+          <div class="mt-rcard__foot">
+            <span class="mt-rcard__src">Triumph service schedule</span>
+            <span class="mt-rcard__acts">
+              <button class="mt-smallbtn mt-smallbtn--outline mt-tap" data-toast="Snoozed for 1 week.">Snooze</button>
+              <button class="mt-smallbtn mt-smallbtn--filled mt-tap" data-toast="Opens a service log with the odometer filled in.">Log it now</button>
+            </span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Settings -->
+      <section class="mt-scr" data-screen="settings" aria-label="Settings" hidden>
+        <div class="mt-scr__head" style="padding-top:16px">
+          <h2 class="mt-scr__title">Settings</h2>
+        </div>
+        <button class="mt-profile mt-tap" data-toast="No account needed. Your logbook stays on this phone.">
+          <span class="mt-profile__mark">{% include icon.html name="logo" %}</span>
+          <span class="mt-row__main"><span class="mt-pref__name" style="font-weight:700">Your logbook</span><span class="mt-pref__hint">Stored on this phone · No account</span></span>
+          <span class="mt-chev">›</span>
+        </button>
+        <div class="mt-card">
+          <p class="mt-card__title">Appearance</p>
+          <p class="mt-card__text">Motoor follows your system theme unless you pick one.</p>
+          <div class="mt-themes" role="group" aria-label="Theme">
+            <button class="mt-theme mt-tap" data-theme-set="system" aria-pressed="true"><i></i>System</button>
+            <button class="mt-theme mt-theme--light mt-tap" data-theme-set="light" aria-pressed="false"><i></i>Light</button>
+            <button class="mt-theme mt-theme--dark mt-tap" data-theme-set="dark" aria-pressed="false"><i></i>Dark</button>
+          </div>
+        </div>
+        <div class="mt-group" style="margin-bottom:16px">
+          <button class="mt-pref mt-tap" data-cycle="Miles|Kilometres">
+            <span><span class="mt-pref__name">Distance</span><span class="mt-pref__hint">Odometer and intervals</span></span>
+            <span class="mt-pref__value">Miles</span>
+          </button>
+          <button class="mt-pref mt-tap" data-cycle="US dollar|Rupiah|Euro|Pound">
+            <span><span class="mt-pref__name">Currency</span><span class="mt-pref__hint">For costs and fuel prices</span></span>
+            <span class="mt-pref__value">US dollar</span>
+          </button>
+          <button class="mt-pref mt-tap" data-cycle="1 week before|3 days before|On the day">
+            <span><span class="mt-pref__name">Remind me</span><span class="mt-pref__hint">When a date-based reminder is near</span></span>
+            <span class="mt-pref__value">1 week before</span>
+          </button>
+        </div>
+        <div class="mt-card mt-card--line">
+          <p class="mt-card__title">Export &amp; backup</p>
+          <p class="mt-card__text">CSV, or a PDF service history with receipts attached. Always available, no account needed.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="mt-scrim" data-fab-close></div>
+    <div class="mt-fab">
+      <div class="mt-fab__menu" id="mt-fab-menu">
+        <button class="mt-fab__item mt-tap" data-toast="Log fuel: litres or gallons, price, and whether it was a full tank.">{% include icon.html name="fuel" %}Log fuel</button>
+        <button class="mt-fab__item mt-tap" data-toast="Log a service: what was done, odometer, workshop and cost.">{% include icon.html name="wrench" %}Log service</button>
+        <button class="mt-fab__item mt-tap" data-toast="Add a cost: tax, parking, insurance or anything else.">{% include icon.html name="coin" %}Add cost</button>
+        <button class="mt-fab__item mt-tap" data-toast="Scan a receipt and Motoor fills the form. You confirm every field.">{% include icon.html name="camera" %}Scan receipt</button>
+      </div>
+      <button class="mt-fab__btn mt-tap" data-fab aria-expanded="false" aria-controls="mt-fab-menu" aria-label="Log something">{% include icon.html name="plus" %}</button>
+    </div>
+    <div class="mt-snack" role="status" aria-live="polite"></div>
+  </div>
+
+  <nav class="mt-phone__nav" aria-label="App sections">
+    <button class="mt-phone__tab" data-go="garage" aria-current="page"><span>{% include icon.html name="car" %}</span>Garage</button>
+    <button class="mt-phone__tab" data-go="reminders"><span>{% include icon.html name="bell" %}</span>Reminders</button>
+    <button class="mt-phone__tab" data-go="settings"><span>{% include icon.html name="gear" %}</span>Settings</button>
+  </nav>
+  <div class="mt-phone__home" aria-hidden="true"><i></i></div>
+</div>
+<p class="mt-phone__hint">Tap around: this is a working preview of the app.</p>
+</div>
