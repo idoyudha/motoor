@@ -1,0 +1,18 @@
+{% assign dev = site.developer %}
+<footer class="mt-footer">
+  <div class="mt-wrap mt-footer__inner">
+    <div>
+      <a class="mt-brand" href="{{ '/' | relative_url }}">
+        {% include icon.html name="logo" class="mt-brand__mark" %}
+        <span class="mt-brand__word">{{ site.title }}</span>
+      </a>
+      <p class="mt-footer__note">{{ site.tagline }}</p>
+    </div>
+    <nav class="mt-footer__links" aria-label="Footer">
+      <a href="{{ '/privacy/' | relative_url }}">Privacy policy</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+      <a href="mailto:{{ dev.email }}">Contact</a>
+    </nav>
+    <p class="mt-footer__legal">© {{ site.time | date: "%Y" }} {{ dev.name }}, {{ dev.country }}. Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
+  </div>
+</footer>

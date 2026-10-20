@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------
+# Motoor website · Jekyll config for GitHub Pages
+# Edit the values marked TODO before you publish.
+# ---------------------------------------------------------------
+
+title: Motoor
+tagline: The calm logbook for every vehicle you own
+description: >-
+  Motoor keeps service reminders, fuel, costs and history for your car,
+  motorcycle or bicycle in one place, on your phone.
+lang: en
+
+# Site address. For a custom domain (e.g. https://motoor.app) set url to it and
+# leave baseurl empty. For https://USERNAME.github.io/REPO set url to
+# https://USERNAME.github.io and baseurl to /REPO.
+url: "https://idoyudha.github.io"
+baseurl: "/motoor"
+
+# Who publishes the app. Must match the developer name on Google Play and
+# the seller name on the App Store.
+developer:
+  name: "Ido Yudhatama"
+  country: "Indonesia"
+  email: "idoyudhatama.dev@gmail.com"
+  response_time: "within 2 working days"
+
+# Store links. Leave empty while the app is not live; the buttons then
+# show "Coming soon".
+stores:
+  google_play: ""                    # e.g. https://play.google.com/store/apps/details?id=app.motoor
+  app_store: ""                      # e.g. https://apps.apple.com/app/id0000000000
+
+# Privacy policy switches. The policy text changes to match, so set these to
+# what the app really does. They must also match your Google Play Data safety
+# form and your App Store privacy labels.
+privacy:
+  updated: 2026-10-20               # change whenever the policy changes
+  ads_provider: "Google AdMob"      # "" if the app shows no ads
+  crash_reporting: ""               # e.g. "Firebase Crashlytics"; "" if none
+  analytics: ""                     # e.g. "Firebase Analytics"; "" if none
+  receipt_scanning_on_device: true  # false if receipt photos are sent to a server
+  min_age: 13
+
+# Navigation in the header
+nav:
+  - title: Features
+    url: /#features
+  - title: Privacy
+    url: /privacy/
+  - title: Support
+    url: /support/
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,187 @@
+---
+layout: default
+title: Motoor · Vehicle logbook for service, fuel and costs
+---
+{% assign play_url = site.stores.google_play %}
+{% assign apple_url = site.stores.app_store %}
+
+<section class="mt-hero">
+  <div class="mt-wrap mt-hero__grid">
+    <div>
+      <p class="mt-eyebrow mt-rise">Vehicle logbook · Android and iOS</p>
+      <h1 class="mt-hero__title mt-rise mt-rise--2">Know what your vehicle needs, before it needs it.</h1>
+      <p class="mt-hero__sub mt-rise mt-rise--3">Motoor keeps service reminders, fuel, costs and history for your car, motorcycle or bicycle in one place. Add a vehicle and Motoor sets up the service schedule for you. It takes about a minute.</p>
+
+      <div class="mt-actions mt-rise mt-rise--4">
+        {% if play_url != "" %}
+          <a class="mt-btn mt-btn--filled" href="{{ play_url }}">
+            {% include icon.html name="play" %}
+            <span class="mt-btn__store"><small>Get it on</small>Google Play</span>
+          </a>
+        {% else %}
+          <span class="mt-btn mt-btn--filled" aria-disabled="true">
+            {% include icon.html name="play" %}
+            <span class="mt-btn__store"><small>Coming soon</small>Google Play</span>
+          </span>
+        {% endif %}
+        {% if apple_url != "" %}
+          <a class="mt-btn mt-btn--tonal" href="{{ apple_url }}">
+            {% include icon.html name="apple" %}
+            <span class="mt-btn__store"><small>Download on the</small>App Store</span>
+          </a>
+        {% else %}
+          <span class="mt-btn mt-btn--tonal" aria-disabled="true">
+            {% include icon.html name="apple" %}
+            <span class="mt-btn__store"><small>Coming soon</small>App Store</span>
+          </span>
+        {% endif %}
+      </div>
+      <p class="mt-hero__fine">Free to start · Your logbook stays on your phone</p>
+    </div>
+
+    <!-- Illustration built from Motoor components -->
+    <div class="mt-phone mt-rise mt-rise--3" role="img" aria-label="The Motoor garage screen with two vehicles: a Triumph Trident 660 with an overdue engine oil change, and a Toyota RAV4 with a tire rotation due soon.">
+      <div class="mt-phone__top" aria-hidden="true">
+        <p class="mt-phone__title">Garage</p>
+        <span class="mt-tier">Free · 2 of 2</span>
+      </div>
+      <div class="mt-stack" aria-hidden="true">
+        <div class="mt-vcard mt-vcard--hero">
+          <div class="mt-vcard__body">
+            <div class="mt-vcard__head">
+              <div>
+                <p class="mt-eyebrow">Triumph · Motorcycle</p>
+                <p class="mt-vcard__name">Trident 660</p>
+              </div>
+              <span class="mt-avatar">TR<span class="mt-avatar__badge">{% include icon.html name="vehicle-moto" %}</span></span>
+            </div>
+            <div class="mt-metrics">
+              <div><span class="mt-metric__label">Odometer</span><span class="mt-metric__value">11,450 mi</span></div>
+              <div><span class="mt-metric__label">Cost / mi</span><span class="mt-metric__value">$0.21</span></div>
+            </div>
+          </div>
+          <div class="mt-strip mt-strip--overdue">
+            <span class="mt-glyph mt-glyph--square"></span>
+            <span class="mt-strip__label">Overdue</span>
+            <span class="mt-strip__note">Engine oil · 2 weeks ago</span>
+          </div>
+        </div>
+
+        <div class="mt-vcard">
+          <div class="mt-vcard__body">
+            <div class="mt-vcard__head">
+              <div>
+                <p class="mt-eyebrow">Toyota · Car</p>
+                <p class="mt-vcard__name">RAV4</p>
+              </div>
+              <span class="mt-avatar">TO<span class="mt-avatar__badge">{% include icon.html name="vehicle-car" %}</span></span>
+            </div>
+            <div class="mt-metrics">
+              <div><span class="mt-metric__label">Odometer</span><span class="mt-metric__value">38,605 mi</span></div>
+              <div><span class="mt-metric__label">Cost / mi</span><span class="mt-metric__value">$0.34</span></div>
+            </div>
+          </div>
+          <div class="mt-strip mt-strip--due">
+            <span class="mt-glyph"></span>
+            <span class="mt-strip__label">Due soon</span>
+            <span class="mt-strip__note">Tire rotation · in 3 weeks</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-phone__nav" aria-hidden="true">
+        <div class="mt-phone__tab mt-phone__tab--on"><span>{% include icon.html name="car" %}</span>Garage</div>
+        <div class="mt-phone__tab"><span>{% include icon.html name="bell" %}</span>Reminders</div>
+        <div class="mt-phone__tab"><span>{% include icon.html name="gear" %}</span>Settings</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-section" id="features">
+  <div class="mt-wrap">
+    <div class="mt-section__head">
+      <p class="mt-eyebrow">What Motoor does</p>
+      <h2 class="mt-section__title">One logbook for everything you drive and ride</h2>
+      <p class="mt-section__sub">No spreadsheets, no shoebox of receipts. Log it once and Motoor does the counting.</p>
+    </div>
+
+    <div class="mt-features">
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--warn">{% include icon.html name="bell" %}</div>
+        <h3>Service reminders</h3>
+        <p>Reminders by distance or by date, whichever comes first. Motoor tells you what’s overdue, what’s due soon and what can wait.</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon">{% include icon.html name="fuel" %}</div>
+        <h3>Fuel and charging</h3>
+        <p>Log each fill in a few taps. Motoor works out your consumption and what each fill costs you.</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--sec">{% include icon.html name="coin" %}</div>
+        <h3>Costs that add up</h3>
+        <p>Service, parts, tax, parking and insurance, all in one place. See what each vehicle really costs per mile or per month.</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--ter">{% include icon.html name="wrench" %}</div>
+        <h3>Full service history</h3>
+        <p>Every service with its date, odometer, workshop and photos. Useful at the next service, and when you sell.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mt-section" style="padding-top:0">
+  <div class="mt-wrap mt-status">
+    <div>
+      <p class="mt-eyebrow">Reminders</p>
+      <h2 class="mt-section__title">See at a glance what needs attention</h2>
+      <p class="mt-section__sub">Every reminder carries a clear status. The words are always there, so you never have to guess from a color.</p>
+      <div class="mt-chips">
+        <span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>Overdue</span>
+        <span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>Due soon</span>
+        <span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span>
+        <span class="mt-chip mt-chip--none"><span class="mt-glyph"></span>No reminders</span>
+      </div>
+    </div>
+    <ul class="mt-list" aria-label="Example reminders">
+      <li><div><span class="mt-list__title">Engine oil</span><span class="mt-list__meta">Trident 660 · every 10,000 mi</span></div><span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>Overdue</span></li>
+      <li><div><span class="mt-list__title">Tire rotation</span><span class="mt-list__meta">RAV4 · in 3 weeks</span></div><span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>Due soon</span></li>
+      <li><div><span class="mt-list__title">Registration renewal</span><span class="mt-list__meta">RAV4 · in 4 months · $82</span></div><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span></li>
+      <li><div><span class="mt-list__title">Chain lube</span><span class="mt-list__meta">Trident 660 · every 500 mi</span></div><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>Upcoming</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="mt-section" style="padding-top:0">
+  <div class="mt-wrap">
+    <div class="mt-section__head">
+      <p class="mt-eyebrow">Made for</p>
+      <h2 class="mt-section__title">Cars, motorcycles, bicycles and EVs</h2>
+      <p class="mt-section__sub">Each class gets its own sensible service schedule. Bicycles are measured by time in service instead of odometer.</p>
+    </div>
+    <div class="mt-classes">
+      <span class="mt-class">{% include icon.html name="vehicle-car" %}Car</span>
+      <span class="mt-class">{% include icon.html name="vehicle-moto" %}Motorcycle</span>
+      <span class="mt-class">{% include icon.html name="vehicle-bike" %}Bicycle</span>
+      <span class="mt-class">{% include icon.html name="vehicle-ev" %}Electric car</span>
+      <span class="mt-class">{% include icon.html name="vehicle-ev" %}Electric motorcycle</span>
+    </div>
+  </div>
+</section>
+
+<section class="mt-section" style="padding-top:0">
+  <div class="mt-wrap">
+    <div class="mt-features" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--sec">{% include icon.html name="shield" %}</div>
+        <h3>Your logbook stays on your phone</h3>
+        <p>Vehicles, logs and photos are stored on your device. Motoor doesn’t ask you to make an account to use it. <a href="{{ '/privacy/' | relative_url }}">Read the privacy policy</a>.</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon">{% include icon.html name="mail" %}</div>
+        <h3>A real person answers</h3>
+        <p>Motoor is made by one independent developer in {{ site.developer.country }}. Questions and ideas go straight to them, and get a reply {{ site.developer.response_time }}. <a href="{{ '/support/' | relative_url }}">Get support</a>.</p>
+      </article>
+    </div>
+  </div>
+</section>

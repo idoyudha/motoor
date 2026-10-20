@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="mt-doc">
+  <div class="mt-wrap mt-wrap--narrow">
+    <header class="mt-doc__head">
+      {% if page.eyebrow %}<p class="mt-eyebrow">{{ page.eyebrow }}</p>{% endif %}
+      <h1 class="mt-doc__title">{{ page.title }}</h1>
+      {% if page.lede %}<p class="mt-doc__lede">{{ page.lede }}</p>{% endif %}
+      {% if page.privacy_date %}{% assign updated = site.privacy.updated %}{% else %}{% assign updated = page.updated %}{% endif %}
+      {% if updated %}<p class="mt-doc__meta">Last updated {{ updated | date: "%-d %B %Y" }}</p>{% endif %}
+    </header>
+    <div class="mt-prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
