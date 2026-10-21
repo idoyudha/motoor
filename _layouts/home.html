@@ -1,0 +1,137 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] %}
+{% assign h = t.home %}
+{% assign lp = '' %}{% if page.lang != 'en' %}{% assign lp = '/' | append: page.lang %}{% endif %}
+{% assign play_url = site.stores.google_play %}
+{% assign apple_url = site.stores.app_store %}
+
+<section class="mt-hero">
+  <div class="mt-wrap mt-hero__grid">
+    <div>
+      <p class="mt-eyebrow mt-rise">{{ h.eyebrow }}</p>
+      <h1 class="mt-hero__title mt-rise mt-rise--2">{{ h.title }}</h1>
+      <p class="mt-hero__sub mt-rise mt-rise--3">{{ h.sub }}</p>
+
+      <div class="mt-actions mt-rise mt-rise--4">
+        {% if play_url != "" %}
+          <a class="mt-btn mt-btn--filled" href="{{ play_url }}">
+            {% include icon.html name="play" %}
+            <span class="mt-btn__store"><small>{{ h.get_it_on }}</small>Google Play</span>
+          </a>
+        {% else %}
+          <span class="mt-btn mt-btn--filled" aria-disabled="true">
+            {% include icon.html name="play" %}
+            <span class="mt-btn__store"><small>{{ h.coming_soon }}</small>Google Play</span>
+          </span>
+        {% endif %}
+        {% if apple_url != "" %}
+          <a class="mt-btn mt-btn--tonal" href="{{ apple_url }}">
+            {% include icon.html name="apple" %}
+            <span class="mt-btn__store"><small>{{ h.download_on }}</small>App Store</span>
+          </a>
+        {% else %}
+          <span class="mt-btn mt-btn--tonal" aria-disabled="true">
+            {% include icon.html name="apple" %}
+            <span class="mt-btn__store"><small>{{ h.coming_soon }}</small>App Store</span>
+          </span>
+        {% endif %}
+      </div>
+      <p class="mt-hero__fine">{{ h.fine }}</p>
+    </div>
+
+    {% include phone.html %}
+  </div>
+</section>
+
+<section class="mt-section" id="features">
+  <div class="mt-wrap">
+    <div class="mt-section__head">
+      <p class="mt-eyebrow">{{ h.features_eyebrow }}</p>
+      <h2 class="mt-section__title">{{ h.features_title }}</h2>
+      <p class="mt-section__sub">{{ h.features_sub }}</p>
+    </div>
+
+    <div class="mt-features">
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--warn">{% include icon.html name="bell" %}</div>
+        <h3>{{ h.f1_title }}</h3>
+        <p>{{ h.f1_text }}</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon">{% include icon.html name="fuel" %}</div>
+        <h3>{{ h.f2_title }}</h3>
+        <p>{{ h.f2_text }}</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--sec">{% include icon.html name="coin" %}</div>
+        <h3>{{ h.f3_title }}</h3>
+        <p>{{ h.f3_text }}</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--ter">{% include icon.html name="wrench" %}</div>
+        <h3>{{ h.f4_title }}</h3>
+        <p>{{ h.f4_text }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mt-section" style="padding-top:0">
+  <div class="mt-wrap mt-status">
+    <div>
+      <p class="mt-eyebrow">{{ h.status_eyebrow }}</p>
+      <h2 class="mt-section__title">{{ h.status_title }}</h2>
+      <p class="mt-section__sub">{{ h.status_sub }}</p>
+      <div class="mt-chips">
+        <span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>{{ t.phone.overdue }}</span>
+        <span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>{{ t.phone.due_soon }}</span>
+        <span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>{{ t.phone.upcoming }}</span>
+        <span class="mt-chip mt-chip--none"><span class="mt-glyph"></span>{{ h.no_reminders }}</span>
+      </div>
+    </div>
+    <ul class="mt-list" aria-label="{{ h.example_label }}">
+      <li><div><span class="mt-list__title">{{ t.phone.engine_oil }}</span><span class="mt-list__meta">{{ h.ex1_meta }}</span></div><span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>{{ t.phone.overdue }}</span></li>
+      <li><div><span class="mt-list__title">{{ t.phone.tire_rotation }}</span><span class="mt-list__meta">{{ h.ex2_meta }}</span></div><span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>{{ t.phone.due_soon }}</span></li>
+      <li><div><span class="mt-list__title">{{ t.phone.registration }}</span><span class="mt-list__meta">{{ h.ex3_meta }}</span></div><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>{{ t.phone.upcoming }}</span></li>
+      <li><div><span class="mt-list__title">{{ t.phone.chain_lube }}</span><span class="mt-list__meta">{{ h.ex4_meta }}</span></div><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>{{ t.phone.upcoming }}</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="mt-section" style="padding-top:0">
+  <div class="mt-wrap">
+    <div class="mt-section__head">
+      <p class="mt-eyebrow">{{ h.classes_eyebrow }}</p>
+      <h2 class="mt-section__title">{{ h.classes_title }}</h2>
+      <p class="mt-section__sub">{{ h.classes_sub }}</p>
+    </div>
+    <div class="mt-classes">
+      <span class="mt-class">{% include icon.html name="vehicle-car" %}{{ h.car }}</span>
+      <span class="mt-class">{% include icon.html name="vehicle-moto" %}{{ h.motorcycle }}</span>
+      <span class="mt-class">{% include icon.html name="vehicle-bike" %}{{ h.bicycle }}</span>
+      <span class="mt-class">{% include icon.html name="vehicle-ev" %}{{ h.ev }}</span>
+      <span class="mt-class">{% include icon.html name="vehicle-evmoto" %}{{ h.evmoto }}</span>
+    </div>
+  </div>
+</section>
+
+<section class="mt-section" style="padding-top:0">
+  <div class="mt-wrap">
+    <div class="mt-features" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+      <article class="mt-feature">
+        <div class="mt-feature__icon mt-feature__icon--sec">{% include icon.html name="shield" %}</div>
+        <h3>{{ h.private_title }}</h3>
+        <p>{{ h.private_text }} <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ h.private_link }}</a>.</p>
+      </article>
+      <article class="mt-feature">
+        <div class="mt-feature__icon">{% include icon.html name="mail" %}</div>
+        <h3>{{ h.person_title }}</h3>
+        <p>{{ h.person_text | replace: '%time%', t.ui.response_time }} <a href="{{ lp | append: '/support/' | relative_url }}">{{ h.person_link }}</a>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script src="{{ '/assets/js/phone.js' | relative_url }}" defer></script>

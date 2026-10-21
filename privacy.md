@@ -3,22 +3,24 @@ layout: page
 title: Privacy policy
 eyebrow: Legal
 permalink: /privacy/
+ref: /privacy/
 privacy_date: true
 lede: What Motoor collects, where it's kept, who else handles it, and how to delete it.
 ---
 {% assign p = site.privacy %}
 {% assign dev = site.developer %}
+{% assign t = site.data.i18n[page.lang] %}
 {% comment %}
   Before publishing: read this page end to end and check every statement is true
   for your build. The switches under `privacy:` in _config.yml fill in the details.
   This is a starting point, not legal advice.
 {% endcomment %}
 
-<div class="mt-note"><strong>The short version.</strong> You sign in with Google or Apple. Your logbook is kept on your phone and backed up automatically to our server in {{ p.data_location }}, so you can restore it on a new phone. Motoor shows no ads and we don’t sell your data. You can delete your account and everything in it at any time.</div>
+<div class="mt-note"><strong>The short version.</strong> You sign in with Google or Apple. Your logbook is kept on your phone and backed up automatically to our server in {{ t.privacy.data_location }}, so you can restore it on a new phone. Motoor shows no ads and we don’t sell your data. You can delete your account and everything in it at any time.</div>
 
 ## Who we are
 
-Motoor is an app made and published by **{{ dev.name }}**, an independent developer based in {{ dev.country }} (“we”, “us”). We are responsible for how Motoor handles your information. You can reach us at [{{ dev.email }}](mailto:{{ dev.email }}).
+Motoor is an app made and published by **{{ dev.name }}**, an independent developer (“we”, “us”). We are responsible for how Motoor handles your information. You can reach us at [{{ dev.email }}](mailto:{{ dev.email }}).
 
 This policy applies to the Motoor app on Android and iOS, to the share pages Motoor creates, and to this website.
 
@@ -49,7 +51,7 @@ This policy applies to the Motoor app on Android and iOS, to the share pages Mot
 
 Your logbook is stored on your phone, in Motoor’s private storage, so the app works without a connection.
 
-It is also **backed up automatically** to our server on Google Cloud in **{{ p.data_location }}**. This happens for every signed-in user, on both Free and Premium, and there is no switch to turn it off: the backup is how Motoor restores your logbook when you sign in on a new phone. It covers your entries, attachments and receipts.
+It is also **backed up automatically** to our server on Google Cloud in **{{ t.privacy.data_location }}**. This happens for every signed-in user, on both Free and Premium, and there is no switch to turn it off: the backup is how Motoor restores your logbook when you sign in on a new phone. It covers your entries, attachments and receipts.
 
 Data is encrypted in transit between your phone and our server, and encrypted at rest on Google Cloud. Only you can read your logbook through the app. We access stored data only when you ask us for help, or when we need to fix a fault.
 
@@ -58,7 +60,7 @@ Data is encrypted in transit between your phone and our server, and encrypted at
 When you scan a receipt, Motoor reads the totals, date and place from it so you don’t have to type them. You review every field before anything is saved. The odometer is never read from a receipt.
 
 - **On your phone, where possible.** If your phone has a built-in model that can read receipts, Motoor uses it and the reading happens on the device.
-- **Otherwise, on our server.** The image or PDF is uploaded to our server, which sends it to **Google’s Gemini model on Google Cloud**, in {{ p.scan_location }}. We use Google’s paid service, whose terms don’t allow Google to use the data to train its models. The extracted fields come back to your phone.
+- **Otherwise, on our server.** The image or PDF is uploaded to our server, which sends it to **Google’s Gemini model on Google Cloud**, in {{ t.privacy.scan_location }}. We use Google’s paid service, whose terms don’t allow Google to use the data to train its models. The extracted fields come back to your phone.
 
 Either way, the scan is kept with the entry as an attachment, and is backed up like the rest of your logbook.
 
@@ -90,7 +92,7 @@ We don’t sell your personal information and we don’t share it for advertisin
 
 | Provider | What it does | Data it handles |
 |---|---|---|
-| Google Cloud | Hosts our server, database and file storage in {{ p.data_location }} | Your account and logbook backup |
+| Google Cloud | Hosts our server, database and file storage in {{ t.privacy.data_location }} | Your account and logbook backup |
 | Google Cloud (Gemini) | Reads receipts that can’t be read on your phone | The receipt you scan |
 | Firebase Authentication (Google) | Sign-in with Google or Apple | Name, email, account ID |
 | Firebase Cloud Messaging (Google) | Delivers push notifications | Device push token |
@@ -151,7 +153,7 @@ Deleting the app from your phone removes the phone’s copy only. Your backup st
 | A single entry, vehicle or photo you delete | Removed from your devices straight away and from our server within 90 days |
 | Share and transfer links | Until they expire after 24 hours or are revoked, then kept as a record until your account is deleted |
 {% if p.crash_reporting != "" %}| Crash reports | Up to 90 days |
-{% endif %}{% if p.analytics != "" %}| Usage statistics | {{ p.analytics_retention }} |
+{% endif %}{% if p.analytics != "" %}| Usage statistics | {{ t.privacy.analytics_retention }} |
 {% endif %}| Support emails | 12 months after the last message |
 
 ## Security
@@ -168,4 +170,4 @@ If we change this policy, we will update the date at the top of this page. If a 
 
 ## Contact
 
-Questions about privacy go to **{{ dev.name }}** at [{{ dev.email }}](mailto:{{ dev.email }}). We reply {{ dev.response_time }}.
+Questions about privacy go to **{{ dev.name }}** at [{{ dev.email }}](mailto:{{ dev.email }}). We reply {{ t.ui.response_time }}.

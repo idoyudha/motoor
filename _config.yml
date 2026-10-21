@@ -8,7 +8,6 @@ tagline: The calm logbook for every vehicle you own
 description: >-
   Motoor keeps service reminders, fuel, costs and history for your car,
   motorcycle or bicycle in one place.
-lang: en
 
 # Site address. For a custom domain (e.g. https://motoor.app) set url to it and
 # leave baseurl empty. For https://USERNAME.github.io/REPO set url to
@@ -21,7 +20,6 @@ baseurl: "/motoor"
 developer:
   name: "Ido Yudhatama"
   email: "idoyudhatama.dev@gmail.com"
-  response_time: "within 2 working days"
 
 # Store links. Leave empty while the app is not live; the buttons then
 # show "Coming soon".
@@ -36,21 +34,29 @@ privacy:
   updated: 2026-10-20               # change whenever the policy changes
   crash_reporting: "Firebase Crashlytics"   # "" if none
   analytics: "Firebase Analytics"          # "" if none
-  analytics_retention: "2 months"          # match Firebase console → Data retention
-  data_location: "Jakarta, Indonesia"      # where the backup server stores data
-  scan_location: "Indonesia or Singapore"  # where server-side receipt scans run
   deletion_grace_days: 30                  # restore window after Delete account
   backup_expiry_days: 7                    # how long disaster-recovery copies live
   min_age: 13
+  # Where the backup server stores data, where receipt scans run and how long
+  # analytics data is kept are worded per language: see privacy: at the end of
+  # each file in _data/i18n/.
 
-# Navigation in the header
+# Navigation in the header. Labels come from _data/i18n/<language>.yml
+# (ui.nav_<key>); the language folder is put in front of url.
 nav:
-  - title: Features
+  - key: features
     url: /#features
-  - title: Privacy
+  - key: privacy
     url: /privacy/
-  - title: Support
+  - key: support
     url: /support/
+
+# Pages are English unless their front matter sets lang (see _data/languages.yml).
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
 
 # Build settings
 permalink: pretty

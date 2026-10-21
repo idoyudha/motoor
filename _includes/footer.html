@@ -1,18 +1,20 @@
 {% assign dev = site.developer %}
+{% assign t = site.data.i18n[page.lang] %}
+{% assign lp = '' %}{% if page.lang != 'en' %}{% assign lp = '/' | append: page.lang %}{% endif %}
 <footer class="mt-footer">
   <div class="mt-wrap mt-footer__inner">
     <div>
-      <a class="mt-brand" href="{{ '/' | relative_url }}">
+      <a class="mt-brand" href="{{ lp | append: '/' | relative_url }}">
         {% include icon.html name="logo" class="mt-brand__mark" %}
         <span class="mt-brand__word">{{ site.title }}</span>
       </a>
-      <p class="mt-footer__note">{{ site.tagline }}</p>
+      <p class="mt-footer__note">{{ t.ui.tagline }}</p>
     </div>
     <nav class="mt-footer__links" aria-label="Footer">
-      <a href="{{ '/privacy/' | relative_url }}">Privacy policy</a>
-      <a href="{{ '/support/' | relative_url }}">Support</a>
-      <a href="mailto:{{ dev.email }}">Contact</a>
+      <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ t.ui.footer_privacy }}</a>
+      <a href="{{ lp | append: '/support/' | relative_url }}">{{ t.ui.footer_support }}</a>
+      <a href="mailto:{{ dev.email }}">{{ t.ui.footer_contact }}</a>
     </nav>
-    <p class="mt-footer__legal">© {{ site.time | date: "%Y" }} {{ dev.name }}, {{ dev.country }}. Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
+    <p class="mt-footer__legal">© {{ site.time | date: "%Y" }} {{ dev.name }}. {{ t.ui.footer_legal }}</p>
   </div>
 </footer>

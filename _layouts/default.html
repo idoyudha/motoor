@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang }}">
+{%- assign t = site.data.i18n[page.lang] %}
+{%- assign current = site.data.languages | where: 'code', page.lang | first %}
+{%- assign ref = page.ref | default: '/' %}
+<html lang="{{ current.hreflang }}" dir="{{ current.dir }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,16 +10,24 @@
   <meta name="theme-color" content="#F7F9FF" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#101418" media="(prefers-color-scheme: dark)">
   {% seo %}
+  {%- if page.ref %}
+  {%- for l in site.data.languages %}
+  {%- if l.code == 'en' %}{% assign href = ref %}{% else %}{% assign href = '/' | append: l.code | append: ref %}{% endif %}
+  <link rel="alternate" hreflang="{{ l.hreflang }}" href="{{ href | absolute_url }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ ref | absolute_url }}">
+  {%- endif %}
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preload" href="{{ '/assets/fonts/Figtree-Latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
-  <a class="mt-skip" href="#main">Skip to content</a>
+  <a class="mt-skip" href="#main">{{ t.ui.skip }}</a>
   {% include header.html %}
   <main id="main">
     {{ content }}
   </main>
   {% include footer.html %}
+  <script src="{{ '/assets/js/lang.js' | relative_url }}" defer></script>
 </body>
 </html>

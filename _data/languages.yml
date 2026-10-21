@@ -1,0 +1,22 @@
+# Languages shown in the language menu, in this order.
+# code:     folder name and file name in _data/i18n/ (English lives at the site root)
+# hreflang: value for <html lang> and hreflang links
+# dir:      rtl for right-to-left scripts
+- { code: en, hreflang: en, native: English, short: EN, dir: ltr }
+- { code: zh, hreflang: zh-Hans, native: 简体中文, short: 中文, dir: ltr }
+- { code: es, hreflang: es, native: Español, short: ES, dir: ltr }
+- { code: hi, hreflang: hi, native: हिन्दी, short: HI, dir: ltr }
+- { code: pt, hreflang: pt, native: Português, short: PT, dir: ltr }
+- { code: bn, hreflang: bn, native: বাংলা, short: BN, dir: ltr }
+- { code: ru, hreflang: ru, native: Русский, short: RU, dir: ltr }
+- { code: ja, hreflang: ja, native: 日本語, short: JA, dir: ltr }
+- { code: tr, hreflang: tr, native: Türkçe, short: TR, dir: ltr }
+- { code: vi, hreflang: vi, native: Tiếng Việt, short: VI, dir: ltr }
+- { code: ar, hreflang: ar, native: العربية, short: AR, dir: rtl }
+- { code: ko, hreflang: ko, native: 한국어, short: KO, dir: ltr }
+- { code: ur, hreflang: ur, native: اردو, short: UR, dir: rtl }
+- { code: id, hreflang: id, native: Bahasa Indonesia, short: ID, dir: ltr }
+- { code: de, hreflang: de, native: Deutsch, short: DE, dir: ltr }
+- { code: fr, hreflang: fr, native: Français, short: FR, dir: ltr }
+- { code: fa, hreflang: fa, native: فارسی, short: FA, dir: rtl }
+- { code: it, hreflang: it, native: Italiano, short: IT, dir: ltr }

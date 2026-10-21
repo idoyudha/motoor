@@ -1,13 +1,20 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% assign lp = '' %}{% if page.lang != 'en' %}{% assign lp = '/' | append: page.lang %}{% endif %}
 <header class="mt-appbar">
   <div class="mt-wrap mt-appbar__inner">
-    <a class="mt-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+    <a class="mt-brand" href="{{ lp | append: '/' | relative_url }}" aria-label="{{ t.ui.home_aria }}">
       {% include icon.html name="logo" class="mt-brand__mark" %}
       <span class="mt-brand__word">{{ site.title }}</span>
     </a>
-    <nav class="mt-nav" aria-label="Main">
-      {% for item in site.nav %}
-        <a class="mt-nav__link" href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
-      {% endfor %}
-    </nav>
+    <div class="mt-appbar__end">
+      <nav class="mt-nav" aria-label="Main">
+        {% for item in site.nav %}
+          {% assign item_url = lp | append: item.url %}
+          {% assign label = 'nav_' | append: item.key %}
+          <a class="mt-nav__link" href="{{ item_url | relative_url }}"{% if page.url == item_url %} aria-current="page"{% endif %}>{{ t.ui[label] }}</a>
+        {% endfor %}
+      </nav>
+      {% include lang-picker.html %}
+    </div>
   </div>
 </header>

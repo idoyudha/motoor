@@ -3,13 +3,15 @@ layout: page
 title: Support
 eyebrow: Help
 permalink: /support/
+ref: /support/
 lede: Answers to common questions, and a direct line to the person who makes Motoor.
 ---
 {% assign dev = site.developer %}
+{% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
   <p class="mt-eyebrow">Contact</p>
-  <p style="margin:0">Email <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> and you’ll get a reply {{ dev.response_time }}. It helps to include your phone model, whether you use Android or iOS, and the Motoor version from <strong>Settings → About</strong>.</p>
+  <p style="margin:0">Email <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> and you’ll get a reply {{ t.ui.response_time }}. It helps to include your phone model, whether you use Android or iOS, and the Motoor version from <strong>Settings → About</strong>.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}Email support</a>
 </div>
 
@@ -76,13 +78,13 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 </div>
 </details>
 
-## Delete your data
+## Delete your data {#delete-your-data}
 
 Deleting your account removes your logbook from your phone and, after {{ site.privacy.deletion_grace_days }} days, from our server for good. There are two ways to do it.
 
 **In the app:** open **Settings → Profile → Delete account** and confirm. Your account is locked straight away and any share links stop working.
 
-**Without the app:** email [{{ dev.email }}](mailto:{{ dev.email }}?subject=Delete%20my%20account) with the subject “Delete my account”, from the email address you sign in with. We’ll confirm by email {{ dev.response_time }} and schedule the deletion, which then works the same way.
+**Without the app:** email [{{ dev.email }}](mailto:{{ dev.email }}?subject=Delete%20my%20account) with the subject “Delete my account”, from the email address you sign in with. We’ll confirm by email {{ t.ui.response_time }} and schedule the deletion, which then works the same way.
 
 What happens next:
 

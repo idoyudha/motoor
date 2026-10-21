@@ -1,0 +1,19 @@
+{%- comment -%}
+  Language menu. Each entry links to the same page in that language
+  (page.ref is the page's English path). Behaviour: assets/js/lang.js.
+{%- endcomment -%}
+{%- assign ref = page.ref | default: '/' -%}
+{%- assign current = site.data.languages | where: 'code', page.lang | first -%}
+<details class="mt-lang" data-mt-lang>
+  <summary class="mt-lang__btn" aria-label="{{ site.data.i18n[page.lang].ui.language }}: {{ current.native }}">
+    {% include icon.html name="globe" %}
+    <span class="mt-lang__name">{{ current.native }}</span>
+    <span class="mt-lang__short" aria-hidden="true">{{ current.short }}</span>
+  </summary>
+  <ul class="mt-lang__menu" role="list">
+    {%- for l in site.data.languages %}
+      {%- if l.code == 'en' %}{% assign href = ref %}{% else %}{% assign href = '/' | append: l.code | append: ref %}{% endif %}
+      <li><a class="mt-lang__item" href="{{ href | relative_url }}" lang="{{ l.hreflang }}" hreflang="{{ l.hreflang }}" dir="{{ l.dir }}" data-lang="{{ l.code }}"{% if l.code == page.lang %} aria-current="true"{% endif %}>{{ l.native }}</a></li>
+    {%- endfor %}
+  </ul>
+</details>
