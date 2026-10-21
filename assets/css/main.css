@@ -176,10 +176,12 @@ a { color:var(--pri); }
 .mt-phone__hint { margin:0; font:500 12px/16px var(--font); letter-spacing:.5px; color:var(--on-sv); }
 .mt-phone {
   position:relative; display:flex; flex-direction:column; overflow:hidden;
-  width:100%; max-width:380px; height:min(720px, 82vh); min-height:540px;
+  width:100%; max-width:340px; height:min(720px, 82vh); min-height:540px;
   background:var(--surf); color:var(--on-s);
   border:9px solid #cfd8d9; border-radius:36px; box-shadow:0 26px 60px rgba(0,29,51,.14);
 }
+/* Lay the screen out at the design's 412dp width, then scale it to the frame (322 / 412) */
+.mt-phone > * { zoom:.78; }
 @media (prefers-color-scheme: dark) { .mt-phone { border-color:#2b3131; box-shadow:0 26px 60px rgba(0,0,0,.5); } }
 .mt-phone[data-theme="dark"] { border-color:#2b3131; }
 .mt-phone[data-theme="light"] { border-color:#cfd8d9; }
