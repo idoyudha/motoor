@@ -1,0 +1,25 @@
+Copyright (c) 2026 Ido Yudhatama. All rights reserved.
+
+This repository holds the website for the Motoor app (https://idoyudha.github.io/motoor/).
+It is public only so that GitHub Pages can publish it. Being able to see it does not give
+you permission to use it.
+
+Unless a section below says otherwise, everything in this repository is proprietary:
+the source code, styles and scripts, the visual design, the text and translations, the
+Motoor name and logo, and the app screens, layouts and sample data shown in the phone
+preview. No licence is granted to copy, modify, publish, distribute, sublicense or sell
+any of it, in whole or in part, or to use it as the basis of another app or website,
+without prior written permission from the copyright holder.
+
+You may view the website in a browser and link to it.
+
+Exceptions
+
+- The Figtree font files in assets/fonts/ are by The Figtree Project Authors and are
+  licensed under the SIL Open Font License, Version 1.1. See assets/fonts/OFL.txt.
+- Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.
+  Android is a trademark of Google LLC. iOS is a trademark or registered trademark of
+  Cisco in the U.S. and other countries and is used under licence by Apple Inc.
+  These names are used only to say where the app is available.
+
+Permission requests: idoyudhatama.dev@gmail.com

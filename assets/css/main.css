@@ -364,8 +364,8 @@ a { color:var(--pri); }
 .mt-platform__btn:focus-visible { outline:2px solid var(--pri); outline-offset:2px; }
 
 /* ---------- iOS 26 (Liquid Glass) design of the phone ----------
-   Values from iosLook() in motoor_compose/design/Motoor App iOS.html. Same screens as Android;
-   colours, SF Pro and shapes change, and glass sits only on the controls floating above content. */
+   Same screens as Android; colours, SF Pro and shapes change, and glass sits only on the
+   controls floating above content. */
 .mt-phone[data-platform="ios"] {
   --pri:#007AFF; --on-pri:#FFFFFF; --pri-c:#DCEBFF; --on-pri-c:#00408A;
   --sec:#636366; --on-sec:#FFFFFF; --sec-c:#E5E5EA; --on-sec-c:#1C1C1E;

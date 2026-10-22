@@ -53,3 +53,9 @@ bundle exec jekyll serve
 ```
 
 When the app is live, paste the store links into `stores:` in `_config.yml`; the "Coming soon" buttons become real download buttons.
+
+## Licence
+
+The site's code, design, text, logo and the app screens shown in the phone preview are © Ido Yudhatama, all rights reserved; see [LICENSE](LICENSE). The repository is public only so GitHub Pages can serve it. The app's design files and product documents live in a private repository.
+
+The Figtree font in `assets/fonts/` is under the SIL Open Font License 1.1 ([OFL.txt](assets/fonts/OFL.txt)).
