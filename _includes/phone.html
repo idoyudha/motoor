@@ -1,13 +1,29 @@
 {%- comment -%}
-  Interactive preview of the Motoor app, rebuilt from the prototype in
-  motoor_compose/design/Motoor App M3.html. Behaviour lives in assets/js/phone.js:
+  Interactive preview of the Motoor app, rebuilt from the prototypes in
+  motoor_compose/design/Motoor App Android.html and Motoor App iOS.html.
+  One set of screens: data-platform="ios" on .mt-phone restyles it as the iOS
+  design (assets/css/main.css). Behaviour lives in assets/js/phone.js:
   data-go switches screen, data-toast shows a snackbar, data-filter filters
-  reminders, data-theme-set changes the phone's theme, data-cycle rotates a value.
+  reminders, data-theme-set changes the phone's theme, data-cycle rotates a value,
+  data-platform-set switches between the Android and iOS designs.
 {%- endcomment -%}
 {%- assign p = site.data.i18n[page.lang].phone -%}
 <div class="mt-phone-wrap mt-rise mt-rise--3">
-<div class="mt-phone" data-mt-phone role="region" aria-label="{{ p.region }}">
-  <div class="mt-phone__status" aria-hidden="true"><span>9:41</span><span><i></i><i></i><i></i></span></div>
+<div class="mt-platform" role="group" aria-label="{{ p.platform_label }}">
+  <button class="mt-platform__btn" data-platform-set="android" aria-pressed="true">Android</button>
+  <button class="mt-platform__btn" data-platform-set="ios" aria-pressed="false">iOS</button>
+</div>
+<div class="mt-phone" data-mt-phone data-platform="android" role="region" aria-label="{{ p.region }}">
+  <div class="mt-phone__status" aria-hidden="true">
+    <span>9:41</span>
+    <b class="mt-phone__island"></b>
+    <span class="mt-phone__sys mt-phone__sys--android"><i></i><i></i><i></i></span>
+    <span class="mt-phone__sys mt-phone__sys--ios">
+      <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="currentColor"/><rect x="5" y="5.5" width="3" height="6.5" rx="1" fill="currentColor"/><rect x="10" y="3" width="3" height="9" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/></svg>
+      <svg width="16" height="12" viewBox="0 0 16 12"><path d="M8 11.5L5.6 9.1a3.4 3.4 0 014.8 0zM3.5 7a6.4 6.4 0 019 0l-1.4 1.4a4.4 4.4 0 00-6.2 0zM1.2 4.7a9.6 9.6 0 0113.6 0l-1.4 1.4a7.6 7.6 0 00-10.8 0z" fill="currentColor"/></svg>
+      <svg width="27" height="13" viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.8" fill="none" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="9" rx="2.5" fill="currentColor"/><path d="M25 4.5v4a2 2 0 000-4z" fill="currentColor" opacity=".45"/></svg>
+    </span>
+  </div>
 
   <div class="mt-phone__body">
     <div class="mt-phone__screen">

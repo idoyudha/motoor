@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Bản xem trước tương tác của ứng dụng Motoor"
+  platform_label: "Nền tảng điện thoại"
   garage: "Garage"
   reminders: "Nhắc nhở"
   settings: "Cài đặt"

@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Motoor アプリのインタラクティブなプレビュー"
+  platform_label: "スマートフォンのプラットフォーム"
   garage: "ガレージ"
   reminders: "リマインダー"
   settings: "設定"

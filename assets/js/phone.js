@@ -82,5 +82,23 @@
     phone.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && fab.hasAttribute('data-open')) { setFab(false); fabBtn.focus(); }
     });
+
+    // Android / iOS switch above the phone. Same screens; data-platform="ios" restyles them (main.css).
+    var wrap = phone.closest('.mt-phone-wrap');
+    var platformBtns = wrap ? wrap.querySelectorAll('[data-platform-set]') : [];
+    function setPlatform(p, remember) {
+      phone.setAttribute('data-platform', p);
+      platformBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.platformSet === p)); });
+      setFab(false);
+      if (remember) { try { localStorage.setItem('mt-platform', p); } catch (err) { /* storage blocked */ } }
+    }
+    platformBtns.forEach(function (b) {
+      b.addEventListener('click', function () { setPlatform(b.dataset.platformSet, true); });
+    });
+    var saved = null;
+    try { saved = localStorage.getItem('mt-platform'); } catch (err) { /* storage blocked */ }
+    var ua = navigator.userAgent;
+    var onApple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    setPlatform(saved === 'ios' || saved === 'android' ? saved : (onApple ? 'ios' : 'android'), false);
   });
 })();

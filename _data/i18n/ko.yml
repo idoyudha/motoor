@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Motoor 앱 인터랙티브 미리보기"
+  platform_label: "휴대폰 플랫폼"
   garage: "차고"
   reminders: "알림"
   settings: "설정"

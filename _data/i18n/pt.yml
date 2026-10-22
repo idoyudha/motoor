@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Prévia interativa do app Motoor"
+  platform_label: "Plataforma do telemóvel"
   garage: "Garagem"
   reminders: "Lembretes"
   settings: "Configurações"

@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Motoor 应用的互动预览"
+  platform_label: "手机平台"
   garage: "车库"
   reminders: "提醒"
   settings: "设置"

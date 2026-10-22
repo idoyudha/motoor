@@ -22,6 +22,8 @@ English is the default and lives at the site root (`/`, `/privacy/`, `/support/`
 
 - `_data/languages.yml` lists the languages in menu order (code, native name, `rtl` for Arabic, Urdu and Persian).
 - `_data/i18n/<code>.yml` holds the short strings: header, footer, home page and the phone preview. Every file has the same keys as `en.yml`.
+
+The phone preview on the home page has an **Android | iOS** switch. Both show the same screens (`_includes/phone.html`); `data-platform="ios"` restyles them as the iOS 26 Liquid Glass design (iOS block in `assets/css/main.css`). It opens on the visitor's platform and remembers their choice.
 - `<code>/privacy.md` and `<code>/support.md` are full translations. When you change the English `privacy.md` or `support.md`, update the translations too. Each translated privacy policy says the English version applies if they differ.
 - The reply time shown on the site is `ui.response_time` in each language file. The privacy facts that are words, not switches (where data is stored, where scans run, how long analytics are kept), are under `privacy:` at the end of each language file.
 

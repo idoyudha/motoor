@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Pratinjau interaktif aplikasi Motoor"
+  platform_label: "Platform ponsel"
   garage: "Garasi"
   reminders: "Pengingat"
   settings: "Pengaturan"

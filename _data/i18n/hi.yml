@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Motoor ऐप का इंटरैक्टिव प्रीव्यू"
+  platform_label: "फ़ोन प्लैटफ़ॉर्म"
   garage: "गैराज"
   reminders: "रिमाइंडर"
   settings: "सेटिंग्स"

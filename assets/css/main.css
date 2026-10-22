@@ -194,7 +194,8 @@ a { color:var(--pri); }
 .mt-tap:active::after { opacity:.1; }
 
 .mt-phone__status { flex:none; height:34px; display:flex; align-items:center; justify-content:space-between; padding:0 22px; font:500 13px/1 var(--font); letter-spacing:.5px; color:var(--on-sv); }
-.mt-phone__status span:last-child { display:flex; gap:4px; }
+.mt-phone__sys { display:flex; align-items:center; gap:4px; }
+.mt-phone__island, .mt-phone__sys--ios { display:none; }
 .mt-phone__status i { width:13px; height:11px; background:currentColor; border-radius:2px; opacity:.85; }
 .mt-phone__body { position:relative; flex:1; min-height:0; }
 .mt-phone__screen { position:absolute; inset:0; overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; scrollbar-width:thin; }
@@ -351,6 +352,119 @@ a { color:var(--pri); }
 .mt-phone__tab[aria-current="page"] span { background:var(--sec-c); color:var(--on-sec-c); }
 .mt-phone__home { flex:none; height:18px; display:grid; place-items:center; background:var(--surf-c2); }
 .mt-phone__home i { width:104px; height:4px; border-radius:2px; background:var(--on-s); opacity:.35; }
+
+/* ---------- Android / iOS switch above the phone ---------- */
+.mt-platform { display:inline-flex; gap:4px; padding:4px; border-radius:var(--corner-full); background:var(--surf-c2); }
+.mt-platform__btn { min-width:96px; height:40px; padding:0 20px; border:0; border-radius:var(--corner-full); background:none; color:var(--on-sv);
+  font:600 14px/20px var(--font); letter-spacing:.1px; cursor:pointer; position:relative;
+  transition:background var(--duration-short) var(--ease-standard), color var(--duration-short) var(--ease-standard); }
+.mt-platform__btn::before { content:""; position:absolute; inset:-4px 0; } /* 48px touch target */
+.mt-platform__btn:hover { color:var(--on-s); }
+.mt-platform__btn[aria-pressed="true"] { background:var(--sec-c); color:var(--on-sec-c); font-weight:700; }
+.mt-platform__btn:focus-visible { outline:2px solid var(--pri); outline-offset:2px; }
+
+/* ---------- iOS 26 (Liquid Glass) design of the phone ----------
+   Values from iosLook() in motoor_compose/design/Motoor App iOS.html. Same screens as Android;
+   colours, SF Pro and shapes change, and glass sits only on the controls floating above content. */
+.mt-phone[data-platform="ios"] {
+  --pri:#007AFF; --on-pri:#FFFFFF; --pri-c:#DCEBFF; --on-pri-c:#00408A;
+  --sec:#636366; --on-sec:#FFFFFF; --sec-c:#E5E5EA; --on-sec-c:#1C1C1E;
+  --ter:#AF52DE; --on-ter:#FFFFFF; --ter-c:#F3E3FA; --on-ter-c:#5B1F78;
+  --err:#FF3B30; --on-err:#FFFFFF; --err-c:#FFE3E1; --on-err-c:#A1140B;
+  --warn:#B25E00; --on-warn:#FFFFFF; --warn-c:#FFEBCC; --on-warn-c:#7A3E00;
+  --surf:#F2F2F7; --surf-c0:#FFFFFF; --surf-c1:#FFFFFF; --surf-c2:#FFFFFF; --surf-c3:#E9E9EE; --surf-c4:#E3E3E8;
+  --on-s:#000000; --on-sv:#6C6C70; --outline:#AEAEB2; --outline-v:#D8D8DC;
+  --inv-surf:#1C1C1E; --inv-on-surf:#FFFFFF; --inv-pri:#0A84FF;
+  --scrim:rgba(0,0,0,.4);
+  --glass:rgba(255,255,255,.6); --glass-strong:rgba(255,255,255,.86); --glass-border:rgba(255,255,255,.8);
+  --glass-shadow:inset 0 1px 0 rgba(255,255,255,.95), 0 10px 30px rgba(0,0,0,.14); --glass-sel:rgba(0,0,0,.07);
+  --frame:#1C1C1E;
+  --font:-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
+  border:10px solid var(--frame); border-radius:52px; box-shadow:0 30px 70px rgba(0,0,0,.28);
+}
+.mt-phone[data-platform="ios"][data-theme="dark"],
+:root[data-theme="dark"] .mt-phone[data-platform="ios"]:not([data-theme="light"]) {
+  --pri:#0A84FF; --on-pri:#FFFFFF; --pri-c:#0B2F57; --on-pri-c:#B5D7FF;
+  --sec:#98989D; --on-sec:#000000; --sec-c:#3A3A3C; --on-sec-c:#F2F2F7;
+  --ter:#BF5AF2; --on-ter:#FFFFFF; --ter-c:#3D1F4D; --on-ter-c:#EBCBFA;
+  --err:#FF453A; --on-err:#FFFFFF; --err-c:#4D1512; --on-err-c:#FFB4AE;
+  --warn:#FF9F0A; --on-warn:#000000; --warn-c:#4A3000; --on-warn-c:#FFD48A;
+  --surf:#000000; --surf-c0:#1C1C1E; --surf-c1:#1C1C1E; --surf-c2:#1C1C1E; --surf-c3:#2C2C2E; --surf-c4:#3A3A3C;
+  --on-s:#FFFFFF; --on-sv:#AEAEB2; --outline:#636366; --outline-v:#38383A;
+  --inv-surf:#F2F2F7; --inv-on-surf:#000000; --inv-pri:#007AFF;
+  --scrim:rgba(0,0,0,.5);
+  --glass:rgba(36,36,40,.56); --glass-strong:rgba(36,36,40,.82); --glass-border:rgba(255,255,255,.16);
+  --glass-shadow:inset 0 1px 0 rgba(255,255,255,.14), 0 10px 30px rgba(0,0,0,.5); --glass-sel:rgba(255,255,255,.14);
+  --frame:#2C2C2E;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .mt-phone[data-platform="ios"]:not([data-theme="light"]) {
+  --pri:#0A84FF; --on-pri:#FFFFFF; --pri-c:#0B2F57; --on-pri-c:#B5D7FF;
+  --sec:#98989D; --on-sec:#000000; --sec-c:#3A3A3C; --on-sec-c:#F2F2F7;
+  --ter:#BF5AF2; --on-ter:#FFFFFF; --ter-c:#3D1F4D; --on-ter-c:#EBCBFA;
+  --err:#FF453A; --on-err:#FFFFFF; --err-c:#4D1512; --on-err-c:#FFB4AE;
+  --warn:#FF9F0A; --on-warn:#000000; --warn-c:#4A3000; --on-warn-c:#FFD48A;
+  --surf:#000000; --surf-c0:#1C1C1E; --surf-c1:#1C1C1E; --surf-c2:#1C1C1E; --surf-c3:#2C2C2E; --surf-c4:#3A3A3C;
+  --on-s:#FFFFFF; --on-sv:#AEAEB2; --outline:#636366; --outline-v:#38383A;
+  --inv-surf:#F2F2F7; --inv-on-surf:#000000; --inv-pri:#007AFF;
+  --scrim:rgba(0,0,0,.5);
+  --glass:rgba(36,36,40,.56); --glass-strong:rgba(36,36,40,.82); --glass-border:rgba(255,255,255,.16);
+  --glass-shadow:inset 0 1px 0 rgba(255,255,255,.14), 0 10px 30px rgba(0,0,0,.5); --glass-sel:rgba(255,255,255,.14);
+  --frame:#2C2C2E;
+  }
+}
+.mt-phone[data-platform="ios"][data-theme="light"] { border-color:#1C1C1E; }
+
+/* status bar with the Dynamic Island */
+.mt-phone[data-platform="ios"] .mt-phone__status { position:relative; height:54px; padding:4px 30px 0 46px; font:600 17px/1 var(--font); letter-spacing:0; color:var(--on-s); }
+.mt-phone[data-platform="ios"] .mt-phone__island { display:block; position:absolute; left:50%; top:11px; width:124px; height:36px; margin-left:-62px; border-radius:18px; background:#000; }
+.mt-phone[data-platform="ios"] .mt-phone__sys--android { display:none; }
+.mt-phone[data-platform="ios"] .mt-phone__sys--ios { display:flex; gap:6px; }
+
+/* floating glass: tab bar, FAB menu, toast */
+.mt-phone[data-platform="ios"] .mt-phone__nav,
+.mt-phone[data-platform="ios"] .mt-fab__item,
+.mt-phone[data-platform="ios"] .mt-snack {
+  -webkit-backdrop-filter:blur(24px) saturate(190%); backdrop-filter:blur(24px) saturate(190%);
+  border:.5px solid var(--glass-border); box-shadow:var(--glass-shadow);
+}
+
+/* tab bar: a 62px capsule floating 16px in and 26px up, leaving room for the FAB beside it */
+.mt-phone[data-platform="ios"] .mt-phone__nav { position:absolute; z-index:5; inset-inline:16px 94px; bottom:26px; height:62px; padding:4px; gap:0;
+  border-radius:31px; background:var(--glass); }
+.mt-phone[data-platform="ios"][data-fab] .mt-phone__nav { z-index:2; }
+.mt-phone[data-platform="ios"] .mt-phone__tab { gap:1px; border-radius:27px; color:var(--on-s); font:600 10px/12px var(--font); letter-spacing:0;
+  transition:background .3s cubic-bezier(.3,1.4,.5,1); }
+.mt-phone[data-platform="ios"] .mt-phone__tab span { width:26px; height:26px; background:none !important; color:inherit !important; }
+.mt-phone[data-platform="ios"] .mt-phone__tab svg { width:26px; height:26px; }
+.mt-phone[data-platform="ios"] .mt-phone__tab:hover { background:color-mix(in srgb, var(--on-s) 4%, transparent); }
+.mt-phone[data-platform="ios"] .mt-phone__tab[aria-current="page"] { background:var(--glass-sel); color:var(--pri); font-weight:600; }
+
+/* home indicator drawn over the content */
+.mt-phone[data-platform="ios"] .mt-phone__home { position:absolute; z-index:7; inset-inline:0; bottom:0; height:21px; align-items:start; background:none; pointer-events:none; }
+.mt-phone[data-platform="ios"] .mt-phone__home i { width:140px; height:5px; border-radius:3px; opacity:1; }
+
+/* FAB: 62px tinted-glass circle level with the tab bar */
+.mt-phone[data-platform="ios"] .mt-fab { bottom:26px; gap:8px; }
+.mt-phone[data-platform="ios"] .mt-fab__btn,
+.mt-phone[data-platform="ios"] .mt-fab[data-open] .mt-fab__btn { width:62px; height:62px; border-radius:31px; color:#FFFFFF;
+  background:color-mix(in srgb, var(--pri) 86%, transparent);
+  -webkit-backdrop-filter:blur(24px) saturate(190%); backdrop-filter:blur(24px) saturate(190%);
+  border:.5px solid rgba(255,255,255,.4);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45), 0 10px 26px color-mix(in srgb, var(--pri) 38%, transparent); }
+.mt-phone[data-platform="ios"] .mt-fab__btn svg { width:24px; height:24px; }
+.mt-phone[data-platform="ios"] .mt-fab__item { height:50px; padding-inline:14px 20px; gap:8px; border-radius:25px; background:var(--glass-strong); color:var(--on-s);
+  font:500 17px/22px var(--font); letter-spacing:0; }
+.mt-phone[data-platform="ios"] .mt-fab__item svg { width:22px; height:22px; color:var(--pri); }
+
+/* toast: centred glass, above the tab bar */
+.mt-phone[data-platform="ios"] .mt-snack { inset-inline:24px; bottom:104px; padding:14px 20px; border-radius:24px; background:var(--glass-strong); color:var(--on-s);
+  font:400 15px/20px var(--font); letter-spacing:0; text-align:center; }
+
+/* content shapes: 26px cards, pill buttons */
+.mt-phone[data-platform="ios"] .mt-vcard,
+.mt-phone[data-platform="ios"] .mt-vcard--hero { border-radius:26px; }
+.mt-phone[data-platform="ios"] .mt-btn--outlined { border-radius:var(--corner-full); }
 
 /* ---------- Sections ---------- */
 .mt-section { padding:var(--space-48) 0; }

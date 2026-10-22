@@ -70,6 +70,7 @@ home:
 # The interactive phone preview on the home page
 phone:
   region: "Motoor uygulamasının etkileşimli önizlemesi"
+  platform_label: "Telefon platformu"
   garage: "Garaj"
   reminders: "Hatırlatıcılar"
   settings: "Ayarlar"
