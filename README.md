@@ -1,30 +1,35 @@
 # Motoor website
 
-Landing page, privacy policy and support page for Motoor, built with Jekyll for GitHub Pages and styled with the Motoor Design System v2 tokens.
+Landing page, about page, legal pages (terms, privacy, copyright) and support page for Motoor, built with Jekyll for GitHub Pages and styled with the Motoor Design System v2 tokens.
 
 | Page | URL | Use it for |
 |---|---|---|
 | Landing | `/` | Store listings (website / marketing URL) |
-| Privacy policy | `/privacy/` | Privacy policy URL in Play Console and App Store Connect |
+| About Motoor | `/about/` | Opened from **Settings → About** in the app |
+| Privacy policy | `/privacy/` | Privacy policy URL in Play Console and App Store Connect; **Settings → Legal** in the app |
+| Terms and Conditions | `/terms/` | Terms of use (EULA link in App Store Connect if you use custom terms); **Settings → Legal** |
+| Copyright | `/copyright/` | Copyright, trademarks and open-source licences; **Settings → Legal** |
 | Support | `/support/` | Support URL in App Store Connect, contact link |
 | Delete your data | `/support/#delete-your-data` | Data deletion info for Play Console |
+
+In the app, **Settings → About** opens `/about/`, and **Settings → Legal** lists Terms and Conditions (`/terms/`), Privacy Policy (`/privacy/`) and Copyright (`/copyright/`). Open the page in the user's language folder (e.g. `/id/terms/`) when the app is not in English.
 
 ## Before you publish
 
 1. Open `_config.yml` and fill in everything marked `TODO`: your name (as on the store), support email, site `url`.
 2. Set the `privacy:` switches to match what your app really does. The privacy policy rewrites itself to match. Make the same answers in the Play Data safety form and App Store privacy labels.
-3. Read `privacy.md` and `support.md` once more. They mention **Settings → Profile → Delete account**, **Settings → Premium → Restore purchase** and **Settings → About** in the app; rename these if your menus differ.
+3. Read `privacy.md`, `terms.md`, `copyright.md` and `support.md` once more; check the Premium prices and the open-source list in `terms.md` and `copyright.md` match the app. They mention **Settings → Profile → Delete account**, **Settings → Premium → Restore purchase** and **Settings → About** in the app; rename these if your menus differ.
 4. Optional: replace the placeholder logo in `_includes/logo.html` and the icons in `_includes/icon.html` with the files from `assets/Logos` and `assets/Icons`.
 
 ## Languages
 
-English is the default and lives at the site root (`/`, `/privacy/`, `/support/`). Every other language has its own folder with the same three pages, e.g. `/id/`, `/id/privacy/`, `/id/support/`. Visitors switch language from the menu at the top right; it keeps them on the same page.
+English is the default and lives at the site root (`/`, `/about/`, `/privacy/`, `/terms/`, `/copyright/`, `/support/`). Every other language has its own folder with the same pages, e.g. `/id/`, `/id/about/`, `/id/privacy/`, `/id/terms/`, `/id/copyright/`, `/id/support/`. Visitors switch language from the menu at the top right; it keeps them on the same page.
 
 - `_data/languages.yml` lists the languages in menu order (code, native name, `rtl` for Arabic, Urdu and Persian).
 - `_data/i18n/<code>.yml` holds the short strings: header, footer, home page and the phone preview. Every file has the same keys as `en.yml`.
 
 The phone preview on the home page has an **Android | iOS** switch. Both show the same screens (`_includes/phone.html`); `data-platform="ios"` restyles them as the iOS 26 Liquid Glass design (iOS block in `assets/css/main.css`). It opens on the visitor's platform and remembers their choice.
-- `<code>/privacy.md` and `<code>/support.md` are full translations. When you change the English `privacy.md` or `support.md`, update the translations too. Each translated privacy policy says the English version applies if they differ.
+- `<code>/about.md`, `<code>/privacy.md`, `<code>/terms.md`, `<code>/copyright.md` and `<code>/support.md` are full translations. When you change an English page, update the translations too. Each translated legal page (privacy, terms, copyright) says the English version applies if they differ.
 - The reply time shown on the site is `ui.response_time` in each language file. The privacy facts that are words, not switches (where data is stored, where scans run, how long analytics are kept), are under `privacy:` at the end of each language file.
 
 To add a language: add it to `_data/languages.yml`, copy `_data/i18n/en.yml` to `_data/i18n/<code>.yml` and translate it, then copy an existing language folder (e.g. `id/`) to `<code>/` and change `lang`, `permalink` and the text.

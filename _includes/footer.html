@@ -11,7 +11,10 @@
       <p class="mt-footer__note">{{ t.ui.tagline }}</p>
     </div>
     <nav class="mt-footer__links" aria-label="Footer">
+      <a href="{{ lp | append: '/about/' | relative_url }}">{{ t.ui.footer_about }}</a>
       <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ t.ui.footer_privacy }}</a>
+      <a href="{{ lp | append: '/terms/' | relative_url }}">{{ t.ui.footer_terms }}</a>
+      <a href="{{ lp | append: '/copyright/' | relative_url }}">{{ t.ui.footer_copyright }}</a>
       <a href="{{ lp | append: '/support/' | relative_url }}">{{ t.ui.footer_support }}</a>
       <a href="mailto:{{ dev.email }}">{{ t.ui.footer_contact }}</a>
     </nav>
