@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Über Motoor
-eyebrow: Über uns
 permalink: /de/about/
 ref: /about/
 lang: de

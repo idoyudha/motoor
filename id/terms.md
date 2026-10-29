@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Syarat dan Ketentuan
-eyebrow: Legal
 permalink: /id/terms/
 ref: /terms/
 lang: id

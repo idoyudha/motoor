@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 版权
-eyebrow: 法律信息
 permalink: /zh/copyright/
 ref: /copyright/
 lang: zh

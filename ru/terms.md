@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Условия использования
-eyebrow: Правовая информация
 permalink: /ru/terms/
 ref: /terms/
 lang: ru

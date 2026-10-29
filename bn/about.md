@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Motoor সম্পর্কে
-eyebrow: পরিচিতি
 permalink: /bn/about/
 ref: /about/
 lang: bn

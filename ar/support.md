@@ -1,7 +1,6 @@
 ---
 layout: page
 title: الدعم
-eyebrow: المساعدة
 permalink: /ar/support/
 ref: /support/
 lang: ar
@@ -12,7 +11,7 @@ description: "إجابات عن الأسئلة الشائعة، وخط مباش�
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">تواصل معنا</p>
+  <h2 class="mt-contact__title">تواصل معنا</h2>
   <p style="margin:0">راسلنا على <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> وستتلقى ردًا {{ t.ui.response_time }}. من المفيد أن تذكر طراز هاتفك، وما إذا كنت تستخدم Android أو iOS، وإصدار Motoor من <strong>الإعدادات ← حول</strong>.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}راسل فريق الدعم</a>
 </div>

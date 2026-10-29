@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Informativa sulla privacy
-eyebrow: Note legali
 permalink: /it/privacy/
 ref: /privacy/
 lang: it

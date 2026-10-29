@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Chính sách quyền riêng tư
-eyebrow: Pháp lý
 permalink: /vi/privacy/
 ref: /privacy/
 lang: vi

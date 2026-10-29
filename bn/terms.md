@@ -1,7 +1,6 @@
 ---
 layout: page
 title: শর্তাবলি
-eyebrow: আইনি
 permalink: /bn/terms/
 ref: /terms/
 lang: bn

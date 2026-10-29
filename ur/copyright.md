@@ -1,7 +1,6 @@
 ---
 layout: page
 title: کاپی رائٹ
-eyebrow: قانونی
 permalink: /ur/copyright/
 ref: /copyright/
 lang: ur

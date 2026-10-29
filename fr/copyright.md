@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Droits d’auteur
-eyebrow: Mentions légales
 permalink: /fr/copyright/
 ref: /copyright/
 lang: fr

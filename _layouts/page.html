@@ -2,17 +2,34 @@
 layout: default
 ---
 {% assign t = site.data.i18n[page.lang] %}
-<article class="mt-doc">
-  <div class="mt-wrap mt-wrap--narrow">
+{%- comment -%} "On this page": one link per ## heading, read from the ids kramdown gives them {%- endcomment -%}
+{% assign parts = content | split: '<h2 id="' %}
+<article class="mt-doc{% if parts.size <= 2 %} mt-doc--narrow{% endif %}">
+  <div class="mt-wrap">
     <header class="mt-doc__head">
-      {% if page.eyebrow %}<p class="mt-eyebrow">{{ page.eyebrow }}</p>{% endif %}
       <h1 class="mt-doc__title">{{ page.title }}</h1>
       {% if page.lede %}<p class="mt-doc__lede">{{ page.lede }}</p>{% endif %}
       {% if page.privacy_date %}{% assign updated = site.privacy.updated %}{% else %}{% assign updated = page.updated %}{% endif %}
       {% if updated %}<p class="mt-doc__meta">{{ t.ui.last_updated }} {{ updated | date: t.ui.date_format }}</p>{% endif %}
     </header>
-    <div class="mt-prose">
-      {{ content }}
+    <div class="mt-doc__grid">
+      <div class="mt-prose">
+        {{ content }}
+      </div>
+      {% if parts.size > 2 %}
+      <aside class="mt-doc__aside">
+        <nav class="mt-toc" aria-labelledby="mt-toc-title">
+          <p class="mt-toc__title" id="mt-toc-title">{{ t.ui.on_this_page }}</p>
+          <ul>
+            {%- for part in parts offset:1 %}
+              {%- assign id = part | split: '"' | first %}
+              {%- assign label = part | split: '</h2>' | first | remove_first: id | remove_first: '">' | strip_html %}
+            <li><a href="#{{ id }}">{{ label }}</a></li>
+            {%- endfor %}
+          </ul>
+        </nav>
+      </aside>
+      {% endif %}
     </div>
   </div>
 </article>

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Авторские права
-eyebrow: Правовая информация
 permalink: /ru/copyright/
 ref: /copyright/
 lang: ru

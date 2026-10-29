@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About Motoor
-eyebrow: About
 permalink: /about/
 ref: /about/
 lede: A calm logbook for every vehicle you own.

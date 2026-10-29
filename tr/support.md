@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Destek
-eyebrow: Yardım
 permalink: /tr/support/
 ref: /support/
 lang: tr
@@ -12,7 +11,7 @@ description: "Sık sorulan soruların yanıtları ve Motoor’u yapan kişiye do
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">İletişim</p>
+  <h2 class="mt-contact__title">İletişim</h2>
   <p style="margin:0"><a href="mailto:{{ dev.email }}">{{ dev.email }}</a> adresine e-posta gönderin, {{ t.ui.response_time }} yanıt alırsınız. Telefon modelinizi, Android mi iOS mu kullandığınızı ve <strong>Ayarlar → Hakkında</strong> bölümündeki Motoor sürümünü belirtmeniz işimizi kolaylaştırır.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}Destek ekibine e-posta gönder</a>
 </div>

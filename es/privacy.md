@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Política de privacidad
-eyebrow: Legal
 permalink: /es/privacy/
 ref: /privacy/
 lang: es

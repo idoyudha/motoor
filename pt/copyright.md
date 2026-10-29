@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Direitos autorais
-eyebrow: Jurídico
 permalink: /pt/copyright/
 ref: /copyright/
 lang: pt

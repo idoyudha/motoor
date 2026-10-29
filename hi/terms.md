@@ -1,7 +1,6 @@
 ---
 layout: page
 title: नियम और शर्तें
-eyebrow: कानूनी
 permalink: /hi/terms/
 ref: /terms/
 lang: hi

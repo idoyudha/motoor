@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Allgemeine Geschäftsbedingungen
-eyebrow: Rechtliches
 permalink: /de/terms/
 ref: /terms/
 lang: de

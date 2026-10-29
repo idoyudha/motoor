@@ -1,7 +1,6 @@
 ---
 layout: page
 title: কপিরাইট
-eyebrow: আইনি
 permalink: /bn/copyright/
 ref: /copyright/
 lang: bn

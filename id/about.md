@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Tentang Motoor
-eyebrow: Tentang
 permalink: /id/about/
 ref: /about/
 lang: id

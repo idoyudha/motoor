@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Motoor hakkında
-eyebrow: Hakkında
 permalink: /tr/about/
 ref: /about/
 lang: tr

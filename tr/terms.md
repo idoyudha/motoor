@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Şartlar ve Koşullar
-eyebrow: Yasal
 permalink: /tr/terms/
 ref: /terms/
 lang: tr

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Conditions générales
-eyebrow: Mentions légales
 permalink: /fr/terms/
 ref: /terms/
 lang: fr

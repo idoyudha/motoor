@@ -1,7 +1,6 @@
 ---
 layout: page
 title: شرائط و ضوابط
-eyebrow: قانونی
 permalink: /ur/terms/
 ref: /terms/
 lang: ur

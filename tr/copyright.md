@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Telif hakkı
-eyebrow: Yasal
 permalink: /tr/copyright/
 ref: /copyright/
 lang: tr

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 利用規約
-eyebrow: 法的情報
 permalink: /ja/terms/
 ref: /terms/
 lang: ja

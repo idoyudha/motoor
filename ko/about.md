@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Motoor 소개
-eyebrow: 소개
 permalink: /ko/about/
 ref: /about/
 lang: ko

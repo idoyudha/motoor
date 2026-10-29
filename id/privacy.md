@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Kebijakan privasi
-eyebrow: Legal
 permalink: /id/privacy/
 ref: /privacy/
 lang: id

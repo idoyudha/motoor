@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Urheberrecht
-eyebrow: Rechtliches
 permalink: /de/copyright/
 ref: /copyright/
 lang: de

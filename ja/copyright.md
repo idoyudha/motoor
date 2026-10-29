@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 著作権
-eyebrow: 法的情報
 permalink: /ja/copyright/
 ref: /copyright/
 lang: ja

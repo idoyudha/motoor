@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Datenschutzerklärung
-eyebrow: Rechtliches
 permalink: /de/privacy/
 ref: /privacy/
 lang: de

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Политика конфиденциальности
-eyebrow: Правовая информация
 permalink: /ru/privacy/
 ref: /privacy/
 lang: ru

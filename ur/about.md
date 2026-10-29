@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Motoor کے بارے میں
-eyebrow: تعارف
 permalink: /ur/about/
 ref: /about/
 lang: ur

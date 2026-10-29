@@ -1,7 +1,6 @@
 ---
 layout: page
 title: سیاست حفظ حریم خصوصی
-eyebrow: حقوقی
 permalink: /fa/privacy/
 ref: /privacy/
 lang: fa

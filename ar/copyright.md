@@ -1,7 +1,6 @@
 ---
 layout: page
 title: حقوق النشر
-eyebrow: قانوني
 permalink: /ar/copyright/
 ref: /copyright/
 lang: ar

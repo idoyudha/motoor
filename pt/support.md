@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Suporte
-eyebrow: Ajuda
 permalink: /pt/support/
 ref: /support/
 lang: pt
@@ -12,7 +11,7 @@ description: Respostas para dúvidas comuns e um canal direto com a pessoa que f
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">Contato</p>
+  <h2 class="mt-contact__title">Contato</h2>
   <p style="margin:0">Envie um e-mail para <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> e você receberá resposta {{ t.ui.response_time }}. Ajuda incluir o modelo do seu celular, se você usa Android ou iOS, e a versão do Motoor que aparece em <strong>Configurações → Sobre</strong>.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}Enviar e-mail ao suporte</a>
 </div>

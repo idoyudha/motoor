@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 条款和条件
-eyebrow: 法律信息
 permalink: /zh/terms/
 ref: /terms/
 lang: zh

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 이용약관
-eyebrow: 법적 고지
 permalink: /ko/terms/
 ref: /terms/
 lang: ko

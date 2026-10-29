@@ -1,7 +1,6 @@
 ---
 layout: page
 title: پشتیبانی
-eyebrow: راهنما
 permalink: /fa/support/
 ref: /support/
 lang: fa
@@ -12,7 +11,7 @@ description: "پاسخ پرسش‌های رایج، و راهی مستقیم ب�
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">تماس</p>
+  <h2 class="mt-contact__title">تماس</h2>
   <p style="margin:0">به <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> ایمیل بزنید تا {{ t.ui.response_time }} پاسخ بگیرید. بهتر است مدل گوشی‌تان، اینکه از Android استفاده می‌کنید یا iOS، و نسخهٔ Motoor را از <strong>تنظیمات ← درباره</strong> ذکر کنید.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}ایمیل به پشتیبانی</a>
 </div>

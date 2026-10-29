@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Hỗ trợ
-eyebrow: Trợ giúp
 permalink: /vi/support/
 ref: /support/
 lang: vi
@@ -12,7 +11,7 @@ description: "Giải đáp các câu hỏi thường gặp, và kênh liên hệ
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">Liên hệ</p>
+  <h2 class="mt-contact__title">Liên hệ</h2>
   <p style="margin:0">Gửi email đến <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> và bạn sẽ nhận được phản hồi {{ t.ui.response_time }}. Sẽ rất hữu ích nếu bạn cho biết mẫu điện thoại, bạn dùng Android hay iOS, và phiên bản Motoor trong <strong>Cài đặt → Giới thiệu</strong>.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}Gửi email hỗ trợ</a>
 </div>

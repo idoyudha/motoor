@@ -3,21 +3,15 @@
 {% assign lp = '' %}{% if page.lang != 'en' %}{% assign lp = '/' | append: page.lang %}{% endif %}
 <footer class="mt-footer">
   <div class="mt-wrap mt-footer__inner">
-    <div>
-      <a class="mt-brand" href="{{ lp | append: '/' | relative_url }}">
-        {% include icon.html name="logo" class="mt-brand__mark" %}
-        <span class="mt-brand__word">{{ site.title }}</span>
-      </a>
-      <p class="mt-footer__note">{{ t.ui.tagline }}</p>
-    </div>
+    <p class="mt-footer__what"><strong>{{ site.title }}</strong> · {{ t.ui.tagline }}</p>
     <nav class="mt-footer__links" aria-label="Footer">
       <a href="{{ lp | append: '/about/' | relative_url }}">{{ t.ui.footer_about }}</a>
-      <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ t.ui.footer_privacy }}</a>
       <a href="{{ lp | append: '/terms/' | relative_url }}">{{ t.ui.footer_terms }}</a>
       <a href="{{ lp | append: '/copyright/' | relative_url }}">{{ t.ui.footer_copyright }}</a>
       <a href="{{ lp | append: '/support/' | relative_url }}">{{ t.ui.footer_support }}</a>
       <a href="mailto:{{ dev.email }}">{{ t.ui.footer_contact }}</a>
     </nav>
-    <p class="mt-footer__legal">© {{ site.time | date: "%Y" }} {{ dev.name }}. {{ t.ui.footer_legal }}</p>
+    <p class="mt-footer__end">© {{ site.time | date: "%Y" }} {{ dev.name }} · <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ t.ui.footer_privacy }}</a></p>
+    <p class="mt-footer__legal">{{ t.ui.footer_legal }}</p>
   </div>
 </footer>

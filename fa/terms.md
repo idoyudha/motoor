@@ -1,7 +1,6 @@
 ---
 layout: page
 title: شرایط و ضوابط
-eyebrow: حقوقی
 permalink: /fa/terms/
 ref: /terms/
 lang: fa

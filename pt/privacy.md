@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Política de privacidade
-eyebrow: Jurídico
 permalink: /pt/privacy/
 ref: /privacy/
 lang: pt

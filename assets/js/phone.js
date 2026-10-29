@@ -8,6 +8,7 @@
     var fabBtn = phone.querySelector('[data-fab]');
     var snack = phone.querySelector('.mt-snack');
     var snackTimer;
+    var demo = phone.closest('[data-demo]') || phone;
     // Vehicle screens belong to the Garage tab
     var TAB_OF = { v1: 'garage', v2: 'garage' };
 
@@ -37,6 +38,18 @@
       fab.hidden = tab !== 'garage';
       setFab(false);
       scroller.scrollTop = 0;
+      demo.querySelectorAll('[data-demo-go]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.demoGo === tab));
+      });
+    }
+
+    // Theme: the Appearance card inside the phone and the Theme control beside it stay in step
+    function setTheme(t) {
+      if (t === 'system') phone.removeAttribute('data-theme');
+      else phone.setAttribute('data-theme', t);
+      demo.querySelectorAll('[data-theme-set], [data-demo-theme]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String((b.dataset.themeSet || b.dataset.demoTheme) === t));
+      });
     }
 
     function toast(msg) {
@@ -59,14 +72,7 @@
         return;
       }
       if (d.filter) return filter(d.filter);
-      if (d.themeSet) {
-        if (d.themeSet === 'system') phone.removeAttribute('data-theme');
-        else phone.setAttribute('data-theme', d.themeSet);
-        phone.querySelectorAll('[data-theme-set]').forEach(function (b) {
-          b.setAttribute('aria-pressed', String(b === el));
-        });
-        return;
-      }
+      if (d.themeSet) return setTheme(d.themeSet);
       if (d.cycle) {
         var opts = d.cycle.split('|');
         var val = el.querySelector('.mt-pref__value');
@@ -83,9 +89,16 @@
       if (e.key === 'Escape' && fab.hasAttribute('data-open')) { setFab(false); fabBtn.focus(); }
     });
 
-    // Android / iOS switch above the phone. Same screens; data-platform="ios" restyles them (main.css).
-    var wrap = phone.closest('.mt-phone-wrap');
-    var platformBtns = wrap ? wrap.querySelectorAll('[data-platform-set]') : [];
+    // Controls beside the phone
+    demo.querySelectorAll('[data-demo-go]').forEach(function (b) {
+      b.addEventListener('click', function () { go(b.dataset.demoGo); filter('all'); });
+    });
+    demo.querySelectorAll('[data-demo-theme]').forEach(function (b) {
+      b.addEventListener('click', function () { setTheme(b.dataset.demoTheme); });
+    });
+
+    // Android / iOS switch. Same screens; data-platform="ios" restyles them (main.css).
+    var platformBtns = demo.querySelectorAll('[data-platform-set]');
     function setPlatform(p, remember) {
       phone.setAttribute('data-platform', p);
       platformBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.platformSet === p)); });

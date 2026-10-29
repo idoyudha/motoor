@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Hak cipta
-eyebrow: Legal
 permalink: /id/copyright/
 ref: /copyright/
 lang: id

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: حق نشر
-eyebrow: حقوقی
 permalink: /fa/copyright/
 ref: /copyright/
 lang: fa

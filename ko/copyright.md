@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 저작권
-eyebrow: 법적 고지
 permalink: /ko/copyright/
 ref: /copyright/
 lang: ko

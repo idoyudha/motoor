@@ -1,7 +1,6 @@
 ---
 layout: page
 title: कॉपीराइट
-eyebrow: कानूनी
 permalink: /hi/copyright/
 ref: /copyright/
 lang: hi

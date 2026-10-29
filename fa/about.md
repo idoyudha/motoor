@@ -1,7 +1,6 @@
 ---
 layout: page
 title: دربارهٔ Motoor
-eyebrow: درباره
 permalink: /fa/about/
 ref: /about/
 lang: fa

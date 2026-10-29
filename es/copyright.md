@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Derechos de autor
-eyebrow: Legal
 permalink: /es/copyright/
 ref: /copyright/
 lang: es

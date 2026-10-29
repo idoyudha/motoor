@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Support
-eyebrow: Help
 permalink: /support/
 ref: /support/
 lede: Answers to common questions, and a direct line to the person who makes Motoor.
@@ -10,7 +9,7 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">Contact</p>
+  <h2 class="mt-contact__title">Contact</h2>
   <p style="margin:0">Email <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> and you’ll get a reply {{ t.ui.response_time }}. It helps to include your phone model, whether you use Android or iOS, and the Motoor version from <strong>Settings → About</strong>.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}Email support</a>
 </div>

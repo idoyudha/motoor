@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Termos e condições
-eyebrow: Jurídico
 permalink: /pt/terms/
 ref: /terms/
 lang: pt

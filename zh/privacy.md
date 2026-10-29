@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 隐私政策
-eyebrow: 法律信息
 permalink: /zh/privacy/
 ref: /privacy/
 lang: zh

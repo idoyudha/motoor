@@ -1,7 +1,6 @@
 ---
 layout: page
 title: О Motoor
-eyebrow: О приложении
 permalink: /ru/about/
 ref: /about/
 lang: ru

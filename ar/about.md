@@ -1,7 +1,6 @@
 ---
 layout: page
 title: عن Motoor
-eyebrow: حول
 permalink: /ar/about/
 ref: /about/
 lang: ar

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Acerca de Motoor
-eyebrow: Acerca de
 permalink: /es/about/
 ref: /about/
 lang: es

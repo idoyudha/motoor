@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 支持
-eyebrow: 帮助
 permalink: /zh/support/
 ref: /support/
 lang: zh
@@ -12,7 +11,7 @@ description: 常见问题解答，以及直接联系 Motoor 开发者的渠道�
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">联系我们</p>
+  <h2 class="mt-contact__title">联系我们</h2>
   <p style="margin:0">发送电子邮件至 <a href="mailto:{{ dev.email }}">{{ dev.email }}</a>，你将在{{ t.ui.response_time }}收到回复。如能附上你的手机型号、使用的是 Android 还是 iOS，以及 <strong>设置 → 关于</strong> 中显示的 Motoor 版本号，会很有帮助。</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}发送邮件获取支持</a>
 </div>

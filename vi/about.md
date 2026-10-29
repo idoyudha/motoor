@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Giới thiệu Motoor
-eyebrow: Giới thiệu
 permalink: /vi/about/
 ref: /about/
 lang: vi

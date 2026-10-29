@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Bantuan
-eyebrow: Bantuan
 permalink: /id/support/
 ref: /support/
 lang: id
@@ -12,7 +11,7 @@ description: "Jawaban atas pertanyaan umum, dan jalur langsung ke orang yang mem
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">Kontak</p>
+  <h2 class="mt-contact__title">Kontak</h2>
   <p style="margin:0">Kirim email ke <a href="mailto:{{ dev.email }}">{{ dev.email }}</a> dan Anda akan mendapat balasan {{ t.ui.response_time }}. Akan sangat membantu jika Anda menyertakan model ponsel, apakah Anda menggunakan Android atau iOS, dan versi Motoor dari <strong>Pengaturan → Tentang</strong>.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}Kirim email ke bantuan</a>
 </div>

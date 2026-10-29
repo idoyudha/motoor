@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Privacy policy
-eyebrow: Legal
 permalink: /privacy/
 ref: /privacy/
 privacy_date: true

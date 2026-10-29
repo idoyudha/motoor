@@ -1,7 +1,6 @@
 ---
 layout: page
 title: رازداری کی پالیسی
-eyebrow: قانونی
 permalink: /ur/privacy/
 ref: /privacy/
 lang: ur

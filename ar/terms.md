@@ -1,7 +1,6 @@
 ---
 layout: page
 title: الشروط والأحكام
-eyebrow: قانوني
 permalink: /ar/terms/
 ref: /terms/
 lang: ar

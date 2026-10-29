@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Copyright
-eyebrow: Legal
 permalink: /copyright/
 ref: /copyright/
 updated: 2026-10-25

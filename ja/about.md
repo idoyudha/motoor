@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Motoor について
-eyebrow: 概要
 permalink: /ja/about/
 ref: /about/
 lang: ja

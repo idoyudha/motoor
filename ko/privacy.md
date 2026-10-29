@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 개인정보처리방침
-eyebrow: 법적 고지
 permalink: /ko/privacy/
 ref: /privacy/
 lang: ko

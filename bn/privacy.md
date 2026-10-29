@@ -1,7 +1,6 @@
 ---
 layout: page
 title: গোপনীয়তা নীতি
-eyebrow: আইনি
 permalink: /bn/privacy/
 ref: /privacy/
 lang: bn

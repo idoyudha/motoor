@@ -1,7 +1,6 @@
 ---
 layout: page
 title: गोपनीयता नीति
-eyebrow: कानूनी
 permalink: /hi/privacy/
 ref: /privacy/
 lang: hi

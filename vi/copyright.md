@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Bản quyền
-eyebrow: Pháp lý
 permalink: /vi/copyright/
 ref: /copyright/
 lang: vi

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Politique de confidentialité
-eyebrow: Mentions légales
 permalink: /fr/privacy/
 ref: /privacy/
 lang: fr

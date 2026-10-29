@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Términos y condiciones
-eyebrow: Legal
 permalink: /es/terms/
 ref: /terms/
 lang: es

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Điều khoản và điều kiện
-eyebrow: Pháp lý
 permalink: /vi/terms/
 ref: /terms/
 lang: vi

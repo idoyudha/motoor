@@ -5,14 +5,15 @@ permalink: /404.html
 sitemap: false
 ---
 {% assign t = site.data.i18n[page.lang].notfound %}
-<section class="mt-doc">
-  <div class="mt-wrap mt-wrap--narrow">
-    <p class="mt-eyebrow">{{ t.eyebrow }}</p>
-    <h1 class="mt-doc__title">{{ t.title }}</h1>
-    <p class="mt-doc__lede">{{ t.lede }}</p>
-    <div class="mt-actions" style="margin-top:24px">
-      <a class="mt-btn mt-btn--filled" href="{{ '/' | relative_url }}">{{ t.home }}</a>
-      <a class="mt-btn mt-btn--outlined" href="{{ '/support/' | relative_url }}">{{ t.support }}</a>
+<section class="mt-doc mt-doc--narrow">
+  <div class="mt-wrap">
+    <div class="mt-doc__head">
+      <h1 class="mt-doc__title">{{ t.title }}</h1>
+      <p class="mt-doc__lede">{{ t.lede }}</p>
+      <div class="mt-actions">
+        <a class="mt-btn mt-btn--filled" href="{{ '/' | relative_url }}">{{ t.home }}</a>
+        <a class="mt-btn mt-btn--tonal" href="{{ '/support/' | relative_url }}">{{ t.support }}</a>
+      </div>
     </div>
   </div>
 </section>

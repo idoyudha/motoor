@@ -1,7 +1,6 @@
 ---
 layout: page
 title: مدد
-eyebrow: رہنمائی
 permalink: /ur/support/
 ref: /support/
 lang: ur
@@ -12,7 +11,7 @@ description: عام سوالات کے جوابات، اور Motoor بنانے و
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">رابطہ</p>
+  <h2 class="mt-contact__title">رابطہ</h2>
   <p style="margin:0"><a href="mailto:{{ dev.email }}">{{ dev.email }}</a> پر ای میل کریں، آپ کو {{ t.ui.response_time }} جواب ملے گا۔ اپنے فون کا ماڈل، آپ Android استعمال کرتے ہیں یا iOS، اور <strong>ترتیبات ← تعارف</strong> میں درج Motoor کا ورژن لکھ دیں تو مدد ملتی ہے۔</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}مدد کے لیے ای میل کریں</a>
 </div>

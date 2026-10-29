@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Gizlilik politikası
-eyebrow: Yasal
 permalink: /tr/privacy/
 ref: /privacy/
 lang: tr

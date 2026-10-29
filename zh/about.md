@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 关于 Motoor
-eyebrow: 关于
 permalink: /zh/about/
 ref: /about/
 lang: zh

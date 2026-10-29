@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Copyright
-eyebrow: Note legali
 permalink: /it/copyright/
 ref: /copyright/
 lang: it

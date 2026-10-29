@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Terms and Conditions
-eyebrow: Legal
 permalink: /terms/
 ref: /terms/
 updated: 2026-10-25

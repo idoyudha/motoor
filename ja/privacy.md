@@ -1,7 +1,6 @@
 ---
 layout: page
 title: プライバシーポリシー
-eyebrow: 法的情報
 permalink: /ja/privacy/
 ref: /privacy/
 lang: ja

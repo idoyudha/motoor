@@ -4,15 +4,13 @@
   design (assets/css/main.css). Behaviour lives in assets/js/phone.js:
   data-go switches screen, data-toast shows a snackbar, data-filter filters
   reminders, data-theme-set changes the phone's theme, data-cycle rotates a value,
-  data-platform-set switches between the Android and iOS designs.
+  data-platform-set switches between the Android and iOS designs. The controls beside
+  the phone (data-demo-go, data-demo-theme) drive the same screens and theme.
 {%- endcomment -%}
 {%- assign p = site.data.i18n[page.lang].phone -%}
-<div class="mt-phone-wrap mt-rise mt-rise--3">
-<div class="mt-platform" role="group" aria-label="{{ p.platform_label }}">
-  <button class="mt-platform__btn" data-platform-set="android" aria-pressed="true">Android</button>
-  <button class="mt-platform__btn" data-platform-set="ios" aria-pressed="false">iOS</button>
-</div>
-<div class="mt-phone" data-mt-phone data-platform="android" role="region" aria-label="{{ p.region }}">
+<div class="mt-demo" data-demo>
+<div class="mt-phone-wrap">
+<div class="mt-phone" data-mt-phone data-ui data-platform="android" role="region" aria-label="{{ p.region }}">
   <div class="mt-phone__status" aria-hidden="true">
     <span>9:41</span>
     <b class="mt-phone__island"></b>
@@ -42,7 +40,7 @@
             <span class="mt-vcard__body">
               <span class="mt-vcard__head">
                 <span>
-                  <span class="mt-eyebrow">Triumph · {{ p.motorcycle }}</span>
+                  <span class="mt-eyebrow">Triumph · {{ p.motorcycle }}</span> <!-- taste-skill-ignore: in-app label -->
                   <span class="mt-vcard__name" style="display:block">Trident 660</span>
                 </span>
                 <span class="mt-avatar">TR<span class="mt-avatar__badge">{% include icon.html name="vehicle-moto" %}</span></span>
@@ -64,7 +62,7 @@
             <span class="mt-vcard__body">
               <span class="mt-vcard__head">
                 <span>
-                  <span class="mt-eyebrow">Toyota · {{ p.car }}</span>
+                  <span class="mt-eyebrow">Toyota · {{ p.car }}</span> <!-- taste-skill-ignore: in-app label -->
                   <span class="mt-vcard__name" style="display:block">RAV4</span>
                 </span>
                 <span class="mt-avatar">TO<span class="mt-avatar__badge">{% include icon.html name="vehicle-car" %}</span></span>
@@ -312,5 +310,32 @@
   </nav>
   <div class="mt-phone__home" aria-hidden="true"><i></i></div>
 </div>
-<p class="mt-phone__hint">{{ p.hint }}</p>
+</div>
+
+<div class="mt-demo__controls">
+  <div role="group" aria-labelledby="mt-ctl-platform">
+    <span class="mt-ctl__name" id="mt-ctl-platform">{{ p.platform_label }}</span>
+    <div class="mt-seg">
+      <button class="mt-seg__btn" data-platform-set="android" aria-pressed="true">Android</button>
+      <button class="mt-seg__btn" data-platform-set="ios" aria-pressed="false">iOS</button>
+    </div>
+  </div>
+  <div role="group" aria-labelledby="mt-ctl-screen">
+    <span class="mt-ctl__name" id="mt-ctl-screen">{{ p.ctl_screen }}</span>
+    <div class="mt-seg">
+      <button class="mt-seg__btn" data-demo-go="garage" aria-pressed="true">{{ p.garage }}</button>
+      <button class="mt-seg__btn" data-demo-go="reminders" aria-pressed="false">{{ p.reminders }}</button>
+      <button class="mt-seg__btn" data-demo-go="settings" aria-pressed="false">{{ p.settings }}</button>
+    </div>
+  </div>
+  <div role="group" aria-labelledby="mt-ctl-theme">
+    <span class="mt-ctl__name" id="mt-ctl-theme">{{ p.theme }}</span>
+    <div class="mt-seg">
+      <button class="mt-seg__btn" data-demo-theme="system" aria-pressed="true">{{ p.system }}</button>
+      <button class="mt-seg__btn" data-demo-theme="light" aria-pressed="false">{{ p.light }}</button>
+      <button class="mt-seg__btn" data-demo-theme="dark" aria-pressed="false">{{ p.dark }}</button>
+    </div>
+  </div>
+  <p class="mt-demo__hint mt-small">{{ p.hint }}</p>
+</div>
 </div>

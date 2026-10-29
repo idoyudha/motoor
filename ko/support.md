@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 지원
-eyebrow: 도움말
 permalink: /ko/support/
 ref: /support/
 lang: ko
@@ -12,7 +11,7 @@ description: 자주 묻는 질문에 대한 답변과 Motoor 개발자에게 직
 {% assign t = site.data.i18n[page.lang] %}
 
 <div class="mt-contact">
-  <p class="mt-eyebrow">문의하기</p>
+  <h2 class="mt-contact__title">문의하기</h2>
   <p style="margin:0"><a href="mailto:{{ dev.email }}">{{ dev.email }}</a>으로 이메일을 보내 주시면 {{ t.ui.response_time }} 답변을 받으실 수 있습니다. 휴대폰 기종, Android와 iOS 중 어느 것을 사용하시는지, 그리고 <strong>설정 → 정보</strong>에 표시된 Motoor 버전을 함께 알려 주시면 도움이 됩니다.</p>
   <a class="mt-btn mt-btn--filled mt-btn--small" href="mailto:{{ dev.email }}?subject=Motoor%20support">{% include icon.html name="mail" %}이메일로 지원 요청</a>
 </div>

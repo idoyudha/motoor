@@ -3,18 +3,18 @@ layout: default
 ---
 {% assign t = site.data.i18n[page.lang] %}
 {% assign h = t.home %}
+{% assign p = t.phone %}
 {% assign lp = '' %}{% if page.lang != 'en' %}{% assign lp = '/' | append: page.lang %}{% endif %}
 {% assign play_url = site.stores.google_play %}
 {% assign apple_url = site.stores.app_store %}
 
 <section class="mt-hero">
   <div class="mt-wrap mt-hero__grid">
-    <div>
-      <p class="mt-eyebrow mt-rise">{{ h.eyebrow }}</p>
-      <h1 class="mt-hero__title mt-rise mt-rise--2">{{ h.title }}</h1>
-      <p class="mt-hero__sub mt-rise mt-rise--3">{{ h.sub }}</p>
+    <div class="mt-hero__copy">
+      <h1 class="mt-h1">{{ h.title }}</h1>
+      <p class="mt-lead">{{ h.sub }}</p>
 
-      <div class="mt-actions mt-rise mt-rise--4">
+      <div class="mt-actions">
         {% if play_url != "" %}
           <a class="mt-btn mt-btn--filled" href="{{ play_url }}">
             {% include icon.html name="play" %}
@@ -38,7 +38,7 @@ layout: default
           </span>
         {% endif %}
       </div>
-      <p class="mt-hero__fine">{{ h.fine }}</p>
+      <p class="mt-hero__fine mt-small">{{ h.fine }}</p>
     </div>
 
     {% include phone.html %}
@@ -47,89 +47,197 @@ layout: default
 
 <section class="mt-section" id="features">
   <div class="mt-wrap">
-    <div class="mt-section__head">
-      <p class="mt-eyebrow">{{ h.features_eyebrow }}</p>
-      <h2 class="mt-section__title">{{ h.features_title }}</h2>
-      <p class="mt-section__sub">{{ h.features_sub }}</p>
+    <div class="mt-section__head" data-reveal>
+      <h2 class="mt-h2">{{ h.features_title }}</h2>
+      <p class="mt-lead">{{ h.features_sub }}</p>
     </div>
 
-    <div class="mt-features">
-      <article class="mt-feature">
-        <div class="mt-feature__icon mt-feature__icon--warn">{% include icon.html name="bell" %}</div>
-        <h3>{{ h.f1_title }}</h3>
-        <p>{{ h.f1_text }}</p>
-      </article>
-      <article class="mt-feature">
-        <div class="mt-feature__icon">{% include icon.html name="fuel" %}</div>
-        <h3>{{ h.f2_title }}</h3>
-        <p>{{ h.f2_text }}</p>
-      </article>
-      <article class="mt-feature">
-        <div class="mt-feature__icon mt-feature__icon--sec">{% include icon.html name="coin" %}</div>
-        <h3>{{ h.f3_title }}</h3>
-        <p>{{ h.f3_text }}</p>
-      </article>
-      <article class="mt-feature">
-        <div class="mt-feature__icon mt-feature__icon--ter">{% include icon.html name="wrench" %}</div>
-        <h3>{{ h.f4_title }}</h3>
-        <p>{{ h.f4_text }}</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="mt-section" style="padding-top:0">
-  <div class="mt-wrap mt-status">
-    <div>
-      <p class="mt-eyebrow">{{ h.status_eyebrow }}</p>
-      <h2 class="mt-section__title">{{ h.status_title }}</h2>
-      <p class="mt-section__sub">{{ h.status_sub }}</p>
-      <div class="mt-chips">
-        <span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>{{ t.phone.overdue }}</span>
-        <span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>{{ t.phone.due_soon }}</span>
-        <span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>{{ t.phone.upcoming }}</span>
-        <span class="mt-chip mt-chip--none"><span class="mt-glyph"></span>{{ h.no_reminders }}</span>
+    {%- comment -%} Each panel is a true-size piece of the app, built from the phone's components {%- endcomment -%}
+    <div class="mt-proof" data-reveal>
+      <div class="mt-proof__panel mt-ui" data-ui aria-hidden="true">
+        <div class="mt-rcard">
+          <div class="mt-rcard__top"><span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>{{ p.overdue }}</span>Trident 660</div>
+          <p class="mt-rcard__title">{{ p.engine_oil }}</p>
+          <p class="mt-rcard__due">{{ p.was_due }}</p>
+          <div class="mt-bar mt-bar--overdue"><i style="width:100%"></i></div>
+          <div class="mt-rcard__foot">
+            <span class="mt-rcard__src">{{ p.triumph_schedule }}</span>
+            <span class="mt-rcard__acts"><span class="mt-smallbtn mt-smallbtn--outline">{{ p.snooze }}</span><span class="mt-smallbtn mt-smallbtn--filled">{{ p.log_now }}</span></span>
+          </div>
+        </div>
+        <div class="mt-rcard">
+          <div class="mt-rcard__top"><span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>{{ p.due_soon }}</span>RAV4</div>
+          <p class="mt-rcard__title">{{ p.tire_rotation }}</p>
+          <p class="mt-rcard__due">{{ p.due_3w }}</p>
+          <div class="mt-bar mt-bar--due"><i style="width:86%"></i></div>
+        </div>
+      </div>
+      <div class="mt-proof__text">
+        <h3 class="mt-h2">{{ h.f1_title }}</h3>
+        <p class="mt-lead">{{ h.f1_text }}</p>
       </div>
     </div>
-    <ul class="mt-list" aria-label="{{ h.example_label }}">
-      <li><div><span class="mt-list__title">{{ t.phone.engine_oil }}</span><span class="mt-list__meta">{{ h.ex1_meta }}</span></div><span class="mt-chip mt-chip--overdue"><span class="mt-glyph mt-glyph--square"></span>{{ t.phone.overdue }}</span></li>
-      <li><div><span class="mt-list__title">{{ t.phone.tire_rotation }}</span><span class="mt-list__meta">{{ h.ex2_meta }}</span></div><span class="mt-chip mt-chip--due"><span class="mt-glyph"></span>{{ t.phone.due_soon }}</span></li>
-      <li><div><span class="mt-list__title">{{ t.phone.registration }}</span><span class="mt-list__meta">{{ h.ex3_meta }}</span></div><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>{{ t.phone.upcoming }}</span></li>
-      <li><div><span class="mt-list__title">{{ t.phone.chain_lube }}</span><span class="mt-list__meta">{{ h.ex4_meta }}</span></div><span class="mt-chip mt-chip--upcoming"><span class="mt-glyph"></span>{{ t.phone.upcoming }}</span></li>
-    </ul>
+
+    <div class="mt-proof" data-reveal>
+      <div class="mt-proof__panel mt-ui" data-ui aria-hidden="true">
+        <div class="mt-stats">
+          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_consumption }}</span><span class="mt-stat__value">52.3 mpg</span><span class="mt-stat__hint">Trident 660 · {{ p.last_3 }}</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_consumption }}</span><span class="mt-stat__value">39.1 mpg</span><span class="mt-stat__hint">RAV4 · {{ p.last_3 }}</span></div>
+        </div>
+        <div class="mt-subhead">{{ p.history }}</div>
+        <div class="mt-group">
+          <div class="mt-row">
+            <span class="mt-badge mt-badge--fuel">{% include icon.html name="fuel" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.full_tank }} · 3.6 gal</span><span class="mt-row__meta">{{ p.date_12sep }} · Trident 660</span></span>
+            <span class="mt-row__end">$16.40</span>
+          </div>
+          <div class="mt-row">
+            <span class="mt-badge mt-badge--fuel">{% include icon.html name="fuel" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.full_tank }} · 11.2 gal</span><span class="mt-row__meta">{{ p.date_9sep }} · RAV4</span></span>
+            <span class="mt-row__end">$39.80</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-proof__text">
+        <h3 class="mt-h2">{{ h.f2_title }}</h3>
+        <p class="mt-lead">{{ h.f2_text }}</p>
+      </div>
+    </div>
+
+    <div class="mt-proof" data-reveal>
+      <div class="mt-proof__panel mt-ui" data-ui aria-hidden="true">
+        <div class="mt-stats">
+          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_spend }}</span><span class="mt-stat__value">$1,184</span><span class="mt-stat__hint">Trident 660</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">{{ p.cost_per_mi }}</span><span class="mt-stat__value">$0.21</span><span class="mt-stat__hint">Trident 660</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_spend }}</span><span class="mt-stat__value">$2,736</span><span class="mt-stat__hint">RAV4</span></div>
+          <div class="mt-stat"><span class="mt-stat__label">{{ p.cost_per_mi }}</span><span class="mt-stat__value">$0.34</span><span class="mt-stat__hint">RAV4</span></div>
+        </div>
+      </div>
+      <div class="mt-proof__text">
+        <h3 class="mt-h2">{{ h.f3_title }}</h3>
+        <p class="mt-lead">{{ h.f3_text }}</p>
+      </div>
+    </div>
+
+    <div class="mt-proof" data-reveal>
+      <div class="mt-proof__panel mt-ui" data-ui aria-hidden="true">
+        <div class="mt-group">
+          <div class="mt-row">
+            <span class="mt-badge">{% include icon.html name="wrench" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.oil_filter }}</span><span class="mt-row__meta">{{ p.date_18jul }} · {{ p.toyota_dealer }}</span></span>
+            <span class="mt-row__end">$68.00</span>
+          </div>
+          <div class="mt-row">
+            <span class="mt-badge">{% include icon.html name="wrench" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.chain_clean }}</span><span class="mt-row__meta">{{ p.date_30aug }} · {{ p.at_home }}</span></span>
+            <span class="mt-row__end">$12.00</span>
+          </div>
+          <div class="mt-row">
+            <span class="mt-badge mt-badge--cost">{% include icon.html name="coin" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.insurance }}</span><span class="mt-row__meta">{{ p.date_2aug }} · {{ p.annual }}</span></span>
+            <span class="mt-row__end">$310.00</span>
+          </div>
+          <div class="mt-row">
+            <span class="mt-badge mt-badge--cost">{% include icon.html name="coin" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.wipers }}</span><span class="mt-row__meta">{{ p.date_2jul }} · AutoZone</span></span>
+            <span class="mt-row__end">$34.50</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-proof__text">
+        <h3 class="mt-h2">{{ h.f4_title }}</h3>
+        <p class="mt-lead">{{ h.f4_text }}</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="mt-section" style="padding-top:0">
+<section class="mt-section" id="vehicles">
   <div class="mt-wrap">
-    <div class="mt-section__head">
-      <p class="mt-eyebrow">{{ h.classes_eyebrow }}</p>
-      <h2 class="mt-section__title">{{ h.classes_title }}</h2>
-      <p class="mt-section__sub">{{ h.classes_sub }}</p>
+    <div class="mt-section__head" data-reveal>
+      <h2 class="mt-h2">{{ h.classes_title }}</h2>
+      <p class="mt-lead">{{ h.classes_sub }}</p>
     </div>
-    <div class="mt-classes">
-      <span class="mt-class">{% include icon.html name="vehicle-car" %}{{ h.car }}</span>
-      <span class="mt-class">{% include icon.html name="vehicle-moto" %}{{ h.motorcycle }}</span>
-      <span class="mt-class">{% include icon.html name="vehicle-bike" %}{{ h.bicycle }}</span>
-      <span class="mt-class">{% include icon.html name="vehicle-ev" %}{{ h.ev }}</span>
-      <span class="mt-class">{% include icon.html name="vehicle-evmoto" %}{{ h.evmoto }}</span>
+    <div class="mt-sched">
+      <div data-reveal style="--i:0">
+        <h3 class="mt-sched__group">{% include icon.html name="vehicle-car" %}{{ h.car }}</h3>
+        <ul>
+          <li><span>{{ p.engine_oil }}</span><span>{{ p.every_oil }}</span></li>
+          <li><span>{{ p.tire_rotation }}</span><span>{{ p.every_7500 }}</span></li>
+          <li><span>{{ h.brake_fluid }}</span><span>{{ h.every_2y }}</span></li>
+        </ul>
+      </div>
+      <div data-reveal style="--i:1">
+        <h3 class="mt-sched__group">{% include icon.html name="vehicle-moto" %}{{ h.motorcycle }}</h3>
+        <ul>
+          <li><span>{{ p.engine_oil }}</span><span>{{ p.every_oil }}</span></li>
+          <li><span>{{ p.chain_lube }}</span><span>{{ p.every_500 }}</span></li>
+          <li><span>{{ h.brake_fluid }}</span><span>{{ h.every_2y }}</span></li>
+        </ul>
+      </div>
+      <div data-reveal style="--i:2">
+        <h3 class="mt-sched__group">{% include icon.html name="vehicle-bike" %}{{ h.bicycle }}</h3>
+        <ul>
+          <li><span>{{ p.chain_lube }}</span><span>{{ h.every_3m_use }}</span></li>
+          <li><span>{{ h.brake_pads }}</span><span>{{ h.every_6m_use }}</span></li>
+          <li><span>{{ h.tune_up }}</span><span>{{ h.every_12m_use }}</span></li>
+        </ul>
+      </div>
+      <div data-reveal style="--i:0">
+        <h3 class="mt-sched__group">{% include icon.html name="vehicle-ev" %}{{ h.ev }}</h3>
+        <ul>
+          <li><span>{{ p.tire_rotation }}</span><span>{{ p.every_7500 }}</span></li>
+          <li><span>{{ h.cabin_filter }}</span><span>{{ h.every_12m }}</span></li>
+          <li><span>{{ h.brake_fluid }}</span><span>{{ h.every_2y }}</span></li>
+        </ul>
+      </div>
+      <div data-reveal style="--i:1">
+        <h3 class="mt-sched__group">{% include icon.html name="vehicle-evmoto" %}{{ h.evmoto }}</h3>
+        <ul>
+          <li><span>{{ p.chain_lube }}</span><span>{{ p.every_500 }}</span></li>
+          <li><span>{{ h.battery_check }}</span><span>{{ h.every_12m }}</span></li>
+          <li><span>{{ h.brake_fluid }}</span><span>{{ h.every_2y }}</span></li>
+        </ul>
+      </div>
     </div>
+    <p class="mt-sched__note" data-reveal>{{ h.classes_note }}</p>
   </div>
 </section>
 
-<section class="mt-section" style="padding-top:0">
-  <div class="mt-wrap">
-    <div class="mt-features" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
-      <article class="mt-feature">
-        <div class="mt-feature__icon mt-feature__icon--sec">{% include icon.html name="shield" %}</div>
-        <h3>{{ h.private_title }}</h3>
-        <p>{{ h.private_text }} <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ h.private_link }}</a>.</p>
-      </article>
-      <article class="mt-feature">
-        <div class="mt-feature__icon">{% include icon.html name="mail" %}</div>
-        <h3>{{ h.person_title }}</h3>
-        <p>{{ h.person_text | replace: '%time%', t.ui.response_time }} <a href="{{ lp | append: '/support/' | relative_url }}">{{ h.person_link }}</a>.</p>
-      </article>
+<section class="mt-section" id="about">
+  <div class="mt-wrap mt-about">
+    <h2 class="mt-h2" data-reveal style="grid-column:1 / -1">{{ h.about_title }}</h2>
+    <dl class="mt-facts" data-reveal>
+      <div><dt>{{ h.fact_made }}</dt><dd>{{ h.fact_made_value }}</dd></div>
+      <div><dt>{{ h.fact_price }}</dt><dd>{{ h.fact_price_value }}</dd></div>
+      <div><dt>{{ h.fact_reply }}</dt><dd>{{ t.ui.response_time }}</dd></div>
+      <div><dt>{{ h.fact_lang }}</dt><dd>{{ site.data.languages.size }}</dd></div>
+    </dl>
+    <div class="mt-about__body" data-reveal style="--i:1">
+      <p class="mt-lead">{{ h.private_text }} <a href="{{ lp | append: '/privacy/' | relative_url }}">{{ h.private_link }}</a>.</p>
+      <p class="mt-lead">{{ h.person_text | replace: '%time%', t.ui.response_time }} <a href="{{ lp | append: '/support/' | relative_url }}">{{ h.person_link }}</a>.</p>
+    </div>
+    <div class="mt-plans">
+      <div class="mt-plan" data-reveal>
+        <h3 class="mt-h3">{{ h.free_name }}</h3>
+        <p class="mt-plan__price">{{ h.free_price }}</p>
+        <ul>
+          <li>{% include icon.html name="check" %}{{ h.free_1 }}</li>
+          <li>{% include icon.html name="check" %}{{ h.free_2 }}</li>
+          <li>{% include icon.html name="check" %}{{ h.free_3 }}</li>
+          <li>{% include icon.html name="check" %}{{ h.free_4 }}</li>
+        </ul>
+      </div>
+      <div class="mt-plan mt-plan--premium" data-reveal style="--i:1">
+        <h3 class="mt-h3">{{ h.premium_name }}</h3>
+        <p class="mt-plan__price">{{ h.premium_price }}</p>
+        <ul>
+          <li>{% include icon.html name="check" %}{{ h.prem_1 }}</li>
+          <li>{% include icon.html name="check" %}{{ h.prem_2 }}</li>
+          <li>{% include icon.html name="check" %}{{ h.prem_3 }}</li>
+          <li>{% include icon.html name="check" %}{{ h.prem_4 }}</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

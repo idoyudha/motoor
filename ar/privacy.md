@@ -1,7 +1,6 @@
 ---
 layout: page
 title: سياسة الخصوصية
-eyebrow: قانوني
 permalink: /ar/privacy/
 ref: /privacy/
 lang: ar
