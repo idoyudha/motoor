@@ -35,7 +35,7 @@ description: Respuestas a preguntas frecuentes y una línea directa con la perso
 <details class="mt-faq">
 <summary>Compré Premium pero no está desbloqueado</summary>
 <div>
-<p>Abre <strong>Ajustes → Premium → Restaurar compra</strong> con la sesión iniciada en la misma cuenta de Google o Apple con la que lo compraste. Si eso no funciona, escríbenos con el número de pedido de tu recibo de Google Play o del App Store.</p>
+<p>Abre <strong>Ajustes → Premium → Restaurar compra</strong> con la sesión iniciada en la misma cuenta con la que lo compraste. Si eso no funciona, escríbenos con el número de pedido de tu recibo de Google Play o del App Store.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: Respuestas a preguntas frecuentes y una línea directa con la perso
 <details class="mt-faq">
 <summary>¿Mi registro tiene copia de seguridad?</summary>
 <div>
-<p>Sí, automáticamente, tanto en Free como en Premium. Tus vehículos, registros, recordatorios, archivos adjuntos y recibos se respaldan en nuestro servidor siempre que estés en línea. En un teléfono nuevo, inicia sesión con la misma cuenta de Google o Apple y tu registro vuelve. Más información en la <a href="{{ '/es/privacy/' | relative_url }}">política de privacidad</a>.</p>
+<p>Sí, automáticamente, tanto en Free como en Premium. Tus vehículos, registros, recordatorios, archivos adjuntos y recibos se respaldan en nuestro servidor siempre que estés en línea. En un teléfono nuevo, inicia sesión con la misma cuenta y tu registro vuelve. Más información en la <a href="{{ '/es/privacy/' | relative_url }}">política de privacidad</a>.</p>
 </div>
 </details>
 

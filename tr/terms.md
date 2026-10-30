@@ -4,7 +4,7 @@ title: Şartlar ve Koşullar
 permalink: /tr/terms/
 ref: /terms/
 lang: tr
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Motoor’u kullanma kuralları, Premium’un neleri kapsadığı ve nelerden sorumlu olup olmadığımız."
 description: "Motoor’u kullanma kuralları, Premium’un neleri kapsadığı ve nelerden sorumlu olup olmadığımız."
 ---
@@ -29,13 +29,15 @@ Motoor’u kullanmak için en az {{ p.min_age }} yaşında olmalısınız. Yaşa
 
 ## Hesabınız
 
-Google ile, iOS’ta ise Apple ile giriş yaparsınız. Araç kaydetmek ve kayıt defterinizi dışa aktarmak için bir hesap gerekir. Google veya Apple hesabınıza erişimi güvende tutun: bu hesapla giriş yapabilen herkes kayıt defterinizi açabilir. Başka birinin hesabınızı kullandığını düşünüyorsanız [{{ dev.email }}](mailto:{{ dev.email }}) adresinden bize bildirin.
+Google ile, iOS’ta Apple ile ya da e-postanız ve bir şifreyle giriş yaparsınız. Araç kaydetmek ve kayıt defterinizi dışa aktarmak için bir hesap gerekir. Şifrenizi ve Google veya Apple hesabınızı güvende tutun: bu hesapla giriş yapabilen herkes kayıt defterinizi açabilir. Başka birinin hesabınızı kullandığını düşünüyorsanız [{{ dev.email }}](mailto:{{ dev.email }}) adresinden bize bildirin.
 
 ## Free ve Premium
 
 **Free**, tek bir aktif araç için eksiksiz bir kayıt defteri sunar: yakıt ve şarj, bakımlar, masraflar, hatırlatıcılar, geçmiş ve dışa aktarma.
 
 **Premium**, araç sınırını kaldırır ve fiş tarama, araç geçmişini paylaşma ve araç devretme gibi özellikler ekler. Fiyatı **aylık 1,30 ABD doları** veya **yıllık 10,80 ABD doları**dır. Fiyatlar ABD doları olarak sabittir; mağaza bunları yerel para biriminizde gösterebilir ve yerel vergileri ekleyebilir.
+
+**Dosya sınırları.** Free araç başına 1 fotoğraf ve 1 belge, kayıt başına 1 ek sunar. Premium araç başına 10 fotoğraf ve 10 belge, kayıt başına 5 ek sunar. Her dosya en fazla 10 MB olabilir.
 
 - Premium, **Google Play** veya **App Store** tarafından faturalandırılır ve siz iptal edene kadar onların koşullarına göre otomatik olarak yenilenir.
 - Dilediğiniz zaman mağazadan iptal edebilirsiniz. Premium, ödediğiniz dönemin sonuna kadar etkin kalır.

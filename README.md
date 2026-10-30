@@ -1,6 +1,6 @@
 # Motoor website
 
-Landing page, about page, legal pages (terms, privacy, copyright) and support page for Motoor, built with Jekyll for GitHub Pages and styled with the Motoor Design System v2 tokens.
+Landing page, about page, legal pages (terms, privacy, copyright) and support page for Motoor, built with Jekyll for GitHub Pages and styled with the Motoor Design System v3 tokens.
 
 | Page | URL | Use it for |
 |---|---|---|

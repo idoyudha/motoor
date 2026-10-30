@@ -35,7 +35,7 @@ description: "Jawaban atas pertanyaan umum, dan jalur langsung ke orang yang mem
 <details class="mt-faq">
 <summary>Saya sudah membeli Premium tetapi belum terbuka</summary>
 <div>
-<p>Buka <strong>Pengaturan → Premium → Pulihkan pembelian</strong> saat masuk dengan akun Google atau Apple yang sama dengan yang Anda gunakan untuk membeli. Jika belum berhasil, kirim email kepada kami dengan nomor pesanan dari struk Google Play atau App Store Anda.</p>
+<p>Buka <strong>Pengaturan → Premium → Pulihkan pembelian</strong> saat masuk dengan akun yang sama dengan yang Anda gunakan untuk membeli. Jika belum berhasil, kirim email kepada kami dengan nomor pesanan dari struk Google Play atau App Store Anda.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: "Jawaban atas pertanyaan umum, dan jalur langsung ke orang yang mem
 <details class="mt-faq">
 <summary>Apakah buku catatan saya dicadangkan?</summary>
 <div>
-<p>Ya, secara otomatis, baik di paket Free maupun Premium. Kendaraan, catatan, pengingat, lampiran, dan struk Anda dicadangkan ke server kami setiap kali Anda online. Di ponsel baru, masuk dengan akun Google atau Apple yang sama dan buku catatan Anda akan kembali. Baca selengkapnya di <a href="{{ '/id/privacy/' | relative_url }}">kebijakan privasi</a>.</p>
+<p>Ya, secara otomatis, baik di paket Free maupun Premium. Kendaraan, catatan, pengingat, lampiran, dan struk Anda dicadangkan ke server kami setiap kali Anda online. Di ponsel baru, masuk dengan akun yang sama dan buku catatan Anda akan kembali. Baca selengkapnya di <a href="{{ '/id/privacy/' | relative_url }}">kebijakan privasi</a>.</p>
 </div>
 </details>
 

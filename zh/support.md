@@ -35,7 +35,7 @@ description: 常见问题解答，以及直接联系 Motoor 开发者的渠道�
 <details class="mt-faq">
 <summary>我购买了 Premium，但没有解锁</summary>
 <div>
-<p>请在登录购买时所用的同一个 Google 或 Apple 账户的情况下，打开 <strong>设置 → Premium → 恢复购买</strong>。如果仍然无效，请将 Google Play 或 App Store 收据上的订单号通过电子邮件发给我们。</p>
+<p>请在登录购买时所用的同一个账户的情况下，打开 <strong>设置 → Premium → 恢复购买</strong>。如果仍然无效，请将 Google Play 或 App Store 收据上的订单号通过电子邮件发给我们。</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: 常见问题解答，以及直接联系 Motoor 开发者的渠道�
 <details class="mt-faq">
 <summary>我的记录本有备份吗？</summary>
 <div>
-<p>有，Free 和 Premium 都会自动备份。只要你在线，你的车辆、记录、提醒、附件和收据就会备份到我们的服务器。在新手机上，使用同一个 Google 或 Apple 账户登录，你的记录本就会恢复。详情请参阅<a href="{{ '/zh/privacy/' | relative_url }}">隐私政策</a>。</p>
+<p>有，Free 和 Premium 都会自动备份。只要你在线，你的车辆、记录、提醒、附件和收据就会备份到我们的服务器。在新手机上，使用同一个账户登录，你的记录本就会恢复。详情请参阅<a href="{{ '/zh/privacy/' | relative_url }}">隐私政策</a>。</p>
 </div>
 </details>
 

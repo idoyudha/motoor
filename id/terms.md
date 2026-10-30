@@ -4,7 +4,7 @@ title: Syarat dan Ketentuan
 permalink: /id/terms/
 ref: /terms/
 lang: id
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Aturan penggunaan Motoor, apa saja yang termasuk dalam Premium, serta apa yang menjadi dan tidak menjadi tanggung jawab kami."
 description: "Aturan penggunaan Motoor, apa saja yang termasuk dalam Premium, serta apa yang menjadi dan tidak menjadi tanggung jawab kami."
 ---
@@ -29,13 +29,15 @@ Anda harus berusia minimal {{ p.min_age }} tahun untuk menggunakan Motoor. Jika 
 
 ## Akun Anda
 
-Anda masuk dengan Google, atau dengan Apple di iOS. Akun diperlukan untuk mendaftarkan kendaraan dan mengekspor buku catatan Anda. Jaga keamanan akun Google atau Apple Anda: siapa pun yang dapat masuk dengannya dapat membuka buku catatan Anda. Beri tahu kami di [{{ dev.email }}](mailto:{{ dev.email }}) jika Anda menduga orang lain telah menggunakan akun Anda.
+Anda masuk dengan Google, dengan Apple di iOS, atau dengan email dan kata sandi. Akun diperlukan untuk mendaftarkan kendaraan dan mengekspor buku catatan Anda. Jaga keamanan kata sandi serta akun Google atau Apple Anda: siapa pun yang dapat masuk dengannya dapat membuka buku catatan Anda. Beri tahu kami di [{{ dev.email }}](mailto:{{ dev.email }}) jika Anda menduga orang lain telah menggunakan akun Anda.
 
 ## Free dan Premium
 
 **Free** memberi Anda buku catatan lengkap untuk satu kendaraan aktif: bahan bakar dan pengisian daya, servis, biaya, pengingat, riwayat, dan ekspor.
 
 **Premium** menghapus batas jumlah kendaraan dan menambahkan fitur seperti pindai struk, berbagi riwayat kendaraan, dan memindahkan kendaraan. Harganya **US$1,30 per bulan** atau **US$10,80 per tahun**. Harga ditetapkan dalam dolar AS; toko dapat menampilkannya dalam mata uang lokal dan menambahkan pajak setempat.
+
+**Batas file.** Free menyediakan 1 foto dan 1 dokumen per kendaraan, serta 1 lampiran per catatan. Premium menyediakan 10 foto dan 10 dokumen per kendaraan, serta 5 lampiran per catatan. Ukuran tiap file maksimal 10 MB.
 
 - Premium ditagih oleh **Google Play** atau **App Store** dan diperpanjang otomatis sesuai ketentuan mereka, sampai Anda membatalkannya.
 - Anda dapat membatalkan kapan saja di toko. Premium tetap aktif sampai akhir periode yang sudah Anda bayar.

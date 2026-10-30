@@ -19,7 +19,7 @@ description: O que o Motoor coleta, onde fica armazenado, quem mais tem acesso e
 
 <p class="mt-doc__meta">Esta é uma tradução. Se houver divergência em relação à <a href="{{ '/privacy/' | relative_url }}">versão em inglês</a>, prevalece a versão em inglês.</p>
 
-<div class="mt-note"><strong>Resumindo.</strong> Você entra com Google ou Apple. Seu registro fica no seu celular e tem backup automático no nosso servidor em {{ t.privacy.data_location }}, para que você possa restaurá-lo em um celular novo. O Motoor não exibe anúncios e não vendemos seus dados. Você pode excluir sua conta e tudo o que há nela a qualquer momento.</div>
+<div class="mt-note"><strong>Resumindo.</strong> Você entra com Google, Apple ou e-mail. Seu registro fica no seu celular e tem backup automático no nosso servidor em {{ t.privacy.data_location }}, para que você possa restaurá-lo em um celular novo. O Motoor não exibe anúncios e não vendemos seus dados. Você pode excluir sua conta e tudo o que há nela a qualquer momento.</div>
 
 ## Quem somos
 
@@ -29,7 +29,7 @@ Esta política se aplica ao app Motoor no Android e no iOS, às páginas de comp
 
 ## O que coletamos
 
-**Sua conta.** Para adicionar um veículo, você entra com Google, ou com Apple no iOS. Desse login recebemos seu nome, seu endereço de e-mail e um ID de conta. Nunca vemos sua senha do Google ou da Apple.
+**Sua conta.** Para adicionar um veículo, você entra com Google, com Apple no iOS, ou com seu e-mail e uma senha. Desse login recebemos seu nome, seu endereço de e-mail e um ID de conta. O Firebase Authentication guarda sua senha, e nós nunca a vemos.
 
 **Seu registro.** Tudo o que você coloca no Motoor:
 
@@ -37,6 +37,7 @@ Esta política se aplica ao app Motoor no Android e no iOS, às páginas de comp
 - abastecimentos e recargas, serviços, gastos, locais e notas
 - lembretes e suas programações
 - comprovantes, digitalizações e outros arquivos que você anexar
+- documentos do veículo que você adicionar, como registro, seguro e garantia
 - suas configurações, como unidades, moeda, idioma e tema
 
 **Seu dispositivo.** Um token de notificação push, para que lembretes e alertas cheguem ao seu celular, e a plataforma (Android ou iOS).
@@ -97,7 +98,7 @@ Não vendemos suas informações pessoais e não as compartilhamos para publicid
 |---|---|---|
 | Google Cloud | Hospeda nosso servidor, banco de dados e armazenamento de arquivos em {{ t.privacy.data_location }} | Sua conta e o backup do seu registro |
 | Google Cloud (Gemini) | Lê comprovantes que não podem ser lidos no seu celular | O comprovante que você escaneia |
-| Firebase Authentication (Google) | Login com Google ou Apple | Nome, e-mail, ID da conta |
+| Firebase Authentication (Google) | Login com Google, Apple ou e-mail | Nome, e-mail, ID da conta, senha de contas de e-mail |
 | Firebase Cloud Messaging (Google) | Entrega notificações push | Token push do dispositivo |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Relatórios de falhas | Detalhes técnicos da falha |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Estatísticas de uso | ID de instância do app e eventos de recursos |

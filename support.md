@@ -33,7 +33,7 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 <details class="mt-faq">
 <summary>I bought Premium but it isn’t unlocked</summary>
 <div>
-<p>Open <strong>Settings → Premium → Restore purchase</strong> while signed in to the same Google or Apple account you bought it with. If that doesn’t work, email us with the order number from your Google Play or App Store receipt.</p>
+<p>Open <strong>Settings → Premium → Restore purchase</strong> while signed in to the same account you bought it with. If that doesn’t work, email us with the order number from your Google Play or App Store receipt.</p>
 </div>
 </details>
 
@@ -59,7 +59,7 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 <details class="mt-faq">
 <summary>Is my logbook backed up?</summary>
 <div>
-<p>Yes, automatically, on both Free and Premium. Your vehicles, logs, reminders, attachments and receipts are backed up to our server whenever you’re online. On a new phone, sign in with the same Google or Apple account and your logbook comes back. Read more in the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>.</p>
+<p>Yes, automatically, on both Free and Premium. Your vehicles, logs, reminders, attachments and receipts are backed up to our server whenever you’re online. On a new phone, sign in with the same account and your logbook comes back. Read more in the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>.</p>
 </div>
 </details>
 

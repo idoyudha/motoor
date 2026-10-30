@@ -31,7 +31,7 @@ stores:
 # what the app really does. They must also match your Google Play Data safety
 # form and your App Store privacy labels.
 privacy:
-  updated: 2026-10-20               # change whenever the policy changes
+  updated: 2026-10-30               # change whenever the policy changes
   crash_reporting: "Firebase Crashlytics"   # "" if none
   analytics: "Firebase Analytics"          # "" if none
   deletion_grace_days: 30                  # restore window after Delete account

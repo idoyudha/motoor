@@ -19,7 +19,7 @@ description: Motoor 收集哪些信息、存放在哪里、还有谁会处理这
 
 <p class="mt-doc__meta">本页为翻译版本。如与<a href="{{ '/privacy/' | relative_url }}">英文版本</a>有出入，以英文版本为准。</p>
 
-<div class="mt-note"><strong>简要说明。</strong>你使用 Google 或 Apple 账户登录。你的记录本保存在手机上，并自动备份到我们位于 {{ t.privacy.data_location }} 的服务器，因此你可以在新手机上恢复。Motoor 不展示广告，我们也不出售你的数据。你可以随时删除你的账户及其中的所有内容。</div>
+<div class="mt-note"><strong>简要说明。</strong>你使用 Google、Apple 账户或电子邮件登录。你的记录本保存在手机上，并自动备份到我们位于 {{ t.privacy.data_location }} 的服务器，因此你可以在新手机上恢复。Motoor 不展示广告，我们也不出售你的数据。你可以随时删除你的账户及其中的所有内容。</div>
 
 ## 我们是谁
 
@@ -29,7 +29,7 @@ Motoor 是由独立开发者 **{{ dev.name }}**（以下称“我们”）开发
 
 ## 我们收集哪些信息
 
-**你的账户。** 添加车辆需要使用 Google 账户登录，在 iOS 上也可以使用 Apple 账户登录。我们会通过登录获得你的姓名、电子邮件地址和账户 ID。我们永远看不到你的 Google 或 Apple 密码。
+**你的账户。** 添加车辆需要使用 Google 账户登录，在 iOS 上也可以使用 Apple 账户，或使用电子邮件和密码登录。我们会通过登录获得你的姓名、电子邮件地址和账户 ID。你的密码由 Firebase Authentication 保管，我们永远看不到。
 
 **你的记录本。** 你在 Motoor 中输入的所有内容：
 
@@ -37,6 +37,7 @@ Motoor 是由独立开发者 **{{ dev.name }}**（以下称“我们”）开发
 - 加油和充电记录、保养、费用、地点和备注
 - 提醒及其计划
 - 你附加的收据、扫描件和其他文件
+- 你添加的车辆文件，例如登记证、保险和保修单
 - 你的设置，例如单位、货币、语言和主题
 
 **你的设备。** 推送通知令牌（用于将提醒和通知发送到你的手机），以及平台（Android 或 iOS）。
@@ -97,7 +98,7 @@ Motoor 使用 **{{ p.analytics }}** 统计应用的使用情况，例如有多�
 |---|---|---|
 | Google Cloud | 在 {{ t.privacy.data_location }} 托管我们的服务器、数据库和文件存储 | 你的账户和记录本备份 |
 | Google Cloud (Gemini) | 读取无法在你手机上识别的收据 | 你扫描的收据 |
-| Firebase Authentication (Google) | 使用 Google 或 Apple 登录 | 姓名、电子邮件、账户 ID |
+| Firebase Authentication (Google) | 使用 Google、Apple 或电子邮件登录 | 姓名、电子邮件、账户 ID、电子邮件账户的密码 |
 | Firebase Cloud Messaging (Google) | 发送推送通知 | 设备推送令牌 |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | 崩溃报告 | 崩溃的技术详情 |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | 使用统计 | 应用实例 ID 和功能事件 |

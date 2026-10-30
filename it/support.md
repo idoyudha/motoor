@@ -35,7 +35,7 @@ description: Risposte alle domande più comuni e un contatto diretto con la pers
 <details class="mt-faq">
 <summary>Ho acquistato Premium ma non è sbloccato</summary>
 <div>
-<p>Apri <strong>Impostazioni → Premium → Ripristina acquisto</strong> dopo aver effettuato l’accesso con lo stesso account Google o Apple con cui l’hai acquistato. Se non funziona, scrivici indicando il numero d’ordine della ricevuta di Google Play o dell’App Store.</p>
+<p>Apri <strong>Impostazioni → Premium → Ripristina acquisto</strong> dopo aver effettuato l’accesso con lo stesso account con cui l’hai acquistato. Se non funziona, scrivici indicando il numero d’ordine della ricevuta di Google Play o dell’App Store.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: Risposte alle domande più comuni e un contatto diretto con la pers
 <details class="mt-faq">
 <summary>Il mio libretto ha un backup?</summary>
 <div>
-<p>Sì, automaticamente, sia con Free sia con Premium. Veicoli, registrazioni, promemoria, allegati e scontrini vengono salvati sul nostro server ogni volta che sei online. Su un nuovo telefono, accedi con lo stesso account Google o Apple e il tuo libretto torna. Maggiori dettagli nell’<a href="{{ '/it/privacy/' | relative_url }}">informativa sulla privacy</a>.</p>
+<p>Sì, automaticamente, sia con Free sia con Premium. Veicoli, registrazioni, promemoria, allegati e scontrini vengono salvati sul nostro server ogni volta che sei online. Su un nuovo telefono, accedi con lo stesso account e il tuo libretto torna. Maggiori dettagli nell’<a href="{{ '/it/privacy/' | relative_url }}">informativa sulla privacy</a>.</p>
 </div>
 </details>
 

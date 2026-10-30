@@ -19,7 +19,7 @@ description: "Motoor neleri toplar, nerede saklar, başka kimler işler ve nası
 
 <p class="mt-doc__meta">Bu bir çeviridir. <a href="{{ '/privacy/' | relative_url }}">İngilizce sürümden</a> farklı olması durumunda İngilizce sürüm geçerlidir.</p>
 
-<div class="mt-note"><strong>Kısaca.</strong> Google veya Apple ile giriş yaparsınız. Bakım defteriniz telefonunuzda tutulur ve yeni bir telefonda geri yükleyebilmeniz için otomatik olarak sunucumuza yedeklenir (konum: {{ t.privacy.data_location }}). Motoor reklam göstermez ve verilerinizi satmayız. Hesabınızı ve içindeki her şeyi istediğiniz zaman silebilirsiniz.</div>
+<div class="mt-note"><strong>Kısaca.</strong> Google, Apple veya e-posta ile giriş yaparsınız. Bakım defteriniz telefonunuzda tutulur ve yeni bir telefonda geri yükleyebilmeniz için otomatik olarak sunucumuza yedeklenir (konum: {{ t.privacy.data_location }}). Motoor reklam göstermez ve verilerinizi satmayız. Hesabınızı ve içindeki her şeyi istediğiniz zaman silebilirsiniz.</div>
 
 ## Biz kimiz
 
@@ -29,7 +29,7 @@ Bu politika; Android ve iOS’taki Motoor uygulaması, Motoor’un oluşturduğu
 
 ## Neleri topluyoruz
 
-**Hesabınız.** Araç eklemek için Google ile veya iOS’ta Apple ile giriş yaparsınız. Bu girişten adınızı, e-posta adresinizi ve bir hesap kimliğini alırız. Google veya Apple şifrenizi asla görmeyiz.
+**Hesabınız.** Araç eklemek için Google ile, iOS’ta Apple ile ya da e-postanız ve bir şifreyle giriş yaparsınız. Bu girişten adınızı, e-posta adresinizi ve bir hesap kimliğini alırız. Şifrenizi Firebase Authentication saklar, biz asla görmeyiz.
 
 **Bakım defteriniz.** Motoor’a girdiğiniz her şey:
 
@@ -37,6 +37,7 @@ Bu politika; Android ve iOS’taki Motoor uygulaması, Motoor’un oluşturduğu
 - yakıt ve şarj kayıtları, bakımlar, masraflar, yerler ve notlar
 - hatırlatıcılar ve planları
 - eklediğiniz fişler, taramalar ve diğer dosyalar
+- eklediğiniz araç belgeleri; örneğin ruhsat, sigorta ve garanti
 - birimler, para birimi, dil ve tema gibi ayarlarınız
 
 **Cihazınız.** Hatırlatıcıların ve uyarıların telefonunuza ulaşması için bir anlık bildirim belirteci ve platform (Android veya iOS).
@@ -97,7 +98,7 @@ Kişisel bilgilerinizi satmayız ve reklam amacıyla paylaşmayız. Aşağıdaki
 |---|---|---|
 | Google Cloud | Sunucumuzu, veritabanımızı ve dosya depolamamızı barındırır ({{ t.privacy.data_location }}) | Hesabınız ve bakım defteri yedeğiniz |
 | Google Cloud (Gemini) | Telefonunuzda okunamayan fişleri okur | Taradığınız fiş |
-| Firebase Authentication (Google) | Google veya Apple ile giriş | Ad, e-posta, hesap kimliği |
+| Firebase Authentication (Google) | Google, Apple veya e-posta ile giriş | Ad, e-posta, hesap kimliği, e-posta hesapları için şifre |
 | Firebase Cloud Messaging (Google) | Anlık bildirimleri iletir | Cihazın bildirim belirteci |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Çökme raporları | Teknik çökme ayrıntıları |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Kullanım istatistikleri | Uygulama örneği kimliği ve özellik olayları |

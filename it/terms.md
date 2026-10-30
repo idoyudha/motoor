@@ -4,7 +4,7 @@ title: Termini e condizioni
 permalink: /it/terms/
 ref: /terms/
 lang: it
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Le regole per usare Motoor, cosa include Premium e di cosa siamo e non siamo responsabili."
 description: "Le regole per usare Motoor, cosa include Premium e di cosa siamo e non siamo responsabili."
 ---
@@ -29,13 +29,15 @@ Devi avere almeno {{ p.min_age }} anni per usare Motoor. Se sei minorenne second
 
 ## Il tuo account
 
-Accedi con Google, oppure con Apple su iOS. Serve un account per registrare veicoli ed esportare il tuo libretto. Proteggi l’accesso al tuo account Google o Apple: chiunque riesca ad accedervi può aprire il tuo libretto. Scrivici a [{{ dev.email }}](mailto:{{ dev.email }}) se pensi che qualcun altro abbia usato il tuo account.
+Accedi con Google, con Apple su iOS, oppure con la tua email e una password. Serve un account per registrare veicoli ed esportare il tuo libretto. Proteggi la tua password e il tuo account Google o Apple: chiunque riesca ad accedervi può aprire il tuo libretto. Scrivici a [{{ dev.email }}](mailto:{{ dev.email }}) se pensi che qualcun altro abbia usato il tuo account.
 
 ## Free e Premium
 
 **Free** ti offre un libretto completo per un veicolo attivo: carburante e ricarica, interventi, spese, promemoria, cronologia ed esportazione.
 
 **Premium** elimina il limite di veicoli e aggiunge funzioni come la scansione delle ricevute, la condivisione della cronologia di un veicolo e il trasferimento di un veicolo. Costa **1,30 US$ al mese** o **10,80 US$ all’anno**. I prezzi sono fissati in dollari statunitensi; lo store può mostrarli nella tua valuta e aggiungere le imposte locali.
+
+**Limiti dei file.** Free include 1 foto e 1 documento per veicolo, e 1 allegato per registrazione. Premium include 10 foto e 10 documenti per veicolo, e 5 allegati per registrazione. Ogni file può arrivare a 10 MB.
 
 - Premium viene addebitato da **Google Play** o dall’**App Store** e si rinnova automaticamente secondo le loro condizioni, finché non lo annulli.
 - Puoi annullarlo in qualsiasi momento nello store. Premium resta attivo fino alla fine del periodo pagato.

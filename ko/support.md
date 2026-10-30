@@ -35,7 +35,7 @@ description: 자주 묻는 질문에 대한 답변과 Motoor 개발자에게 직
 <details class="mt-faq">
 <summary>Premium을 구매했는데 활성화되지 않아요</summary>
 <div>
-<p>구매할 때 사용한 것과 같은 Google 또는 Apple 계정으로 로그인한 상태에서 <strong>설정 → Premium → 구매 복원</strong>을 여세요. 그래도 해결되지 않으면 Google Play 또는 App Store 영수증에 있는 주문 번호를 이메일로 보내 주세요.</p>
+<p>구매할 때 사용한 것과 같은 계정으로 로그인한 상태에서 <strong>설정 → Premium → 구매 복원</strong>을 여세요. 그래도 해결되지 않으면 Google Play 또는 App Store 영수증에 있는 주문 번호를 이메일로 보내 주세요.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: 자주 묻는 질문에 대한 답변과 Motoor 개발자에게 직
 <details class="mt-faq">
 <summary>로그북이 백업되나요?</summary>
 <div>
-<p>네, Free와 Premium 모두 자동으로 백업됩니다. 온라인 상태일 때마다 차량, 기록, 알림, 첨부 파일, 영수증이 저희 서버에 백업됩니다. 새 휴대폰에서 같은 Google 또는 Apple 계정으로 로그인하면 로그북이 그대로 돌아옵니다. 자세한 내용은 <a href="{{ '/ko/privacy/' | relative_url }}">개인정보처리방침</a>을 참조하세요.</p>
+<p>네, Free와 Premium 모두 자동으로 백업됩니다. 온라인 상태일 때마다 차량, 기록, 알림, 첨부 파일, 영수증이 저희 서버에 백업됩니다. 새 휴대폰에서 같은 계정으로 로그인하면 로그북이 그대로 돌아옵니다. 자세한 내용은 <a href="{{ '/ko/privacy/' | relative_url }}">개인정보처리방침</a>을 참조하세요.</p>
 </div>
 </details>
 

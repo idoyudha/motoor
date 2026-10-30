@@ -35,7 +35,7 @@ description: Respostas para dúvidas comuns e um canal direto com a pessoa que f
 <details class="mt-faq">
 <summary>Comprei o Premium, mas ele não foi desbloqueado</summary>
 <div>
-<p>Abra <strong>Configurações → Premium → Restaurar compra</strong> estando conectado à mesma conta Google ou Apple usada na compra. Se não funcionar, envie-nos um e-mail com o número do pedido do seu recibo do Google Play ou da App Store.</p>
+<p>Abra <strong>Configurações → Premium → Restaurar compra</strong> estando conectado à mesma conta usada na compra. Se não funcionar, envie-nos um e-mail com o número do pedido do seu recibo do Google Play ou da App Store.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: Respostas para dúvidas comuns e um canal direto com a pessoa que f
 <details class="mt-faq">
 <summary>Meu registro tem backup?</summary>
 <div>
-<p>Sim, automaticamente, tanto no Free quanto no Premium. Seus veículos, registros, lembretes, anexos e comprovantes têm backup no nosso servidor sempre que você está online. Em um celular novo, entre com a mesma conta Google ou Apple e seu registro volta. Saiba mais na <a href="{{ '/pt/privacy/' | relative_url }}">política de privacidade</a>.</p>
+<p>Sim, automaticamente, tanto no Free quanto no Premium. Seus veículos, registros, lembretes, anexos e comprovantes têm backup no nosso servidor sempre que você está online. Em um celular novo, entre com a mesma conta e seu registro volta. Saiba mais na <a href="{{ '/pt/privacy/' | relative_url }}">política de privacidade</a>.</p>
 </div>
 </details>
 

@@ -35,7 +35,7 @@ description: よくある質問への回答と、Motoor の開発者に直接連
 <details class="mt-faq">
 <summary>Premium を購入したのに有効になっていない</summary>
 <div>
-<p>購入時と同じ Google または Apple アカウントでログインした状態で、<strong>設定 → Premium → 購入を復元</strong> を開いてください。それでも解決しない場合は、Google Play または App Store のレシートに記載された注文番号を添えて、メールでご連絡ください。</p>
+<p>購入時と同じアカウントでログインした状態で、<strong>設定 → Premium → 購入を復元</strong> を開いてください。それでも解決しない場合は、Google Play または App Store のレシートに記載された注文番号を添えて、メールでご連絡ください。</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: よくある質問への回答と、Motoor の開発者に直接連
 <details class="mt-faq">
 <summary>ログブックはバックアップされていますか？</summary>
 <div>
-<p>はい、Free・Premium のどちらでも自動でバックアップされます。オンラインのときはいつでも、車両、記録、リマインダー、添付ファイル、レシートが当方のサーバーにバックアップされます。新しいスマートフォンで同じ Google または Apple アカウントでログインすれば、ログブックが戻ってきます。詳しくは<a href="{{ '/ja/privacy/' | relative_url }}">プライバシーポリシー</a>をご覧ください。</p>
+<p>はい、Free・Premium のどちらでも自動でバックアップされます。オンラインのときはいつでも、車両、記録、リマインダー、添付ファイル、レシートが当方のサーバーにバックアップされます。新しいスマートフォンで同じアカウントでログインすれば、ログブックが戻ってきます。詳しくは<a href="{{ '/ja/privacy/' | relative_url }}">プライバシーポリシー</a>をご覧ください。</p>
 </div>
 </details>
 

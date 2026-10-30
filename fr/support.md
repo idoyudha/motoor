@@ -35,7 +35,7 @@ description: Les réponses aux questions fréquentes, et une ligne directe avec 
 <details class="mt-faq">
 <summary>J’ai acheté Premium mais il n’est pas débloqué</summary>
 <div>
-<p>Ouvrez <strong>Réglages → Premium → Restaurer l’achat</strong> en étant connecté au même compte Google ou Apple que celui utilisé pour l’achat. Si cela ne fonctionne pas, écrivez-nous en indiquant le numéro de commande figurant sur votre reçu Google Play ou App Store.</p>
+<p>Ouvrez <strong>Réglages → Premium → Restaurer l’achat</strong> en étant connecté au même compte que celui utilisé pour l’achat. Si cela ne fonctionne pas, écrivez-nous en indiquant le numéro de commande figurant sur votre reçu Google Play ou App Store.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: Les réponses aux questions fréquentes, et une ligne directe avec 
 <details class="mt-faq">
 <summary>Mon carnet est-il sauvegardé ?</summary>
 <div>
-<p>Oui, automatiquement, en Free comme en Premium. Vos véhicules, entrées, rappels, pièces jointes et tickets sont sauvegardés sur notre serveur dès que vous êtes en ligne. Sur un nouveau téléphone, connectez-vous avec le même compte Google ou Apple et votre carnet revient. Pour en savoir plus, consultez la <a href="{{ '/fr/privacy/' | relative_url }}">politique de confidentialité</a>.</p>
+<p>Oui, automatiquement, en Free comme en Premium. Vos véhicules, entrées, rappels, pièces jointes et tickets sont sauvegardés sur notre serveur dès que vous êtes en ligne. Sur un nouveau téléphone, connectez-vous avec le même compte et votre carnet revient. Pour en savoir plus, consultez la <a href="{{ '/fr/privacy/' | relative_url }}">politique de confidentialité</a>.</p>
 </div>
 </details>
 

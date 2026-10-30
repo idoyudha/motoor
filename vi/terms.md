@@ -4,7 +4,7 @@ title: Điều khoản và điều kiện
 permalink: /vi/terms/
 ref: /terms/
 lang: vi
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Các quy tắc sử dụng Motoor, những gì có trong Premium, và những gì chúng tôi chịu và không chịu trách nhiệm."
 description: "Các quy tắc sử dụng Motoor, những gì có trong Premium, và những gì chúng tôi chịu và không chịu trách nhiệm."
 ---
@@ -29,13 +29,15 @@ Bạn phải từ {{ p.min_age }} tuổi trở lên để sử dụng Motoor. N�
 
 ## Tài khoản của bạn
 
-Bạn đăng nhập bằng Google, hoặc bằng Apple trên iOS. Cần có tài khoản để đăng ký phương tiện và xuất sổ ghi chép. Hãy giữ an toàn quyền truy cập vào tài khoản Google hoặc Apple: bất kỳ ai đăng nhập được bằng tài khoản đó đều có thể mở sổ của bạn. Hãy báo cho chúng tôi qua [{{ dev.email }}](mailto:{{ dev.email }}) nếu bạn nghĩ người khác đã dùng tài khoản của bạn.
+Bạn đăng nhập bằng Google, bằng Apple trên iOS, hoặc bằng email và mật khẩu. Cần có tài khoản để đăng ký phương tiện và xuất sổ ghi chép. Hãy giữ an toàn mật khẩu và tài khoản Google hoặc Apple của bạn: bất kỳ ai đăng nhập được bằng tài khoản đó đều có thể mở sổ của bạn. Hãy báo cho chúng tôi qua [{{ dev.email }}](mailto:{{ dev.email }}) nếu bạn nghĩ người khác đã dùng tài khoản của bạn.
 
 ## Free và Premium
 
 **Free** cung cấp sổ ghi chép đầy đủ cho một phương tiện đang hoạt động: nhiên liệu và sạc, bảo dưỡng, chi phí, lời nhắc, lịch sử và xuất dữ liệu.
 
 **Premium** bỏ giới hạn số phương tiện và thêm các tính năng như quét hóa đơn, chia sẻ lịch sử xe và chuyển nhượng xe. Giá **1,30 US$ mỗi tháng** hoặc **10,80 US$ mỗi năm**. Giá được cố định bằng đô la Mỹ; cửa hàng có thể hiển thị bằng đơn vị tiền tệ địa phương và cộng thêm thuế địa phương.
+
+**Giới hạn tệp.** Free có 1 ảnh và 1 giấy tờ cho mỗi xe, cùng 1 tệp đính kèm cho mỗi mục ghi. Premium có 10 ảnh và 10 giấy tờ cho mỗi xe, cùng 5 tệp đính kèm cho mỗi mục ghi. Mỗi tệp tối đa 10 MB.
 
 - Premium được thanh toán qua **Google Play** hoặc **App Store** và tự động gia hạn theo điều khoản của họ, cho đến khi bạn hủy.
 - Bạn có thể hủy bất cứ lúc nào trong cửa hàng. Premium vẫn hoạt động đến hết kỳ bạn đã thanh toán.

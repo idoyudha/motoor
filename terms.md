@@ -3,7 +3,7 @@ layout: page
 title: Terms and Conditions
 permalink: /terms/
 ref: /terms/
-updated: 2026-10-25
+updated: 2026-10-30
 lede: The rules for using Motoor, what Premium includes, and what we are and aren’t responsible for.
 ---
 {% assign p = site.privacy %}
@@ -30,13 +30,15 @@ You must be at least {{ p.min_age }} years old to use Motoor. If you are under t
 
 ## Your account
 
-You sign in with Google, or with Apple on iOS. An account is needed to register vehicles and to export your logbook. Keep access to your Google or Apple account safe: anyone who can sign in with it can open your logbook. Tell us at [{{ dev.email }}](mailto:{{ dev.email }}) if you think someone else has used your account.
+You sign in with Google, with Apple on iOS, or with your email and a password. An account is needed to register vehicles and to export your logbook. Keep your password and your Google or Apple account safe: anyone who can sign in with it can open your logbook. Tell us at [{{ dev.email }}](mailto:{{ dev.email }}) if you think someone else has used your account.
 
 ## Free and Premium
 
 **Free** gives you a complete logbook for one active vehicle: fuel and charging, services, costs, reminders, history and export.
 
 **Premium** removes the vehicle limit and adds features such as receipt scanning, sharing a vehicle’s history and transferring a vehicle. It costs **US$1.30 per month** or **US$10.80 per year**. Prices are fixed in US dollars; the store may show them in your local currency and add local taxes.
+
+**File limits.** Free holds 1 photo and 1 document per vehicle, and 1 attachment per log entry. Premium holds 10 photos and 10 documents per vehicle, and 5 attachments per log entry. Each file can be up to 10 MB.
 
 - Premium is billed by **Google Play** or the **App Store** and renews automatically under their terms, until you cancel.
 - You can cancel at any time in the store. Premium stays active until the end of the period you have paid for.

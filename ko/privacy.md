@@ -19,7 +19,7 @@ description: Motoor가 수집하는 정보, 보관 위치, 정보를 처리하�
 
 <p class="mt-doc__meta">이 페이지는 번역본입니다. <a href="{{ '/privacy/' | relative_url }}">영어 원문</a>과 내용이 다를 경우 영어 원문이 우선합니다.</p>
 
-<div class="mt-note"><strong>요약.</strong> Google 또는 Apple로 로그인합니다. 로그북은 휴대폰에 저장되며 {{ t.privacy.data_location }}에 있는 저희 서버에 자동으로 백업되므로 새 휴대폰에서 복원할 수 있습니다. Motoor는 광고를 표시하지 않으며, 저희는 회원님의 데이터를 판매하지 않습니다. 언제든지 계정과 그 안의 모든 데이터를 삭제할 수 있습니다.</div>
+<div class="mt-note"><strong>요약.</strong> Google, Apple 또는 이메일로 로그인합니다. 로그북은 휴대폰에 저장되며 {{ t.privacy.data_location }}에 있는 저희 서버에 자동으로 백업되므로 새 휴대폰에서 복원할 수 있습니다. Motoor는 광고를 표시하지 않으며, 저희는 회원님의 데이터를 판매하지 않습니다. 언제든지 계정과 그 안의 모든 데이터를 삭제할 수 있습니다.</div>
 
 ## 운영자 소개
 
@@ -29,7 +29,7 @@ Motoor는 독립 개발자인 **{{ dev.name }}**(이하 “저희”)이 만들�
 
 ## 수집하는 정보
 
-**계정.** 차량을 추가하려면 Google로, iOS에서는 Apple로도 로그인합니다. 로그인을 통해 이름, 이메일 주소, 계정 ID를 받습니다. 저희는 회원님의 Google 또는 Apple 비밀번호를 절대 볼 수 없습니다.
+**계정.** 차량을 추가하려면 Google, iOS에서는 Apple, 또는 이메일과 비밀번호로 로그인합니다. 로그인을 통해 이름, 이메일 주소, 계정 ID를 받습니다. 비밀번호는 Firebase Authentication이 보관하며 저희는 절대 볼 수 없습니다.
 
 **로그북.** 회원님이 Motoor에 입력하는 모든 정보:
 
@@ -37,6 +37,7 @@ Motoor는 독립 개발자인 **{{ dev.name }}**(이하 “저희”)이 만들�
 - 주유 및 충전 기록, 정비, 비용, 장소 및 메모
 - 알림 및 해당 일정
 - 첨부한 영수증, 스캔본 및 기타 파일
+- 추가한 차량 서류(등록증, 보험, 보증서 등)
 - 단위, 통화, 언어, 테마 등의 설정
 
 **기기.** 알림이 휴대폰에 전달되도록 하기 위한 푸시 알림 토큰과 플랫폼(Android 또는 iOS).
@@ -97,7 +98,7 @@ Premium을 구매하면 결제는 전적으로 **Google Play** 또는 **Apple Ap
 |---|---|---|
 | Google Cloud | {{ t.privacy.data_location }}에서 저희 서버, 데이터베이스 및 파일 저장소 호스팅 | 계정 및 로그북 백업 |
 | Google Cloud (Gemini) | 휴대폰에서 읽을 수 없는 영수증 판독 | 스캔한 영수증 |
-| Firebase Authentication (Google) | Google 또는 Apple 로그인 | 이름, 이메일, 계정 ID |
+| Firebase Authentication (Google) | Google, Apple 또는 이메일 로그인 | 이름, 이메일, 계정 ID, 이메일 계정의 비밀번호 |
 | Firebase Cloud Messaging (Google) | 푸시 알림 전송 | 기기 푸시 토큰 |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | 비정상 종료 보고서 | 비정상 종료의 기술적 세부 정보 |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | 사용 통계 | 앱 인스턴스 ID 및 기능 이벤트 |

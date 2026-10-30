@@ -19,7 +19,7 @@ description: Qué recopila Motoor, dónde se guarda, quién más lo maneja y có
 
 <p class="mt-doc__meta">Esta es una traducción. Si difiere de la <a href="{{ '/privacy/' | relative_url }}">versión en inglés</a>, prevalece la versión en inglés.</p>
 
-<div class="mt-note"><strong>En resumen.</strong> Inicias sesión con Google o Apple. Tu registro se guarda en tu teléfono y se respalda automáticamente en nuestro servidor en {{ t.privacy.data_location }}, para que puedas restaurarlo en un teléfono nuevo. Motoor no muestra anuncios y no vendemos tus datos. Puedes eliminar tu cuenta y todo su contenido en cualquier momento.</div>
+<div class="mt-note"><strong>En resumen.</strong> Inicias sesión con Google, Apple o correo electrónico. Tu registro se guarda en tu teléfono y se respalda automáticamente en nuestro servidor en {{ t.privacy.data_location }}, para que puedas restaurarlo en un teléfono nuevo. Motoor no muestra anuncios y no vendemos tus datos. Puedes eliminar tu cuenta y todo su contenido en cualquier momento.</div>
 
 ## Quiénes somos
 
@@ -29,7 +29,7 @@ Esta política se aplica a la app Motoor en Android e iOS, a las páginas para c
 
 ## Qué recopilamos
 
-**Tu cuenta.** Para agregar un vehículo, inicias sesión con Google, o con Apple en iOS. De ese inicio de sesión recibimos tu nombre, tu dirección de correo electrónico y un ID de cuenta. Nunca vemos tu contraseña de Google o Apple.
+**Tu cuenta.** Para agregar un vehículo, inicias sesión con Google, con Apple en iOS, o con tu correo electrónico y una contraseña. De ese inicio de sesión recibimos tu nombre, tu dirección de correo electrónico y un ID de cuenta. Firebase Authentication guarda tu contraseña y nosotros nunca la vemos.
 
 **Tu registro.** Todo lo que introduces en Motoor:
 
@@ -37,6 +37,7 @@ Esta política se aplica a la app Motoor en Android e iOS, a las páginas para c
 - cargas de combustible y de batería, servicios, gastos, lugares y notas
 - recordatorios y sus calendarios
 - recibos, escaneos y otros archivos que adjuntes
+- documentos del vehículo que agregues, como la matrícula, el seguro y la garantía
 - tus ajustes, como unidades, moneda, idioma y tema
 
 **Tu dispositivo.** Un token de notificaciones push, para que los recordatorios y avisos lleguen a tu teléfono, y la plataforma (Android o iOS).
@@ -97,7 +98,7 @@ No vendemos tu información personal y no la compartimos con fines publicitarios
 |---|---|---|
 | Google Cloud | Aloja nuestro servidor, base de datos y almacenamiento de archivos en {{ t.privacy.data_location }} | Tu cuenta y la copia de seguridad de tu registro |
 | Google Cloud (Gemini) | Lee los recibos que no se pueden leer en tu teléfono | El recibo que escaneas |
-| Firebase Authentication (Google) | Inicio de sesión con Google o Apple | Nombre, correo, ID de cuenta |
+| Firebase Authentication (Google) | Inicio de sesión con Google, Apple o correo | Nombre, correo, ID de cuenta, contraseña en cuentas de correo |
 | Firebase Cloud Messaging (Google) | Envía notificaciones push | Token push del dispositivo |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Informes de fallos | Detalles técnicos del fallo |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Estadísticas de uso | ID de instancia de la app y eventos de funciones |

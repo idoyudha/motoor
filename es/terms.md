@@ -4,7 +4,7 @@ title: Términos y condiciones
 permalink: /es/terms/
 ref: /terms/
 lang: es
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Las reglas para usar Motoor, qué incluye Premium y de qué somos y no somos responsables."
 description: "Las reglas para usar Motoor, qué incluye Premium y de qué somos y no somos responsables."
 ---
@@ -29,13 +29,15 @@ Debes tener al menos {{ p.min_age }} años para usar Motoor. Si eres menor de ed
 
 ## Tu cuenta
 
-Inicias sesión con Google, o con Apple en iOS. Necesitas una cuenta para registrar vehículos y exportar tu registro. Protege el acceso a tu cuenta de Google o Apple: cualquiera que pueda iniciar sesión con ella puede abrir tu registro. Avísanos en [{{ dev.email }}](mailto:{{ dev.email }}) si crees que otra persona ha usado tu cuenta.
+Inicias sesión con Google, con Apple en iOS, o con tu correo electrónico y una contraseña. Necesitas una cuenta para registrar vehículos y exportar tu registro. Protege tu contraseña y tu cuenta de Google o Apple: cualquiera que pueda iniciar sesión con ella puede abrir tu registro. Avísanos en [{{ dev.email }}](mailto:{{ dev.email }}) si crees que otra persona ha usado tu cuenta.
 
 ## Free y Premium
 
 **Free** te da un registro completo para un vehículo activo: combustible y carga, mantenimientos, gastos, recordatorios, historial y exportación.
 
 **Premium** elimina el límite de vehículos y añade funciones como el escaneo de recibos, compartir el historial de un vehículo y transferir un vehículo. Cuesta **US$1,30 al mes** o **US$10,80 al año**. Los precios están fijados en dólares estadounidenses; la tienda puede mostrarlos en tu moneda local y añadir impuestos locales.
+
+**Límites de archivos.** Free incluye 1 foto y 1 documento por vehículo, y 1 archivo adjunto por entrada. Premium incluye 10 fotos y 10 documentos por vehículo, y 5 archivos adjuntos por entrada. Cada archivo puede ocupar hasta 10 MB.
 
 - Premium lo cobra **Google Play** o el **App Store** y se renueva automáticamente según sus condiciones, hasta que lo canceles.
 - Puedes cancelarlo en cualquier momento en la tienda. Premium sigue activo hasta el final del periodo que hayas pagado.

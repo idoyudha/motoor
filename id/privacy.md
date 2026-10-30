@@ -19,7 +19,7 @@ description: "Apa yang dikumpulkan Motoor, di mana data disimpan, siapa saja yan
 
 <p class="mt-doc__meta">Ini adalah terjemahan. Jika ada perbedaan dengan <a href="{{ '/privacy/' | relative_url }}">versi bahasa Inggris</a>, yang berlaku adalah versi bahasa Inggris.</p>
 
-<div class="mt-note"><strong>Versi singkatnya.</strong> Anda masuk dengan Google atau Apple. Buku catatan Anda disimpan di ponsel dan dicadangkan secara otomatis ke server kami di {{ t.privacy.data_location }}, sehingga Anda bisa memulihkannya di ponsel baru. Motoor tidak menampilkan iklan dan kami tidak menjual data Anda. Anda dapat menghapus akun beserta seluruh isinya kapan saja.</div>
+<div class="mt-note"><strong>Versi singkatnya.</strong> Anda masuk dengan Google, Apple, atau email. Buku catatan Anda disimpan di ponsel dan dicadangkan secara otomatis ke server kami di {{ t.privacy.data_location }}, sehingga Anda bisa memulihkannya di ponsel baru. Motoor tidak menampilkan iklan dan kami tidak menjual data Anda. Anda dapat menghapus akun beserta seluruh isinya kapan saja.</div>
 
 ## Siapa kami
 
@@ -29,7 +29,7 @@ Kebijakan ini berlaku untuk aplikasi Motoor di Android dan iOS, untuk halaman be
 
 ## Apa yang kami kumpulkan
 
-**Akun Anda.** Untuk menambahkan kendaraan, Anda masuk dengan Google, atau dengan Apple di iOS. Dari proses masuk tersebut kami menerima nama, alamat email, dan ID akun Anda. Kami tidak pernah melihat kata sandi Google atau Apple Anda.
+**Akun Anda.** Untuk menambahkan kendaraan, Anda masuk dengan Google, dengan Apple di iOS, atau dengan email dan kata sandi. Dari proses masuk tersebut kami menerima nama, alamat email, dan ID akun Anda. Firebase Authentication menyimpan kata sandi Anda, dan kami tidak pernah melihatnya.
 
 **Buku catatan Anda.** Semua yang Anda masukkan ke Motoor:
 
@@ -37,6 +37,7 @@ Kebijakan ini berlaku untuk aplikasi Motoor di Android dan iOS, untuk halaman be
 - catatan bahan bakar dan pengisian daya, servis, biaya, tempat, dan catatan
 - pengingat beserta jadwalnya
 - struk, hasil pindaian, dan file lain yang Anda lampirkan
+- dokumen kendaraan yang Anda tambahkan, seperti STNK, asuransi, dan garansi
 - pengaturan Anda, seperti satuan, mata uang, bahasa, dan tema
 
 **Perangkat Anda.** Token notifikasi push, agar pengingat dan peringatan sampai ke ponsel Anda, serta platformnya (Android atau iOS).
@@ -97,7 +98,7 @@ Kami tidak menjual informasi pribadi Anda dan tidak membagikannya untuk keperlua
 |---|---|---|
 | Google Cloud | Menjadi host server, database, dan penyimpanan file kami di {{ t.privacy.data_location }} | Akun dan cadangan buku catatan Anda |
 | Google Cloud (Gemini) | Membaca struk yang tidak dapat dibaca di ponsel Anda | Struk yang Anda pindai |
-| Firebase Authentication (Google) | Masuk dengan Google atau Apple | Nama, email, ID akun |
+| Firebase Authentication (Google) | Masuk dengan Google, Apple, atau email | Nama, email, ID akun, kata sandi untuk akun email |
 | Firebase Cloud Messaging (Google) | Mengirimkan notifikasi push | Token push perangkat |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Laporan crash | Detail teknis crash |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Statistik penggunaan | ID instance aplikasi dan peristiwa fitur |

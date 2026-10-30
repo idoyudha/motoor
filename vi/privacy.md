@@ -19,7 +19,7 @@ description: "Motoor thu thập những gì, dữ liệu được lưu ở đâu
 
 <p class="mt-doc__meta">Đây là bản dịch. Nếu có khác biệt so với <a href="{{ '/privacy/' | relative_url }}">bản tiếng Anh</a>, bản tiếng Anh sẽ được áp dụng.</p>
 
-<div class="mt-note"><strong>Tóm tắt ngắn gọn.</strong> Bạn đăng nhập bằng Google hoặc Apple. Sổ theo dõi của bạn được lưu trên điện thoại và tự động sao lưu lên máy chủ của chúng tôi tại {{ t.privacy.data_location }}, để bạn có thể khôi phục trên điện thoại mới. Motoor không hiển thị quảng cáo và chúng tôi không bán dữ liệu của bạn. Bạn có thể xóa tài khoản cùng toàn bộ dữ liệu trong đó bất cứ lúc nào.</div>
+<div class="mt-note"><strong>Tóm tắt ngắn gọn.</strong> Bạn đăng nhập bằng Google, Apple hoặc email. Sổ theo dõi của bạn được lưu trên điện thoại và tự động sao lưu lên máy chủ của chúng tôi tại {{ t.privacy.data_location }}, để bạn có thể khôi phục trên điện thoại mới. Motoor không hiển thị quảng cáo và chúng tôi không bán dữ liệu của bạn. Bạn có thể xóa tài khoản cùng toàn bộ dữ liệu trong đó bất cứ lúc nào.</div>
 
 ## Chúng tôi là ai
 
@@ -29,7 +29,7 @@ Chính sách này áp dụng cho ứng dụng Motoor trên Android và iOS, cho 
 
 ## Chúng tôi thu thập những gì
 
-**Tài khoản của bạn.** Để thêm xe, bạn đăng nhập bằng Google, hoặc bằng Apple trên iOS. Từ lần đăng nhập đó, chúng tôi nhận được tên, địa chỉ email và một ID tài khoản của bạn. Chúng tôi không bao giờ thấy mật khẩu Google hoặc Apple của bạn.
+**Tài khoản của bạn.** Để thêm xe, bạn đăng nhập bằng Google, bằng Apple trên iOS, hoặc bằng email và mật khẩu. Từ lần đăng nhập đó, chúng tôi nhận được tên, địa chỉ email và một ID tài khoản của bạn. Firebase Authentication giữ mật khẩu của bạn và chúng tôi không bao giờ thấy mật khẩu đó.
 
 **Sổ theo dõi của bạn.** Mọi thứ bạn nhập vào Motoor:
 
@@ -37,6 +37,7 @@ Chính sách này áp dụng cho ứng dụng Motoor trên Android và iOS, cho 
 - các mục nhiên liệu và sạc điện, bảo dưỡng, chi phí, địa điểm và ghi chú
 - nhắc nhở và lịch của chúng
 - hóa đơn, bản quét và các tệp khác bạn đính kèm
+- giấy tờ xe bạn thêm vào, như đăng ký xe, bảo hiểm và bảo hành
 - cài đặt của bạn, như đơn vị, tiền tệ, ngôn ngữ và chủ đề
 
 **Thiết bị của bạn.** Mã thông báo thông báo đẩy (push token), để nhắc nhở và cảnh báo đến được điện thoại của bạn, và nền tảng (Android hoặc iOS).
@@ -97,7 +98,7 @@ Chúng tôi không bán thông tin cá nhân của bạn và không chia sẻ th
 |---|---|---|
 | Google Cloud | Lưu trữ máy chủ, cơ sở dữ liệu và tệp của chúng tôi tại {{ t.privacy.data_location }} | Tài khoản và bản sao lưu sổ theo dõi của bạn |
 | Google Cloud (Gemini) | Đọc những hóa đơn không đọc được trên điện thoại của bạn | Hóa đơn bạn quét |
-| Firebase Authentication (Google) | Đăng nhập bằng Google hoặc Apple | Tên, email, ID tài khoản |
+| Firebase Authentication (Google) | Đăng nhập bằng Google, Apple hoặc email | Tên, email, ID tài khoản, mật khẩu của tài khoản email |
 | Firebase Cloud Messaging (Google) | Gửi thông báo đẩy | Mã thông báo đẩy của thiết bị |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Báo cáo sự cố | Thông tin kỹ thuật về sự cố |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Thống kê sử dụng | ID phiên bản ứng dụng và sự kiện tính năng |

@@ -19,7 +19,7 @@ description: Was Motoor erfasst, wo es gespeichert wird, wer sonst damit umgeht 
 
 <p class="mt-doc__meta">Dies ist eine Übersetzung. Weicht sie von der <a href="{{ '/privacy/' | relative_url }}">englischen Fassung</a> ab, gilt die englische Fassung.</p>
 
-<div class="mt-note"><strong>Kurz gesagt.</strong> Sie melden sich mit Google oder Apple an. Ihr Logbuch wird auf Ihrem Handy gespeichert und automatisch auf unserem Server in {{ t.privacy.data_location }} gesichert, damit Sie es auf einem neuen Handy wiederherstellen können. Motoor zeigt keine Werbung, und wir verkaufen Ihre Daten nicht. Sie können Ihr Konto und alle Inhalte jederzeit löschen.</div>
+<div class="mt-note"><strong>Kurz gesagt.</strong> Sie melden sich mit Google, Apple oder E-Mail an. Ihr Logbuch wird auf Ihrem Handy gespeichert und automatisch auf unserem Server in {{ t.privacy.data_location }} gesichert, damit Sie es auf einem neuen Handy wiederherstellen können. Motoor zeigt keine Werbung, und wir verkaufen Ihre Daten nicht. Sie können Ihr Konto und alle Inhalte jederzeit löschen.</div>
 
 ## Wer wir sind
 
@@ -29,7 +29,7 @@ Diese Erklärung gilt für die Motoor-App unter Android und iOS, für die von Mo
 
 ## Was wir erfassen
 
-**Ihr Konto.** Um ein Fahrzeug hinzuzufügen, melden Sie sich mit Google an, unter iOS auch mit Apple. Über diese Anmeldung erhalten wir Ihren Namen, Ihre E-Mail-Adresse und eine Konto-ID. Ihr Google- oder Apple-Passwort sehen wir nie.
+**Ihr Konto.** Um ein Fahrzeug hinzuzufügen, melden Sie sich mit Google an, unter iOS auch mit Apple, oder mit Ihrer E-Mail-Adresse und einem Passwort. Über diese Anmeldung erhalten wir Ihren Namen, Ihre E-Mail-Adresse und eine Konto-ID. Ihr Passwort liegt bei Firebase Authentication, wir sehen es nie.
 
 **Ihr Logbuch.** Alles, was Sie in Motoor eingeben:
 
@@ -37,6 +37,7 @@ Diese Erklärung gilt für die Motoor-App unter Android und iOS, für die von Mo
 - Tank- und Ladeeinträge, Wartungen, Kosten, Orte und Notizen
 - Erinnerungen und ihre Zeitpläne
 - Belege, Scans und andere Dateien, die Sie anhängen
+- Fahrzeugdokumente, die Sie hinzufügen, zum Beispiel Zulassung, Versicherung und Garantie
 - Ihre Einstellungen, etwa Einheiten, Währung, Sprache und Design
 
 **Ihr Gerät.** Ein Push-Benachrichtigungs-Token, damit Erinnerungen und Hinweise Ihr Handy erreichen, sowie die Plattform (Android oder iOS).
@@ -97,7 +98,7 @@ Wir verkaufen Ihre personenbezogenen Daten nicht und geben sie nicht für Werbez
 |---|---|---|
 | Google Cloud | Hostet unseren Server, unsere Datenbank und unseren Dateispeicher in {{ t.privacy.data_location }} | Ihr Konto und die Sicherung Ihres Logbuchs |
 | Google Cloud (Gemini) | Liest Belege, die auf Ihrem Handy nicht gelesen werden können | Der Beleg, den Sie scannen |
-| Firebase Authentication (Google) | Anmeldung mit Google oder Apple | Name, E-Mail, Konto-ID |
+| Firebase Authentication (Google) | Anmeldung mit Google, Apple oder E-Mail | Name, E-Mail, Konto-ID, Passwort bei E-Mail-Konten |
 | Firebase Cloud Messaging (Google) | Stellt Push-Benachrichtigungen zu | Push-Token des Geräts |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Absturzberichte | Technische Absturzdetails |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Nutzungsstatistiken | App-Instanz-ID und Funktionsereignisse |

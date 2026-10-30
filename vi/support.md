@@ -35,7 +35,7 @@ description: "Giải đáp các câu hỏi thường gặp, và kênh liên hệ
 <details class="mt-faq">
 <summary>Tôi đã mua Premium nhưng chưa được mở khóa</summary>
 <div>
-<p>Mở <strong>Cài đặt → Premium → Khôi phục giao dịch mua</strong> khi đang đăng nhập bằng đúng tài khoản Google hoặc Apple mà bạn đã dùng để mua. Nếu vẫn không được, hãy gửi email cho chúng tôi kèm mã đơn hàng trên biên lai Google Play hoặc App Store của bạn.</p>
+<p>Mở <strong>Cài đặt → Premium → Khôi phục giao dịch mua</strong> khi đang đăng nhập bằng đúng tài khoản mà bạn đã dùng để mua. Nếu vẫn không được, hãy gửi email cho chúng tôi kèm mã đơn hàng trên biên lai Google Play hoặc App Store của bạn.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: "Giải đáp các câu hỏi thường gặp, và kênh liên hệ
 <details class="mt-faq">
 <summary>Sổ theo dõi của tôi có được sao lưu không?</summary>
 <div>
-<p>Có, tự động, trên cả gói Free lẫn Premium. Xe, mục ghi, nhắc nhở, tệp đính kèm và hóa đơn của bạn được sao lưu lên máy chủ của chúng tôi mỗi khi bạn trực tuyến. Trên điện thoại mới, hãy đăng nhập bằng cùng tài khoản Google hoặc Apple và sổ theo dõi của bạn sẽ trở lại. Đọc thêm trong <a href="{{ '/vi/privacy/' | relative_url }}">chính sách quyền riêng tư</a>.</p>
+<p>Có, tự động, trên cả gói Free lẫn Premium. Xe, mục ghi, nhắc nhở, tệp đính kèm và hóa đơn của bạn được sao lưu lên máy chủ của chúng tôi mỗi khi bạn trực tuyến. Trên điện thoại mới, hãy đăng nhập bằng cùng tài khoản và sổ theo dõi của bạn sẽ trở lại. Đọc thêm trong <a href="{{ '/vi/privacy/' | relative_url }}">chính sách quyền riêng tư</a>.</p>
 </div>
 </details>
 

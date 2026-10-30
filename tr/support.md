@@ -35,7 +35,7 @@ description: "Sık sorulan soruların yanıtları ve Motoor’u yapan kişiye do
 <details class="mt-faq">
 <summary>Premium satın aldım ama açılmadı</summary>
 <div>
-<p>Satın alırken kullandığınız Google veya Apple hesabıyla giriş yapmışken <strong>Ayarlar → Premium → Satın alımı geri yükle</strong> yolunu izleyin. Bu işe yaramazsa Google Play veya App Store makbuzunuzdaki sipariş numarasıyla bize e-posta gönderin.</p>
+<p>Satın alırken kullandığınız hesapla giriş yapmışken <strong>Ayarlar → Premium → Satın alımı geri yükle</strong> yolunu izleyin. Bu işe yaramazsa Google Play veya App Store makbuzunuzdaki sipariş numarasıyla bize e-posta gönderin.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: "Sık sorulan soruların yanıtları ve Motoor’u yapan kişiye do
 <details class="mt-faq">
 <summary>Bakım defterim yedekleniyor mu?</summary>
 <div>
-<p>Evet, hem Free hem Premium’da otomatik olarak. Araçlarınız, kayıtlarınız, hatırlatıcılarınız, ekleriniz ve fişleriniz çevrimiçi olduğunuz her an sunucumuza yedeklenir. Yeni bir telefonda aynı Google veya Apple hesabıyla giriş yapın, bakım defteriniz geri gelsin. Ayrıntılar için <a href="{{ '/tr/privacy/' | relative_url }}">gizlilik politikasını</a> okuyun.</p>
+<p>Evet, hem Free hem Premium’da otomatik olarak. Araçlarınız, kayıtlarınız, hatırlatıcılarınız, ekleriniz ve fişleriniz çevrimiçi olduğunuz her an sunucumuza yedeklenir. Yeni bir telefonda aynı hesapla giriş yapın, bakım defteriniz geri gelsin. Ayrıntılar için <a href="{{ '/tr/privacy/' | relative_url }}">gizlilik politikasını</a> okuyun.</p>
 </div>
 </details>
 

@@ -4,7 +4,7 @@ title: Termos e condições
 permalink: /pt/terms/
 ref: /terms/
 lang: pt
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "As regras para usar o Motoor, o que o Premium inclui e pelo que somos e não somos responsáveis."
 description: "As regras para usar o Motoor, o que o Premium inclui e pelo que somos e não somos responsáveis."
 ---
@@ -29,13 +29,15 @@ Você precisa ter pelo menos {{ p.min_age }} anos para usar o Motoor. Se for men
 
 ## Sua conta
 
-Você entra com o Google, ou com a Apple no iOS. É preciso ter uma conta para cadastrar veículos e exportar seu diário. Proteja o acesso à sua conta Google ou Apple: quem conseguir entrar com ela pode abrir seu diário. Avise-nos em [{{ dev.email }}](mailto:{{ dev.email }}) se achar que outra pessoa usou sua conta.
+Você entra com o Google, com a Apple no iOS, ou com seu e-mail e uma senha. É preciso ter uma conta para cadastrar veículos e exportar seu diário. Proteja sua senha e sua conta Google ou Apple: quem conseguir entrar com ela pode abrir seu diário. Avise-nos em [{{ dev.email }}](mailto:{{ dev.email }}) se achar que outra pessoa usou sua conta.
 
 ## Free e Premium
 
 O **Free** oferece um diário completo para um veículo ativo: combustível e recarga, manutenções, custos, lembretes, histórico e exportação.
 
 O **Premium** remove o limite de veículos e adiciona recursos como leitura de recibos, compartilhamento do histórico de um veículo e transferência de um veículo. Custa **US$ 1,30 por mês** ou **US$ 10,80 por ano**. Os preços são fixados em dólares americanos; a loja pode exibi-los na sua moeda e adicionar impostos locais.
+
+**Limites de arquivos.** O Free inclui 1 foto e 1 documento por veículo, e 1 anexo por registro. O Premium inclui 10 fotos e 10 documentos por veículo, e 5 anexos por registro. Cada arquivo pode ter até 10 MB.
 
 - O Premium é cobrado pelo **Google Play** ou pela **App Store** e renova automaticamente conforme as regras deles, até você cancelar.
 - Você pode cancelar a qualquer momento na loja. O Premium continua ativo até o fim do período já pago.

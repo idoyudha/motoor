@@ -15,7 +15,7 @@ lede: What Motoor collects, where it's kept, who else handles it, and how to del
   This is a starting point, not legal advice.
 {% endcomment %}
 
-<div class="mt-note"><strong>The short version.</strong> You sign in with Google or Apple. Your logbook is kept on your phone and backed up automatically to our server in {{ t.privacy.data_location }}, so you can restore it on a new phone. Motoor shows no ads and we don’t sell your data. You can delete your account and everything in it at any time.</div>
+<div class="mt-note"><strong>The short version.</strong> You sign in with Google, Apple or email. Your logbook is kept on your phone and backed up automatically to our server in {{ t.privacy.data_location }}, so you can restore it on a new phone. Motoor shows no ads and we don’t sell your data. You can delete your account and everything in it at any time.</div>
 
 ## Who we are
 
@@ -25,7 +25,7 @@ This policy applies to the Motoor app on Android and iOS, to the share pages Mot
 
 ## What we collect
 
-**Your account.** To add a vehicle you sign in with Google, or with Apple on iOS. We receive your name, your email address and an account ID from that sign-in. We never see your Google or Apple password.
+**Your account.** To add a vehicle you sign in with Google, with Apple on iOS, or with your email and a password. We receive your name, your email address and an account ID from that sign-in. Firebase Authentication holds your password, and we never see it.
 
 **Your logbook.** Everything you put into Motoor:
 
@@ -33,6 +33,7 @@ This policy applies to the Motoor app on Android and iOS, to the share pages Mot
 - fuel and charging entries, services, costs, places and notes
 - reminders and their schedules
 - receipts, scans and other files you attach
+- vehicle documents you add, such as registration papers, insurance and warranty
 - your settings, such as units, currency, language and theme
 
 **Your device.** A push notification token, so reminders and alerts reach your phone, and the platform (Android or iOS).
@@ -93,7 +94,7 @@ We don’t sell your personal information and we don’t share it for advertisin
 |---|---|---|
 | Google Cloud | Hosts our server, database and file storage in {{ t.privacy.data_location }} | Your account and logbook backup |
 | Google Cloud (Gemini) | Reads receipts that can’t be read on your phone | The receipt you scan |
-| Firebase Authentication (Google) | Sign-in with Google or Apple | Name, email, account ID |
+| Firebase Authentication (Google) | Sign-in with Google, Apple or email | Name, email, account ID, password for email accounts |
 | Firebase Cloud Messaging (Google) | Delivers push notifications | Device push token |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Crash reports | Technical crash details |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Usage statistics | App-instance ID and feature events |

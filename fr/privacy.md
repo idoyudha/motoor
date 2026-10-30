@@ -19,7 +19,7 @@ description: Ce que Motoor collecte, où c’est conservé, qui d’autre y a ac
 
 <p class="mt-doc__meta">Ceci est une traduction. En cas de divergence avec la <a href="{{ '/privacy/' | relative_url }}">version anglaise</a>, la version anglaise fait foi.</p>
 
-<div class="mt-note"><strong>En bref.</strong> Vous vous connectez avec Google ou Apple. Votre carnet est conservé sur votre téléphone et sauvegardé automatiquement sur notre serveur à {{ t.privacy.data_location }}, pour que vous puissiez le restaurer sur un nouveau téléphone. Motoor n’affiche aucune publicité et nous ne vendons pas vos données. Vous pouvez supprimer votre compte et tout son contenu à tout moment.</div>
+<div class="mt-note"><strong>En bref.</strong> Vous vous connectez avec Google, Apple ou votre e-mail. Votre carnet est conservé sur votre téléphone et sauvegardé automatiquement sur notre serveur à {{ t.privacy.data_location }}, pour que vous puissiez le restaurer sur un nouveau téléphone. Motoor n’affiche aucune publicité et nous ne vendons pas vos données. Vous pouvez supprimer votre compte et tout son contenu à tout moment.</div>
 
 ## Qui sommes-nous
 
@@ -29,7 +29,7 @@ Cette politique s’applique à l’application Motoor sur Android et iOS, aux p
 
 ## Ce que nous collectons
 
-**Votre compte.** Pour ajouter un véhicule, vous vous connectez avec Google, ou avec Apple sur iOS. Cette connexion nous transmet votre nom, votre adresse e-mail et un identifiant de compte. Nous ne voyons jamais votre mot de passe Google ou Apple.
+**Votre compte.** Pour ajouter un véhicule, vous vous connectez avec Google, avec Apple sur iOS, ou avec votre e-mail et un mot de passe. Cette connexion nous transmet votre nom, votre adresse e-mail et un identifiant de compte. Firebase Authentication conserve votre mot de passe, et nous ne le voyons jamais.
 
 **Votre carnet.** Tout ce que vous saisissez dans Motoor :
 
@@ -37,6 +37,7 @@ Cette politique s’applique à l’application Motoor sur Android et iOS, aux p
 - pleins et recharges, entretiens, dépenses, lieux et notes
 - rappels et leurs échéances
 - tickets, scans et autres fichiers que vous joignez
+- documents du véhicule que vous ajoutez, comme la carte grise, l’assurance et la garantie
 - vos réglages, comme les unités, la devise, la langue et le thème
 
 **Votre appareil.** Un jeton de notification push, pour que les rappels et alertes arrivent sur votre téléphone, et la plateforme (Android ou iOS).
@@ -97,7 +98,7 @@ Nous ne vendons pas vos informations personnelles et ne les partageons pas à de
 |---|---|---|
 | Google Cloud | Héberge notre serveur, notre base de données et notre stockage de fichiers à {{ t.privacy.data_location }} | Votre compte et la sauvegarde de votre carnet |
 | Google Cloud (Gemini) | Lit les tickets qui ne peuvent pas être lus sur votre téléphone | Le ticket que vous scannez |
-| Firebase Authentication (Google) | Connexion avec Google ou Apple | Nom, e-mail, identifiant de compte |
+| Firebase Authentication (Google) | Connexion avec Google, Apple ou e-mail | Nom, e-mail, identifiant de compte, mot de passe des comptes e-mail |
 | Firebase Cloud Messaging (Google) | Envoie les notifications push | Jeton push de l’appareil |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Rapports de plantage | Détails techniques des plantages |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Statistiques d’utilisation | Identifiant d’instance de l’application et événements liés aux fonctionnalités |

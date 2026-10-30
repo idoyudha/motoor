@@ -184,6 +184,31 @@
         </div>
       </section>
 
+      <!-- Logs -->
+      <section class="mt-scr" data-screen="logs" aria-label="{{ p.logs }}" hidden>
+        <div class="mt-scr__head" style="padding-top:16px">
+          <h2 class="mt-scr__title">{{ p.logs }}</h2>
+          <p class="mt-scr__sub">{{ p.entries_3 }}</p>
+        </div>
+        <div class="mt-group">
+          <button class="mt-row mt-tap" data-toast="{{ p.fuel1_toast }}">
+            <span class="mt-badge mt-badge--fuel">{% include icon.html name="fuel" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.full_tank }} · 3.6 gal</span><span class="mt-row__meta">{{ p.date_12sep }} · Shell, Main St</span></span>
+            <span class="mt-row__end">$16.40</span>
+          </button>
+          <button class="mt-row mt-tap" data-toast="{{ p.chain_toast }}">
+            <span class="mt-badge">{% include icon.html name="wrench" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.chain_clean }}</span><span class="mt-row__meta">{{ p.date_30aug }} · {{ p.at_home }}</span></span>
+            <span class="mt-row__end">$12.00</span>
+          </button>
+          <button class="mt-row mt-tap" data-toast="{{ p.receipt_toast }}">
+            <span class="mt-badge mt-badge--cost">{% include icon.html name="coin" %}</span>
+            <span class="mt-row__main"><span class="mt-row__title">{{ p.insurance }}</span><span class="mt-row__meta">{{ p.date_2aug }} · {{ p.annual }}</span></span>
+            <span class="mt-row__end">$310.00</span>
+          </button>
+        </div>
+      </section>
+
       <!-- Reminders -->
       <section class="mt-scr" data-screen="reminders" aria-label="{{ p.reminders }}" hidden>
         <div class="mt-scr__head" style="padding-top:16px">
@@ -305,6 +330,7 @@
 
   <nav class="mt-phone__nav" aria-label="{{ p.nav_label }}">
     <button class="mt-phone__tab" data-go="garage" aria-current="page"><span>{% include icon.html name="car" %}</span>{{ p.garage }}</button>
+    <button class="mt-phone__tab" data-go="logs"><span>{% include icon.html name="logs" %}</span>{{ p.logs }}</button>
     <button class="mt-phone__tab" data-go="reminders"><span>{% include icon.html name="bell" %}</span>{{ p.reminders }}</button>
     <button class="mt-phone__tab" data-go="settings"><span>{% include icon.html name="gear" %}</span>{{ p.settings }}</button>
   </nav>
@@ -324,6 +350,7 @@
     <span class="mt-ctl__name" id="mt-ctl-screen">{{ p.ctl_screen }}</span>
     <div class="mt-seg">
       <button class="mt-seg__btn" data-demo-go="garage" aria-pressed="true">{{ p.garage }}</button>
+      <button class="mt-seg__btn" data-demo-go="logs" aria-pressed="false">{{ p.logs }}</button>
       <button class="mt-seg__btn" data-demo-go="reminders" aria-pressed="false">{{ p.reminders }}</button>
       <button class="mt-seg__btn" data-demo-go="settings" aria-pressed="false">{{ p.settings }}</button>
     </div>

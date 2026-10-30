@@ -19,7 +19,7 @@ description: Cosa raccoglie Motoor, dove viene conservato, chi altro lo tratta e
 
 <p class="mt-doc__meta">Questa è una traduzione. In caso di differenze rispetto alla <a href="{{ '/privacy/' | relative_url }}">versione inglese</a>, prevale la versione inglese.</p>
 
-<div class="mt-note"><strong>In breve.</strong> Accedi con Google o Apple. Il tuo libretto è conservato sul telefono e salvato automaticamente sul nostro server a {{ t.privacy.data_location }}, così puoi ripristinarlo su un nuovo telefono. Motoor non mostra pubblicità e non vendiamo i tuoi dati. Puoi eliminare il tuo account e tutto ciò che contiene in qualsiasi momento.</div>
+<div class="mt-note"><strong>In breve.</strong> Accedi con Google, Apple o email. Il tuo libretto è conservato sul telefono e salvato automaticamente sul nostro server a {{ t.privacy.data_location }}, così puoi ripristinarlo su un nuovo telefono. Motoor non mostra pubblicità e non vendiamo i tuoi dati. Puoi eliminare il tuo account e tutto ciò che contiene in qualsiasi momento.</div>
 
 ## Chi siamo
 
@@ -29,7 +29,7 @@ Questa informativa si applica all’app Motoor su Android e iOS, alle pagine di 
 
 ## Cosa raccogliamo
 
-**Il tuo account.** Per aggiungere un veicolo accedi con Google, oppure con Apple su iOS. Da questo accesso riceviamo il tuo nome, il tuo indirizzo email e un ID account. Non vediamo mai la tua password di Google o Apple.
+**Il tuo account.** Per aggiungere un veicolo accedi con Google, con Apple su iOS, oppure con la tua email e una password. Da questo accesso riceviamo il tuo nome, il tuo indirizzo email e un ID account. La tua password è custodita da Firebase Authentication e noi non la vediamo mai.
 
 **Il tuo libretto.** Tutto ciò che inserisci in Motoor:
 
@@ -37,6 +37,7 @@ Questa informativa si applica all’app Motoor su Android e iOS, alle pagine di 
 - rifornimenti e ricariche, interventi, spese, luoghi e note
 - promemoria e relative scadenze
 - scontrini, scansioni e altri file che alleghi
+- documenti del veicolo che aggiungi, come libretto di circolazione, assicurazione e garanzia
 - le tue impostazioni, come unità, valuta, lingua e tema
 
 **Il tuo dispositivo.** Un token per le notifiche push, affinché promemoria e avvisi arrivino sul tuo telefono, e la piattaforma (Android o iOS).
@@ -97,7 +98,7 @@ Non vendiamo le tue informazioni personali e non le condividiamo a fini pubblici
 |---|---|---|
 | Google Cloud | Ospita il nostro server, il database e l’archiviazione dei file a {{ t.privacy.data_location }} | Il tuo account e il backup del libretto |
 | Google Cloud (Gemini) | Legge gli scontrini che non è possibile leggere sul telefono | Lo scontrino che scansioni |
-| Firebase Authentication (Google) | Accesso con Google o Apple | Nome, email, ID account |
+| Firebase Authentication (Google) | Accesso con Google, Apple o email | Nome, email, ID account, password degli account email |
 | Firebase Cloud Messaging (Google) | Invia le notifiche push | Token push del dispositivo |
 {% if p.crash_reporting != "" %}| {{ p.crash_reporting }} (Google) | Report sugli arresti anomali | Dettagli tecnici dell’arresto |
 {% endif %}{% if p.analytics != "" %}| {{ p.analytics }} (Google) | Statistiche di utilizzo | ID dell’istanza dell’app ed eventi delle funzioni |

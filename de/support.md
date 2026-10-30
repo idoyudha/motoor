@@ -35,7 +35,7 @@ description: Antworten auf häufige Fragen und ein direkter Draht zu der Person,
 <details class="mt-faq">
 <summary>Ich habe Premium gekauft, aber es ist nicht freigeschaltet</summary>
 <div>
-<p>Öffnen Sie <strong>Einstellungen → Premium → Kauf wiederherstellen</strong>, während Sie mit demselben Google- oder Apple-Konto angemeldet sind, mit dem Sie gekauft haben. Wenn das nicht hilft, schreiben Sie uns eine E-Mail mit der Bestellnummer aus Ihrem Google-Play- oder App-Store-Beleg.</p>
+<p>Öffnen Sie <strong>Einstellungen → Premium → Kauf wiederherstellen</strong>, während Sie mit demselben Konto angemeldet sind, mit dem Sie gekauft haben. Wenn das nicht hilft, schreiben Sie uns eine E-Mail mit der Bestellnummer aus Ihrem Google-Play- oder App-Store-Beleg.</p>
 </div>
 </details>
 
@@ -61,7 +61,7 @@ description: Antworten auf häufige Fragen und ein direkter Draht zu der Person,
 <details class="mt-faq">
 <summary>Wird mein Logbuch gesichert?</summary>
 <div>
-<p>Ja, automatisch, sowohl mit Free als auch mit Premium. Ihre Fahrzeuge, Einträge, Erinnerungen, Anhänge und Belege werden auf unserem Server gesichert, sobald Sie online sind. Melden Sie sich auf einem neuen Handy mit demselben Google- oder Apple-Konto an, und Ihr Logbuch ist wieder da. Mehr dazu in der <a href="{{ '/de/privacy/' | relative_url }}">Datenschutzerklärung</a>.</p>
+<p>Ja, automatisch, sowohl mit Free als auch mit Premium. Ihre Fahrzeuge, Einträge, Erinnerungen, Anhänge und Belege werden auf unserem Server gesichert, sobald Sie online sind. Melden Sie sich auf einem neuen Handy mit demselben Konto an, und Ihr Logbuch ist wieder da. Mehr dazu in der <a href="{{ '/de/privacy/' | relative_url }}">Datenschutzerklärung</a>.</p>
 </div>
 </details>
 

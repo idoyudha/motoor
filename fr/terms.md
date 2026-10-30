@@ -4,7 +4,7 @@ title: Conditions générales
 permalink: /fr/terms/
 ref: /terms/
 lang: fr
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Les règles d’utilisation de Motoor, ce que comprend Premium, et ce dont nous sommes responsables ou non."
 description: "Les règles d’utilisation de Motoor, ce que comprend Premium, et ce dont nous sommes responsables ou non."
 ---
@@ -29,13 +29,15 @@ Vous devez avoir au moins {{ p.min_age }} ans pour utiliser Motoor. Si vous ête
 
 ## Votre compte
 
-Vous vous connectez avec Google, ou avec Apple sur iOS. Un compte est nécessaire pour enregistrer des véhicules et exporter votre carnet. Protégez l’accès à votre compte Google ou Apple : toute personne qui peut s’y connecter peut ouvrir votre carnet. Prévenez-nous à [{{ dev.email }}](mailto:{{ dev.email }}) si vous pensez que quelqu’un d’autre a utilisé votre compte.
+Vous vous connectez avec Google, avec Apple sur iOS, ou avec votre e-mail et un mot de passe. Un compte est nécessaire pour enregistrer des véhicules et exporter votre carnet. Protégez votre mot de passe et votre compte Google ou Apple : toute personne qui peut s’y connecter peut ouvrir votre carnet. Prévenez-nous à [{{ dev.email }}](mailto:{{ dev.email }}) si vous pensez que quelqu’un d’autre a utilisé votre compte.
 
 ## Free et Premium
 
 **Free** vous offre un carnet complet pour un véhicule actif : carburant et recharge, entretiens, dépenses, rappels, historique et export.
 
 **Premium** supprime la limite de véhicules et ajoute des fonctions comme la numérisation des tickets, le partage de l’historique d’un véhicule et le transfert d’un véhicule. Il coûte **1,30 US$ par mois** ou **10,80 US$ par an**. Les prix sont fixés en dollars américains ; le store peut les afficher dans votre devise et ajouter les taxes locales.
+
+**Limites de fichiers.** Free comprend 1 photo et 1 document par véhicule, et 1 pièce jointe par entrée. Premium comprend 10 photos et 10 documents par véhicule, et 5 pièces jointes par entrée. Chaque fichier peut peser jusqu’à 10 Mo.
 
 - Premium est facturé par **Google Play** ou l’**App Store** et se renouvelle automatiquement selon leurs conditions, jusqu’à ce que vous le résiliiez.
 - Vous pouvez résilier à tout moment dans le store. Premium reste actif jusqu’à la fin de la période payée.

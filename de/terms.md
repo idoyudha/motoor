@@ -4,7 +4,7 @@ title: Allgemeine Geschäftsbedingungen
 permalink: /de/terms/
 ref: /terms/
 lang: de
-updated: 2026-10-25
+updated: 2026-10-30
 lede: "Die Regeln für die Nutzung von Motoor, was Premium umfasst und wofür wir verantwortlich sind und wofür nicht."
 description: "Die Regeln für die Nutzung von Motoor, was Premium umfasst und wofür wir verantwortlich sind und wofür nicht."
 ---
@@ -29,13 +29,15 @@ Sie müssen mindestens {{ p.min_age }} Jahre alt sein, um Motoor zu nutzen. Wenn
 
 ## Ihr Konto
 
-Sie melden sich mit Google an, unter iOS auch mit Apple. Ein Konto ist nötig, um Fahrzeuge anzulegen und Ihr Fahrtenbuch zu exportieren. Schützen Sie den Zugang zu Ihrem Google- oder Apple-Konto: Wer sich damit anmelden kann, kann Ihr Fahrtenbuch öffnen. Schreiben Sie uns an [{{ dev.email }}](mailto:{{ dev.email }}), wenn Sie glauben, dass jemand anderes Ihr Konto benutzt hat.
+Sie melden sich mit Google an, unter iOS auch mit Apple, oder mit Ihrer E-Mail-Adresse und einem Passwort. Ein Konto ist nötig, um Fahrzeuge anzulegen und Ihr Fahrtenbuch zu exportieren. Schützen Sie Ihr Passwort und Ihr Google- oder Apple-Konto: Wer sich damit anmelden kann, kann Ihr Fahrtenbuch öffnen. Schreiben Sie uns an [{{ dev.email }}](mailto:{{ dev.email }}), wenn Sie glauben, dass jemand anderes Ihr Konto benutzt hat.
 
 ## Free und Premium
 
 **Free** bietet Ihnen ein vollständiges Fahrtenbuch für ein aktives Fahrzeug: Tanken und Laden, Wartungen, Kosten, Erinnerungen, Verlauf und Export.
 
 **Premium** hebt die Fahrzeuggrenze auf und bietet zusätzliche Funktionen wie das Scannen von Belegen, das Teilen des Fahrzeugverlaufs und die Übertragung eines Fahrzeugs. Es kostet **1,30 US$ pro Monat** oder **10,80 US$ pro Jahr**. Die Preise sind in US-Dollar festgelegt; der Store kann sie in Ihrer Landeswährung anzeigen und lokale Steuern hinzufügen.
+
+**Dateilimits.** Free umfasst 1 Foto und 1 Dokument pro Fahrzeug sowie 1 Anhang pro Eintrag. Premium umfasst 10 Fotos und 10 Dokumente pro Fahrzeug sowie 5 Anhänge pro Eintrag. Jede Datei darf bis zu 10 MB groß sein.
 
 - Premium wird über **Google Play** oder den **App Store** abgerechnet und verlängert sich nach deren Bedingungen automatisch, bis Sie kündigen.
 - Sie können jederzeit im Store kündigen. Premium bleibt bis zum Ende des bezahlten Zeitraums aktiv.
