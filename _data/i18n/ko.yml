@@ -103,7 +103,7 @@ phone:
   car: "자동차"
   odometer: "주행 거리"
   cost_per_mi: "마일당 비용"
-  open: "열기 ›"
+  photo: "앞쪽 측면"
   overdue: "기한 지남"
   due_soon: "곧 도래"
   upcoming: "예정"

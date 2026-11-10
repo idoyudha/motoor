@@ -103,7 +103,7 @@ phone:
   car: "車"
   odometer: "走行距離"
   cost_per_mi: "1 マイルあたりの費用"
-  open: "開く ›"
+  photo: "斜め前から"
   overdue: "期限切れ"
   due_soon: "まもなく期限"
   upcoming: "今後の予定"

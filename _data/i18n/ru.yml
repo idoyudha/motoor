@@ -103,7 +103,7 @@ phone:
   car: "Автомобиль"
   odometer: "Пробег"
   cost_per_mi: "Цена / mi"
-  open: "Открыть ›"
+  photo: "Вид спереди сбоку"
   overdue: "Просрочено"
   due_soon: "Скоро"
   upcoming: "Предстоит"

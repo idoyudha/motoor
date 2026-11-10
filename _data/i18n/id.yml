@@ -103,7 +103,7 @@ phone:
   car: "Mobil"
   odometer: "Odometer"
   cost_per_mi: "Biaya / mi"
-  open: "Buka ›"
+  photo: "Tampak depan-samping"
   overdue: "Terlambat"
   due_soon: "Segera"
   upcoming: "Mendatang"

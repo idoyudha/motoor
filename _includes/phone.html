@@ -37,6 +37,7 @@
         </div>
         <div class="mt-stack">
           <button class="mt-vcard mt-vcard--hero mt-tap" data-go="v1">
+            <span class="mt-vcard__photo" role="img" aria-label="{{ p.photo }}">{% include icon.html name="vehicle-moto" %}<span class="mt-vcard__cap">{% include icon.html name="camera" %}{{ p.photo }}</span></span>
             <span class="mt-vcard__body">
               <span class="mt-vcard__head">
                 <span>
@@ -46,9 +47,9 @@
                 <span class="mt-avatar">TR<span class="mt-avatar__badge">{% include icon.html name="vehicle-moto" %}</span></span>
               </span>
               <span class="mt-metrics">
-                <span><span class="mt-metric__label">{{ p.odometer }}</span><span class="mt-metric__value">11,450 mi</span></span>
+                <span><span class="mt-metric__label">{{ p.odometer }}</span><span class="mt-odo" role="img" aria-label="11,450 mi"><span aria-hidden="true" style="display:contents"><span class="mt-odo__cell mt-odo__cell--lead" style="--i:0"><b>0</b></span><span class="mt-odo__cell" style="--i:1"><b>1</b></span><span class="mt-odo__cell" style="--i:2"><b>1</b></span><span class="mt-odo__cell" style="--i:3"><b>4</b></span><span class="mt-odo__cell" style="--i:4"><b>5</b></span><span class="mt-odo__cell" style="--i:5"><b>0</b></span><span class="mt-odo__unit">mi</span></span></span></span>
                 <span><span class="mt-metric__label">{{ p.cost_per_mi }}</span><span class="mt-metric__value">$0.21</span></span>
-                <span class="mt-vcard__open">{{ p.open }}</span>
+                <span class="mt-vcard__chev" aria-hidden="true">{% include icon.html name="chev" %}</span>
               </span>
             </span>
             <span class="mt-strip mt-strip--overdue">
@@ -68,9 +69,9 @@
                 <span class="mt-avatar">TO<span class="mt-avatar__badge">{% include icon.html name="vehicle-car" %}</span></span>
               </span>
               <span class="mt-metrics">
-                <span><span class="mt-metric__label">{{ p.odometer }}</span><span class="mt-metric__value">38,605 mi</span></span>
+                <span><span class="mt-metric__label">{{ p.odometer }}</span><span class="mt-odo" role="img" aria-label="38,605 mi"><span aria-hidden="true" style="display:contents"><span class="mt-odo__cell mt-odo__cell--lead" style="--i:0"><b>0</b></span><span class="mt-odo__cell" style="--i:1"><b>3</b></span><span class="mt-odo__cell" style="--i:2"><b>8</b></span><span class="mt-odo__cell" style="--i:3"><b>6</b></span><span class="mt-odo__cell" style="--i:4"><b>0</b></span><span class="mt-odo__cell" style="--i:5"><b>5</b></span><span class="mt-odo__unit">mi</span></span></span></span>
                 <span><span class="mt-metric__label">{{ p.cost_per_mi }}</span><span class="mt-metric__value">$0.34</span></span>
-                <span class="mt-vcard__open">{{ p.open }}</span>
+                <span class="mt-vcard__chev" aria-hidden="true">{% include icon.html name="chev" %}</span>
               </span>
             </span>
             <span class="mt-strip mt-strip--due">
@@ -98,10 +99,10 @@
           </div>
         </div>
         <div class="mt-stats">
-          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_odometer }}</span><span class="mt-stat__value">11,450 mi</span><span class="mt-stat__hint">{{ p.updated_12sep }}</span></div>
+          <div class="mt-stat mt-stat--wide"><span class="mt-stat__label">{{ p.stat_odometer }}</span><span class="mt-odo mt-odo--lg" role="img" aria-label="11,450 mi"><span aria-hidden="true" style="display:contents"><span class="mt-odo__cell mt-odo__cell--lead" style="--i:0"><b>0</b></span><span class="mt-odo__cell" style="--i:1"><b>1</b></span><span class="mt-odo__cell" style="--i:2"><b>1</b></span><span class="mt-odo__cell" style="--i:3"><b>4</b></span><span class="mt-odo__cell" style="--i:4"><b>5</b></span><span class="mt-odo__cell" style="--i:5"><b>0</b></span><span class="mt-odo__unit">mi</span></span></span><span class="mt-stat__hint">{{ p.updated_12sep }}</span></div>
           <div class="mt-stat mt-stat--alert"><span class="mt-stat__label">{{ p.stat_next }}</span><span class="mt-stat__value">{{ p.overdue }}</span><span class="mt-stat__hint">{{ p.engine_oil }}</span></div>
           <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_consumption }}</span><span class="mt-stat__value">52.3 mpg</span><span class="mt-stat__hint">{{ p.last_3 }}</span></div>
-          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_spend }}</span><span class="mt-stat__value">$1,184</span><span class="mt-stat__hint">{{ p.spend_hint }}</span></div>
+          <div class="mt-stat mt-stat--wide"><span class="mt-stat__label">{{ p.stat_spend }}</span><span class="mt-stat__value">$1,184</span><span class="mt-stat__hint">{{ p.spend_hint }}</span></div>
         </div>
         <div class="mt-subhead">{{ p.reminders }} <small>{{ p.active_2 }}</small></div>
         <div class="mt-group">
@@ -148,10 +149,10 @@
           </div>
         </div>
         <div class="mt-stats">
-          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_odometer }}</span><span class="mt-stat__value">38,605 mi</span><span class="mt-stat__hint">{{ p.updated_9sep }}</span></div>
+          <div class="mt-stat mt-stat--wide"><span class="mt-stat__label">{{ p.stat_odometer }}</span><span class="mt-odo mt-odo--lg" role="img" aria-label="38,605 mi"><span aria-hidden="true" style="display:contents"><span class="mt-odo__cell mt-odo__cell--lead" style="--i:0"><b>0</b></span><span class="mt-odo__cell" style="--i:1"><b>3</b></span><span class="mt-odo__cell" style="--i:2"><b>8</b></span><span class="mt-odo__cell" style="--i:3"><b>6</b></span><span class="mt-odo__cell" style="--i:4"><b>0</b></span><span class="mt-odo__cell" style="--i:5"><b>5</b></span><span class="mt-odo__unit">mi</span></span></span><span class="mt-stat__hint">{{ p.updated_9sep }}</span></div>
           <div class="mt-stat mt-stat--warn"><span class="mt-stat__label">{{ p.stat_next }}</span><span class="mt-stat__value">{{ p.due_soon }}</span><span class="mt-stat__hint">{{ p.tire_rotation }}</span></div>
           <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_consumption }}</span><span class="mt-stat__value">39.1 mpg</span><span class="mt-stat__hint">{{ p.last_3 }}</span></div>
-          <div class="mt-stat"><span class="mt-stat__label">{{ p.stat_spend }}</span><span class="mt-stat__value">$2,736</span><span class="mt-stat__hint">{{ p.spend_hint }}</span></div>
+          <div class="mt-stat mt-stat--wide"><span class="mt-stat__label">{{ p.stat_spend }}</span><span class="mt-stat__value">$2,736</span><span class="mt-stat__hint">{{ p.spend_hint }}</span></div>
         </div>
         <div class="mt-subhead">{{ p.reminders }} <small>{{ p.active_2 }}</small></div>
         <div class="mt-group">
@@ -216,7 +217,7 @@
           <p class="mt-scr__sub">{{ p.reminders_sub }}</p>
         </div>
         <div class="mt-filters" role="group" aria-label="{{ p.filter_label }}">
-          <button class="mt-filter mt-tap" data-filter="all" aria-pressed="true">{{ p.all }}</button>
+          <button class="mt-filter mt-tap" data-filter="all" aria-pressed="true">{{ p.all }}<span class="mt-filter__count">4</span></button>
           <button class="mt-filter mt-tap" data-filter="v1" aria-pressed="false">Trident 660</button>
           <button class="mt-filter mt-tap" data-filter="v2" aria-pressed="false">RAV4</button>
         </div>
@@ -296,15 +297,15 @@
         <div class="mt-group" style="margin-bottom:16px">
           <button class="mt-pref mt-tap" data-cycle="{{ p.miles }}|{{ p.km }}">
             <span><span class="mt-pref__name">{{ p.distance }}</span><span class="mt-pref__hint">{{ p.distance_hint }}</span></span>
-            <span class="mt-pref__value">{{ p.miles }}</span>
+            <span class="mt-pref__value"><span data-cycle-value>{{ p.miles }}</span>{% include icon.html name="chev" %}</span>
           </button>
           <button class="mt-pref mt-tap" data-cycle="{{ p.usd }}|{{ p.rupiah }}|{{ p.euro }}|{{ p.pound }}">
             <span><span class="mt-pref__name">{{ p.currency }}</span><span class="mt-pref__hint">{{ p.currency_hint }}</span></span>
-            <span class="mt-pref__value">{{ p.usd }}</span>
+            <span class="mt-pref__value"><span data-cycle-value>{{ p.usd }}</span>{% include icon.html name="chev" %}</span>
           </button>
           <button class="mt-pref mt-tap" data-cycle="{{ p.before_1w }}|{{ p.before_3d }}|{{ p.on_day }}">
             <span><span class="mt-pref__name">{{ p.remind_me }}</span><span class="mt-pref__hint">{{ p.remind_hint }}</span></span>
-            <span class="mt-pref__value">{{ p.before_1w }}</span>
+            <span class="mt-pref__value"><span data-cycle-value>{{ p.before_1w }}</span>{% include icon.html name="chev" %}</span>
           </button>
         </div>
         <div class="mt-card mt-card--line">

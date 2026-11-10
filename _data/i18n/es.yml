@@ -103,7 +103,7 @@ phone:
   car: "Auto"
   odometer: "Odómetro"
   cost_per_mi: "Costo / mi"
-  open: "Abrir ›"
+  photo: "Tres cuartos frontal"
   overdue: "Vencido"
   due_soon: "Vence pronto"
   upcoming: "Próximo"

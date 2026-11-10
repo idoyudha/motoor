@@ -103,7 +103,7 @@ phone:
   car: "Voiture"
   odometer: "Compteur"
   cost_per_mi: "Coût / mi"
-  open: "Ouvrir ›"
+  photo: "Trois-quarts avant"
   overdue: "En retard"
   due_soon: "Bientôt"
   upcoming: "À venir"

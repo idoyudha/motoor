@@ -103,7 +103,7 @@ phone:
   car: "Auto"
   odometer: "Kilometerstand"
   cost_per_mi: "Kosten / mi"
-  open: "Öffnen ›"
+  photo: "Vorne schräg"
   overdue: "Überfällig"
   due_soon: "Bald fällig"
   upcoming: "Demnächst"

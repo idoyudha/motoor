@@ -103,7 +103,7 @@ phone:
   car: "Otomobil"
   odometer: "Kilometre sayacı"
   cost_per_mi: "Maliyet / mi"
-  open: "Aç ›"
+  photo: "Ön çapraz"
   overdue: "Gecikti"
   due_soon: "Yaklaşıyor"
   upcoming: "İleride"

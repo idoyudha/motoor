@@ -14,4 +14,16 @@
     });
   }, { rootMargin: '0px 0px -10% 0px' });
   items.forEach(function (el) { io.observe(el); });
+
+  // Safety net: content already on screen (or scrolled past) must never stay hidden,
+  // even if the observer is late or never fires. Below-the-fold items keep their entrance.
+  function revealVisible() {
+    var bottom = window.innerHeight || document.documentElement.clientHeight;
+    items.forEach(function (el) {
+      if (el.classList.contains('is-in')) return;
+      if (el.getBoundingClientRect().top < bottom) { el.classList.add('is-in'); io.unobserve(el); }
+    });
+  }
+  requestAnimationFrame(revealVisible);
+  setTimeout(revealVisible, 1500);
 })();

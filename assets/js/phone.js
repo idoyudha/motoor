@@ -75,7 +75,7 @@
       if (d.themeSet) return setTheme(d.themeSet);
       if (d.cycle) {
         var opts = d.cycle.split('|');
-        var val = el.querySelector('.mt-pref__value');
+        var val = el.querySelector('[data-cycle-value]') || el.querySelector('.mt-pref__value');
         val.textContent = opts[(opts.indexOf(val.textContent) + 1) % opts.length];
         return;
       }

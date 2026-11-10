@@ -103,7 +103,7 @@ phone:
   car: "汽车"
   odometer: "里程表"
   cost_per_mi: "每英里费用"
-  open: "打开 ›"
+  photo: "前侧视角"
   overdue: "已逾期"
   due_soon: "即将到期"
   upcoming: "未来"
