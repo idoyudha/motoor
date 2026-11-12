@@ -13,7 +13,7 @@ Motoor keeps the fuel, service and cost records for your cars, motorcycles, bicy
 
 ## How Motoor works
 
-- **Register a vehicle in about a minute.** Choose its make, class and powertrain, and Motoor proposes a service schedule for it.
+- **Register a vehicle in about a minute.** Tap “Get started” and sign in with Google, Apple or email, then choose the vehicle’s make, class and powertrain. Motoor proposes a service schedule for it.
 - **Log fuel or charging, services and costs** in a few taps. Motoor works out consumption and what each vehicle really costs.
 - **Get reminders by distance or by time**, whichever comes first, so you know what’s overdue, what’s due soon and what can wait.
 

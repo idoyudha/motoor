@@ -15,7 +15,7 @@ Motoor réunit au même endroit le carburant, les entretiens et les dépenses de
 
 ## Comment fonctionne Motoor
 
-- **Enregistrez un véhicule en une minute environ.** Choisissez la marque, la catégorie et la motorisation, et Motoor vous propose un plan d’entretien.
+- **Enregistrez un véhicule en une minute environ.** Touchez « Commencer » et connectez-vous avec Google, Apple ou votre e-mail, puis choisissez la marque, la catégorie et la motorisation du véhicule. Motoor vous propose un plan d’entretien.
 - **Notez carburant ou recharge, entretiens et dépenses** en quelques gestes. Motoor calcule la consommation et ce que coûte réellement chaque véhicule.
 - **Recevez des rappels selon la distance ou la durée**, au premier des deux termes atteint, pour savoir ce qui est en retard, ce qui arrive bientôt et ce qui peut attendre.
 

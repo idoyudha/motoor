@@ -19,9 +19,16 @@ description: Les réponses aux questions fréquentes, et une ligne directe avec 
 ## Questions fréquentes
 
 <details class="mt-faq">
+<summary>Ai-je besoin d’un compte ?</summary>
+<div>
+<p>Oui. Vous vous connectez avant d’enregistrer un véhicule, et votre compte garde votre carnet sauvegardé. La première fois, touchez <strong>Commencer</strong>, connectez-vous avec Google, Apple (sur iOS) ou votre e-mail, choisissez vos unités et votre devise, puis enregistrez votre premier véhicule. Sur un nouveau téléphone, touchez plutôt <strong>Se connecter</strong> et votre carnet revient.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Les rappels n’apparaissent pas sur mon téléphone</summary>
 <div>
-<p>Vérifiez que les notifications sont activées pour Motoor dans les réglages de votre téléphone. Sur Android, certains téléphones arrêtent aussi les applications en arrière-plan pour économiser la batterie : ouvrez <strong>Paramètres → Applications → Motoor → Batterie</strong> et choisissez <strong>Sans restriction</strong>. Les rappels apparaissent toujours dans l’application, dans l’onglet <strong>Rappels</strong>, même lorsque les notifications sont désactivées.</p>
+<p>Motoor demande l’autorisation d’envoyer des notifications juste après que vous avez confirmé les rappels d’un véhicule. Si les notifications sont désactivées, l’onglet <strong>Rappels</strong> affiche un bandeau : touchez <strong>Activer</strong> pour ouvrir les réglages de votre téléphone et les autoriser pour Motoor. Sur Android, certains téléphones arrêtent aussi les applications en arrière-plan pour économiser la batterie : ouvrez <strong>Paramètres → Applications → Motoor → Batterie</strong> et choisissez <strong>Sans restriction</strong>. Les rappels apparaissent toujours dans l’application, dans l’onglet <strong>Rappels</strong>, même lorsque les notifications sont désactivées.</p>
 </div>
 </details>
 

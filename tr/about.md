@@ -15,7 +15,7 @@ Motoor; otomobilleriniz, motosikletleriniz, bisikletleriniz ve elektrikli araçl
 
 ## Motoor nasıl çalışır
 
-- **Bir aracı yaklaşık bir dakikada kaydedin.** Markasını, sınıfını ve güç aktarma sistemini seçin; Motoor onun için bir bakım planı önersin.
+- **Bir aracı yaklaşık bir dakikada kaydedin.** “Başlayın”a dokunup Google, Apple veya e-posta ile giriş yapın; ardından aracın markasını, sınıfını ve güç aktarma sistemini seçin. Motoor onun için bir bakım planı önersin.
 - **Yakıt veya şarj, bakım ve masrafları** birkaç dokunuşla kaydedin. Motoor tüketimi ve her aracın gerçekte neye mal olduğunu hesaplar.
 - **Mesafeye veya zamana göre hatırlatıcılar alın**, hangisi önce gelirse; böylece neyin geciktiğini, neyin yaklaştığını ve neyin bekleyebileceğini bilirsiniz.
 

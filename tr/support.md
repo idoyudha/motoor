@@ -19,9 +19,16 @@ description: "Sık sorulan soruların yanıtları ve Motoor’u yapan kişiye do
 ## Sık sorulan sorular
 
 <details class="mt-faq">
+<summary>Hesaba ihtiyacım var mı?</summary>
+<div>
+<p>Evet. Araç kaydetmeden önce giriş yaparsınız ve hesabınız bakım defterinizi yedekli tutar. İlk seferde <strong>Başlayın</strong>’a dokunun, Google, Apple (iOS’ta) veya e-posta ile giriş yapın, birimlerinizi ve para biriminizi seçin, ardından ilk aracınızı kaydedin. Yeni bir telefonda bunun yerine <strong>Giriş yap</strong>’a dokunun, bakım defteriniz geri gelsin.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Hatırlatıcılar telefonumda görünmüyor</summary>
 <div>
-<p>Telefonunuzun ayarlarında Motoor için bildirimlerin açık olduğunu kontrol edin. Android’de bazı telefonlar pil tasarrufu için arka planda çalışan uygulamaları da durdurur: <strong>Ayarlar → Uygulamalar → Motoor → Pil</strong> yolunu izleyin ve <strong>Kısıtlamasız</strong>’ı seçin. Bildirimler kapalı olsa bile hatırlatıcılar uygulama içinde <strong>Hatırlatıcılar</strong> sekmesinde her zaman görünür.</p>
+<p>Motoor, bir aracın hatırlatıcılarını onayladıktan hemen sonra bildirim göndermek için izin ister. Bildirimler kapalıysa <strong>Hatırlatıcılar</strong> sekmesinde bir uyarı görünür: telefonunuzun ayarlarını açıp Motoor’a izin vermek için <strong>Aç</strong>’a dokunun. Android’de bazı telefonlar pil tasarrufu için arka planda çalışan uygulamaları da durdurur: <strong>Ayarlar → Uygulamalar → Motoor → Pil</strong> yolunu izleyin ve <strong>Kısıtlamasız</strong>’ı seçin. Bildirimler kapalı olsa bile hatırlatıcılar uygulama içinde <strong>Hatırlatıcılar</strong> sekmesinde her zaman görünür.</p>
 </div>
 </details>
 

@@ -15,7 +15,7 @@ Motoor guarda en un solo lugar los registros de combustible, mantenimiento y gas
 
 ## Cómo funciona Motoor
 
-- **Registra un vehículo en un minuto aproximadamente.** Elige la marca, la clase y el tipo de motor, y Motoor te propone un plan de mantenimiento.
+- **Registra un vehículo en un minuto aproximadamente.** Toca “Empezar” e inicia sesión con Google, Apple o correo electrónico; luego elige la marca, la clase y el tipo de motor del vehículo, y Motoor te propone un plan de mantenimiento.
 - **Registra combustible o carga, mantenimientos y gastos** con unos pocos toques. Motoor calcula el consumo y lo que de verdad cuesta cada vehículo.
 - **Recibe recordatorios por distancia o por tiempo**, lo que llegue primero, para saber qué está vencido, qué vence pronto y qué puede esperar.
 

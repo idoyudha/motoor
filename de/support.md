@@ -19,9 +19,16 @@ description: Antworten auf häufige Fragen und ein direkter Draht zu der Person,
 ## Häufige Fragen
 
 <details class="mt-faq">
+<summary>Brauche ich ein Konto?</summary>
+<div>
+<p>Ja. Sie melden sich an, bevor Sie ein Fahrzeug anlegen, und Ihr Konto hält Ihr Logbuch gesichert. Beim ersten Mal tippen Sie auf <strong>Loslegen</strong>, melden sich mit Google, Apple (unter iOS) oder E-Mail an, wählen Einheiten und Währung und legen dann Ihr erstes Fahrzeug an. Auf einem neuen Handy tippen Sie stattdessen auf <strong>Anmelden</strong>, und Ihr Logbuch ist wieder da.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Erinnerungen erscheinen nicht auf meinem Handy</summary>
 <div>
-<p>Prüfen Sie, ob Benachrichtigungen für Motoor in den Einstellungen Ihres Handys aktiviert sind. Unter Android beenden manche Handys außerdem Apps im Hintergrund, um Akku zu sparen: Öffnen Sie <strong>Einstellungen → Apps → Motoor → Akku</strong> und wählen Sie <strong>Nicht eingeschränkt</strong>. Erinnerungen erscheinen in der App immer im Tab <strong>Erinnerungen</strong>, auch wenn Benachrichtigungen ausgeschaltet sind.</p>
+<p>Motoor fragt nach der Erlaubnis für Benachrichtigungen, direkt nachdem Sie die Erinnerungen eines Fahrzeugs bestätigt haben. Sind Benachrichtigungen ausgeschaltet, zeigt der Tab <strong>Erinnerungen</strong> einen Hinweis: Tippen Sie auf <strong>Aktivieren</strong>, um die Einstellungen Ihres Handys zu öffnen und sie für Motoor zu erlauben. Unter Android beenden manche Handys außerdem Apps im Hintergrund, um Akku zu sparen: Öffnen Sie <strong>Einstellungen → Apps → Motoor → Akku</strong> und wählen Sie <strong>Nicht eingeschränkt</strong>. Erinnerungen erscheinen in der App immer im Tab <strong>Erinnerungen</strong>, auch wenn Benachrichtigungen ausgeschaltet sind.</p>
 </div>
 </details>
 

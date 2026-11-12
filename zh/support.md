@@ -19,9 +19,16 @@ description: 常见问题解答，以及直接联系 Motoor 开发者的渠道�
 ## 常见问题
 
 <details class="mt-faq">
+<summary>需要账户吗？</summary>
+<div>
+<p>需要。登记车辆前需要先登录，你的记录本也通过账户备份。首次使用时，点按 <strong>开始使用</strong>，用 Google、Apple（iOS）或电子邮件登录，选择单位和货币，然后登记第一辆车。在新手机上，点按 <strong>登录</strong>，你的记录本就会恢复。</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>手机上收不到提醒</summary>
 <div>
-<p>请在手机设置中确认 Motoor 的通知已开启。在 Android 上，有些手机为了省电还会阻止应用在后台运行：打开 <strong>设置 → 应用 → Motoor → 电池</strong>，然后选择 <strong>不受限制</strong>。即使关闭了通知，提醒也始终会显示在应用内的 <strong>提醒</strong> 标签页中。</p>
+<p>确认车辆的提醒后，Motoor 会立即请求通知权限。如果通知已关闭，<strong>提醒</strong> 标签页会显示一条横幅：点按 <strong>开启</strong> 即可打开手机设置，允许 Motoor 发送通知。在 Android 上，有些手机为了省电还会阻止应用在后台运行：打开 <strong>设置 → 应用 → Motoor → 电池</strong>，然后选择 <strong>不受限制</strong>。即使关闭了通知，提醒也始终会显示在应用内的 <strong>提醒</strong> 标签页中。</p>
 </div>
 </details>
 

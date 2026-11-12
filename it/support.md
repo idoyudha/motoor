@@ -19,9 +19,16 @@ description: Risposte alle domande più comuni e un contatto diretto con la pers
 ## Domande frequenti
 
 <details class="mt-faq">
+<summary>Mi serve un account?</summary>
+<div>
+<p>Sì. Accedi prima di registrare un veicolo, e il tuo account mantiene il backup del tuo libretto. La prima volta tocca <strong>Inizia</strong>, accedi con Google, Apple (su iOS) o email, scegli unità e valuta, poi registra il tuo primo veicolo. Su un nuovo telefono tocca invece <strong>Accedi</strong> e il tuo libretto torna.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>I promemoria non compaiono sul telefono</summary>
 <div>
-<p>Verifica che le notifiche di Motoor siano attive nelle impostazioni del telefono. Su Android, alcuni telefoni bloccano anche le app in background per risparmiare batteria: apri <strong>Impostazioni → App → Motoor → Batteria</strong> e scegli <strong>Senza restrizioni</strong>. I promemoria compaiono sempre all’interno dell’app, nella scheda <strong>Promemoria</strong>, anche con le notifiche disattivate.</p>
+<p>Motoor chiede il permesso di inviare notifiche subito dopo che hai confermato i promemoria di un veicolo. Se le notifiche sono disattivate, la scheda <strong>Promemoria</strong> mostra un avviso: tocca <strong>Attiva</strong> per aprire le impostazioni del telefono e consentirle per Motoor. Su Android, alcuni telefoni bloccano anche le app in background per risparmiare batteria: apri <strong>Impostazioni → App → Motoor → Batteria</strong> e scegli <strong>Senza restrizioni</strong>. I promemoria compaiono sempre all’interno dell’app, nella scheda <strong>Promemoria</strong>, anche con le notifiche disattivate.</p>
 </div>
 </details>
 

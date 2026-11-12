@@ -19,9 +19,16 @@ description: Respuestas a preguntas frecuentes y una línea directa con la perso
 ## Preguntas frecuentes
 
 <details class="mt-faq">
+<summary>¿Necesito una cuenta?</summary>
+<div>
+<p>Sí. Inicias sesión antes de registrar un vehículo, y tu cuenta mantiene tu registro respaldado. La primera vez, toca <strong>Empezar</strong>, inicia sesión con Google, Apple (en iOS) o correo electrónico, elige las unidades y la moneda, y registra tu primer vehículo. En un teléfono nuevo, toca <strong>Iniciar sesión</strong> y tu registro vuelve.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Los recordatorios no aparecen en mi teléfono</summary>
 <div>
-<p>Comprueba que las notificaciones de Motoor estén activadas en los ajustes de tu teléfono. En Android, algunos teléfonos también detienen las apps en segundo plano para ahorrar batería: abre <strong>Ajustes → Aplicaciones → Motoor → Batería</strong> y elige <strong>Sin restricciones</strong>. Los recordatorios siempre aparecen dentro de la app, en la pestaña <strong>Recordatorios</strong>, aunque las notificaciones estén desactivadas.</p>
+<p>Motoor te pide permiso para enviar notificaciones justo después de que confirmes los recordatorios de un vehículo. Si las notificaciones están desactivadas, la pestaña <strong>Recordatorios</strong> muestra un aviso: toca <strong>Activar</strong> para abrir los ajustes del teléfono y permitirlas para Motoor. En Android, algunos teléfonos también detienen las apps en segundo plano para ahorrar batería: abre <strong>Ajustes → Aplicaciones → Motoor → Batería</strong> y elige <strong>Sin restricciones</strong>. Los recordatorios siempre aparecen dentro de la app, en la pestaña <strong>Recordatorios</strong>, aunque las notificaciones estén desactivadas.</p>
 </div>
 </details>
 

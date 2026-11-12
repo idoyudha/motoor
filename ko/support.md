@@ -19,9 +19,16 @@ description: 자주 묻는 질문에 대한 답변과 Motoor 개발자에게 직
 ## 자주 묻는 질문
 
 <details class="mt-faq">
+<summary>계정이 필요한가요?</summary>
+<div>
+<p>네. 차량을 등록하기 전에 로그인하며, 계정이 있어야 로그북이 백업됩니다. 처음에는 <strong>시작하기</strong>를 탭하고 Google, Apple(iOS) 또는 이메일로 로그인한 뒤 단위와 통화를 고르고 첫 차량을 등록하세요. 새 휴대폰에서는 <strong>로그인</strong>을 탭하면 로그북이 그대로 돌아옵니다.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>휴대폰에 알림이 표시되지 않아요</summary>
 <div>
-<p>휴대폰 설정에서 Motoor 알림이 켜져 있는지 확인하세요. Android의 경우 일부 휴대폰은 배터리를 절약하기 위해 백그라운드에서 실행 중인 앱을 중지하기도 합니다. <strong>설정 → 애플리케이션 → Motoor → 배터리</strong>를 열고 <strong>제한 없음</strong>을 선택하세요. 알림이 꺼져 있어도 앱 안의 <strong>알림</strong> 탭에는 항상 알림이 표시됩니다.</p>
+<p>Motoor는 차량의 알림 일정을 확인한 직후 알림 권한을 요청합니다. 알림이 꺼져 있으면 <strong>알림</strong> 탭에 배너가 표시됩니다. <strong>켜기</strong>를 탭해 휴대폰 설정을 열고 Motoor 알림을 허용하세요. Android의 경우 일부 휴대폰은 배터리를 절약하기 위해 백그라운드에서 실행 중인 앱을 중지하기도 합니다. <strong>설정 → 애플리케이션 → Motoor → 배터리</strong>를 열고 <strong>제한 없음</strong>을 선택하세요. 알림이 꺼져 있어도 앱 안의 <strong>알림</strong> 탭에는 항상 알림이 표시됩니다.</p>
 </div>
 </details>
 

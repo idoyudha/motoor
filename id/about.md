@@ -15,7 +15,7 @@ Motoor menyimpan catatan bahan bakar, servis, dan biaya untuk mobil, sepeda moto
 
 ## Cara kerja Motoor
 
-- **Daftarkan kendaraan dalam sekitar satu menit.** Pilih merek, jenis, dan sistem penggeraknya, lalu Motoor mengusulkan jadwal servisnya.
+- **Daftarkan kendaraan dalam sekitar satu menit.** Ketuk “Mulai” lalu masuk dengan Google, Apple, atau email, kemudian pilih merek, jenis, dan sistem penggerak kendaraan. Motoor mengusulkan jadwal servisnya.
 - **Catat bahan bakar atau pengisian daya, servis, dan biaya** dengan beberapa ketukan. Motoor menghitung konsumsi dan biaya sebenarnya dari setiap kendaraan.
 - **Dapatkan pengingat berdasarkan jarak atau waktu**, mana yang lebih dulu, sehingga Anda tahu apa yang sudah lewat waktunya, apa yang segera jatuh tempo, dan apa yang masih bisa menunggu.
 

@@ -19,9 +19,16 @@ description: Respostas para dúvidas comuns e um canal direto com a pessoa que f
 ## Perguntas frequentes
 
 <details class="mt-faq">
+<summary>Preciso de uma conta?</summary>
+<div>
+<p>Sim. Você entra antes de cadastrar um veículo, e sua conta mantém o backup do seu registro. Na primeira vez, toque em <strong>Começar</strong>, entre com Google, Apple (no iOS) ou e-mail, escolha as unidades e a moeda e cadastre seu primeiro veículo. Em um celular novo, toque em <strong>Entrar</strong> e seu registro volta.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Os lembretes não aparecem no meu celular</summary>
 <div>
-<p>Verifique se as notificações do Motoor estão ativadas nas configurações do celular. No Android, alguns celulares também interrompem apps em segundo plano para economizar bateria: abra <strong>Configurações → Apps → Motoor → Bateria</strong> e escolha <strong>Sem restrições</strong>. Os lembretes sempre aparecem dentro do app, na aba <strong>Lembretes</strong>, mesmo com as notificações desativadas.</p>
+<p>O Motoor pede permissão para enviar notificações logo depois que você confirma os lembretes de um veículo. Se as notificações estiverem desativadas, a aba <strong>Lembretes</strong> mostra um aviso: toque em <strong>Ativar</strong> para abrir as configurações do celular e permiti-las para o Motoor. No Android, alguns celulares também interrompem apps em segundo plano para economizar bateria: abra <strong>Configurações → Apps → Motoor → Bateria</strong> e escolha <strong>Sem restrições</strong>. Os lembretes sempre aparecem dentro do app, na aba <strong>Lembretes</strong>, mesmo com as notificações desativadas.</p>
 </div>
 </details>
 

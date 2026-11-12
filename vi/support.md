@@ -19,9 +19,16 @@ description: "Giải đáp các câu hỏi thường gặp, và kênh liên hệ
 ## Câu hỏi thường gặp
 
 <details class="mt-faq">
+<summary>Tôi có cần tài khoản không?</summary>
+<div>
+<p>Có. Bạn cần đăng nhập trước khi đăng ký xe, và tài khoản giúp sổ theo dõi của bạn luôn được sao lưu. Lần đầu, chạm <strong>Bắt đầu</strong>, đăng nhập bằng Google, Apple (trên iOS) hoặc email, chọn đơn vị và tiền tệ, rồi đăng ký xe đầu tiên. Trên điện thoại mới, hãy chạm <strong>Đăng nhập</strong> và sổ theo dõi của bạn sẽ trở lại.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Nhắc nhở không hiện trên điện thoại của tôi</summary>
 <div>
-<p>Hãy kiểm tra xem thông báo của Motoor đã được bật trong cài đặt điện thoại chưa. Trên Android, một số điện thoại còn dừng các ứng dụng chạy nền để tiết kiệm pin: mở <strong>Cài đặt → Ứng dụng → Motoor → Pin</strong> và chọn <strong>Không hạn chế</strong>. Nhắc nhở luôn hiển thị trong ứng dụng ở thẻ <strong>Nhắc nhở</strong>, kể cả khi thông báo bị tắt.</p>
+<p>Motoor xin quyền gửi thông báo ngay sau khi bạn xác nhận nhắc nhở của một xe. Nếu thông báo bị tắt, thẻ <strong>Nhắc nhở</strong> hiển thị một biểu ngữ: chạm <strong>Bật</strong> để mở cài đặt điện thoại và cho phép thông báo của Motoor. Trên Android, một số điện thoại còn dừng các ứng dụng chạy nền để tiết kiệm pin: mở <strong>Cài đặt → Ứng dụng → Motoor → Pin</strong> và chọn <strong>Không hạn chế</strong>. Nhắc nhở luôn hiển thị trong ứng dụng ở thẻ <strong>Nhắc nhở</strong>, kể cả khi thông báo bị tắt.</p>
 </div>
 </details>
 

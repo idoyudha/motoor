@@ -17,9 +17,16 @@ lede: Answers to common questions, and a direct line to the person who makes Mot
 ## Common questions
 
 <details class="mt-faq">
+<summary>Do I need an account?</summary>
+<div>
+<p>Yes. You sign in before you register a vehicle, and your account keeps your logbook backed up. The first time, tap <strong>Get started</strong>, sign in with Google, Apple (on iOS) or email, choose your units and currency, then register your first vehicle. On a new phone, tap <strong>Sign in</strong> instead and your logbook comes back.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Reminders don’t show up on my phone</summary>
 <div>
-<p>Check that notifications are on for Motoor in your phone’s settings. On Android, some phones also stop apps running in the background to save battery: open <strong>Settings → Apps → Motoor → Battery</strong> and choose <strong>Unrestricted</strong>. Reminders always appear inside the app on the <strong>Reminders</strong> tab, even when notifications are off.</p>
+<p>Motoor asks for permission to send notifications right after you confirm a vehicle’s reminders. If notifications are off, the <strong>Reminders</strong> tab shows a banner: tap <strong>Turn on</strong> to open your phone’s settings and allow them for Motoor. On Android, some phones also stop apps running in the background to save battery: open <strong>Settings → Apps → Motoor → Battery</strong> and choose <strong>Unrestricted</strong>. Reminders always appear inside the app on the <strong>Reminders</strong> tab, even when notifications are off.</p>
 </div>
 </details>
 

@@ -19,9 +19,16 @@ description: "Jawaban atas pertanyaan umum, dan jalur langsung ke orang yang mem
 ## Pertanyaan umum
 
 <details class="mt-faq">
+<summary>Apakah saya perlu akun?</summary>
+<div>
+<p>Ya. Anda masuk sebelum mendaftarkan kendaraan, dan akun Anda menjaga buku catatan Anda tetap dicadangkan. Pertama kali, ketuk <strong>Mulai</strong>, masuk dengan Google, Apple (di iOS), atau email, pilih satuan dan mata uang, lalu daftarkan kendaraan pertama Anda. Di ponsel baru, ketuk <strong>Masuk</strong> dan buku catatan Anda akan kembali.</p>
+</div>
+</details>
+
+<details class="mt-faq">
 <summary>Pengingat tidak muncul di ponsel saya</summary>
 <div>
-<p>Pastikan notifikasi untuk Motoor sudah aktif di pengaturan ponsel Anda. Di Android, beberapa ponsel juga menghentikan aplikasi yang berjalan di latar belakang untuk menghemat baterai: buka <strong>Setelan → Aplikasi → Motoor → Baterai</strong> dan pilih <strong>Tidak dibatasi</strong>. Pengingat selalu muncul di dalam aplikasi pada tab <strong>Pengingat</strong>, meskipun notifikasi dimatikan.</p>
+<p>Motoor meminta izin untuk mengirim notifikasi tepat setelah Anda mengonfirmasi pengingat sebuah kendaraan. Jika notifikasi dimatikan, tab <strong>Pengingat</strong> menampilkan banner: ketuk <strong>Aktifkan</strong> untuk membuka pengaturan ponsel dan mengizinkan notifikasi untuk Motoor. Di Android, beberapa ponsel juga menghentikan aplikasi yang berjalan di latar belakang untuk menghemat baterai: buka <strong>Setelan → Aplikasi → Motoor → Baterai</strong> dan pilih <strong>Tidak dibatasi</strong>. Pengingat selalu muncul di dalam aplikasi pada tab <strong>Pengingat</strong>, meskipun notifikasi dimatikan.</p>
 </div>
 </details>
 

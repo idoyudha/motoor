@@ -15,7 +15,7 @@ Motoor lưu hồ sơ nhiên liệu, bảo dưỡng và chi phí cho ô tô, xe m
 
 ## Motoor hoạt động thế nào
 
-- **Đăng ký một phương tiện trong khoảng một phút.** Chọn hãng, loại xe và hệ truyền động, Motoor sẽ đề xuất lịch bảo dưỡng cho xe.
+- **Đăng ký một phương tiện trong khoảng một phút.** Chạm “Bắt đầu” và đăng nhập bằng Google, Apple hoặc email, rồi chọn hãng, loại xe và hệ truyền động. Motoor sẽ đề xuất lịch bảo dưỡng cho xe.
 - **Ghi nhiên liệu hoặc sạc, bảo dưỡng và chi phí** chỉ với vài lần chạm. Motoor tính mức tiêu hao và chi phí thực của từng xe.
 - **Nhận lời nhắc theo quãng đường hoặc thời gian**, tùy điều kiện nào đến trước, để bạn biết việc gì đã quá hạn, việc gì sắp đến hạn và việc gì có thể đợi.
 

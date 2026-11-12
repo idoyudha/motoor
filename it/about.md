@@ -15,7 +15,7 @@ Motoor tiene in un unico posto carburante, interventi e spese di auto, moto, bic
 
 ## Come funziona Motoor
 
-- **Registra un veicolo in circa un minuto.** Scegli marca, categoria e alimentazione, e Motoor ti propone un piano di manutenzione.
+- **Registra un veicolo in circa un minuto.** Tocca “Inizia” e accedi con Google, Apple o email, poi scegli marca, categoria e alimentazione del veicolo. Motoor ti propone un piano di manutenzione.
 - **Registra carburante o ricarica, interventi e spese** con pochi tocchi. Motoor calcola i consumi e quanto costa davvero ogni veicolo.
 - **Ricevi promemoria per distanza o per tempo**, a seconda di quale arriva prima, così sai cosa è scaduto, cosa scade a breve e cosa può aspettare.
 

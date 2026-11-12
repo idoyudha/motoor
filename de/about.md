@@ -15,7 +15,7 @@ Motoor hält die Tank-, Wartungs- und Kostendaten Ihrer Autos, Motorräder, Fahr
 
 ## So funktioniert Motoor
 
-- **Ein Fahrzeug in etwa einer Minute anlegen.** Wählen Sie Marke, Klasse und Antrieb, und Motoor schlägt einen Wartungsplan dafür vor.
+- **Ein Fahrzeug in etwa einer Minute anlegen.** Tippen Sie auf „Loslegen“ und melden Sie sich mit Google, Apple oder E-Mail an. Wählen Sie dann Marke, Klasse und Antrieb des Fahrzeugs, und Motoor schlägt einen Wartungsplan dafür vor.
 - **Tanken oder Laden, Wartungen und Kosten erfassen** mit wenigen Fingertipps. Motoor berechnet den Verbrauch und was jedes Fahrzeug wirklich kostet.
 - **Erinnerungen nach Strecke oder Zeit**, je nachdem, was zuerst eintritt. So sehen Sie, was überfällig ist, was bald fällig wird und was warten kann.
 

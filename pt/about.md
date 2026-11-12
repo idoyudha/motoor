@@ -15,7 +15,7 @@ O Motoor reúne num só lugar os registros de combustível, manutenção e custo
 
 ## Como o Motoor funciona
 
-- **Cadastre um veículo em cerca de um minuto.** Escolha a marca, a categoria e a motorização, e o Motoor propõe um plano de manutenção.
+- **Cadastre um veículo em cerca de um minuto.** Toque em “Começar” e entre com Google, Apple ou e-mail, depois escolha a marca, a categoria e a motorização do veículo. O Motoor propõe um plano de manutenção.
 - **Registre combustível ou recarga, manutenções e custos** com poucos toques. O Motoor calcula o consumo e quanto cada veículo realmente custa.
 - **Receba lembretes por distância ou por tempo**, o que vier primeiro, para saber o que está atrasado, o que vence em breve e o que pode esperar.
 
